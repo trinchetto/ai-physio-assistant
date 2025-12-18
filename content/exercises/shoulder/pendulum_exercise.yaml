@@ -1,0 +1,100 @@
+# Pendulum Exercise / Codman's Exercise
+# Classic gentle shoulder mobilization exercise
+
+id: pendulum_exercise
+
+name: "Pendulum Exercise (Codman's)"
+
+primary_language: en
+
+description: >
+  A gentle shoulder mobilization exercise that uses gravity and body momentum
+  to move the arm with minimal muscle effort. Excellent for early-stage
+  shoulder rehabilitation, frozen shoulder, and post-surgical recovery.
+  Helps maintain range of motion while allowing healing tissues to rest.
+
+instructions:
+  - "Stand beside a table or sturdy chair and bend forward at the waist"
+  - "Support yourself by placing your unaffected hand on the table"
+  - "Let your affected arm hang straight down, completely relaxed like a pendulum"
+  - "Gently shift your body weight to create small circular movements in your hanging arm"
+  - "Start with small circles (about 15-20 cm diameter) and gradually increase if comfortable"
+  - "Perform 10 circles clockwise, then 10 circles counter-clockwise"
+  - "Next, gently swing the arm forward and backward like a pendulum, 10 times"
+  - "Finally, swing the arm side to side, 10 times"
+  - "Keep the arm completely relaxed - let gravity and momentum do the work"
+
+common_mistakes:
+  - "Actively moving the arm with shoulder muscles instead of using body momentum - the arm should hang passively"
+  - "Making circles too large too soon - start small and progress gradually"
+  - "Not bending forward enough at the waist - you need about 90 degrees of hip flexion for gravity to help"
+  - "Tensing the shoulder or arm muscles - focus on keeping everything relaxed"
+  - "Rushing through the movements - slow, controlled momentum is key"
+
+body_regions:
+  - shoulder
+
+conditions:
+  - frozen_shoulder
+  - shoulder_impingement
+  - rotator_cuff_injury
+  - post_surgery_shoulder
+  - shoulder_stiffness
+  - adhesive_capsulitis
+
+therapeutic_goals:
+  - maintain_range_of_motion
+  - reduce_stiffness
+  - reduce_pain
+  - improve_mobility
+
+contraindications:
+  - shoulder_dislocation_acute
+  - unstable_shoulder_fracture
+  - severe_acute_inflammation
+
+difficulty: beginner
+
+equipment:
+  - chair
+  - table
+
+default_sets: 2
+default_reps: "10 each direction"
+default_rest: "30 seconds"
+
+tags:
+  - gentle
+  - early_rehab
+  - post_surgery
+  - home_exercise
+
+images: []
+
+translations:
+  it:
+    name: "Esercizio del Pendolo (Codman)"
+    description: >
+      Un esercizio di mobilizzazione della spalla delicato che utilizza la gravità
+      e lo slancio del corpo per muovere il braccio con minimo sforzo muscolare.
+      Eccellente per la riabilitazione della spalla in fase iniziale, spalla
+      congelata e recupero post-chirurgico. Aiuta a mantenere l'ampiezza di
+      movimento permettendo ai tessuti in guarigione di riposare.
+    instructions:
+      - "Posizionati accanto a un tavolo o una sedia stabile e piegati in avanti dalla vita"
+      - "Sostieniti appoggiando la mano non interessata sul tavolo"
+      - "Lascia che il braccio interessato penda verso il basso, completamente rilassato come un pendolo"
+      - "Sposta delicatamente il peso del corpo per creare piccoli movimenti circolari nel braccio pendente"
+      - "Inizia con cerchi piccoli (circa 15-20 cm di diametro) e aumenta gradualmente se confortevole"
+      - "Esegui 10 cerchi in senso orario, poi 10 in senso antiorario"
+      - "Successivamente, oscilla delicatamente il braccio avanti e indietro come un pendolo, 10 volte"
+      - "Infine, oscilla il braccio da un lato all'altro, 10 volte"
+      - "Mantieni il braccio completamente rilassato - lascia che la gravità e lo slancio facciano il lavoro"
+    common_mistakes:
+      - "Muovere attivamente il braccio con i muscoli della spalla invece di usare lo slancio del corpo"
+      - "Fare cerchi troppo grandi troppo presto - inizia in piccolo e progredisci gradualmente"
+      - "Non piegarsi abbastanza in avanti dalla vita - serve circa 90 gradi di flessione dell'anca"
+      - "Contrarre i muscoli della spalla o del braccio - concentrati sul mantenere tutto rilassato"
+
+source: ai_assisted
+owner_id: shared

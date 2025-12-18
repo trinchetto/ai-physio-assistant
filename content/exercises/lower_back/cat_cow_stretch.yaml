@@ -1,0 +1,105 @@
+# Cat-Cow Stretch
+# Fundamental spinal mobility exercise
+
+id: cat_cow_stretch
+
+name: "Cat-Cow Stretch"
+
+primary_language: en
+
+description: >
+  A gentle spinal mobility exercise that alternates between flexion (cat) and
+  extension (cow) of the spine. Improves flexibility of the entire spine,
+  releases tension in the back muscles, and promotes healthy spinal disc
+  function through gentle movement. Often used as a warm-up or for general
+  back health maintenance.
+
+instructions:
+  - "Start on your hands and knees (tabletop position) with wrists under shoulders and knees under hips"
+  - "Keep your spine in a neutral position with your head looking down slightly"
+  - "COW POSE: Inhale and slowly drop your belly toward the floor while lifting your tailbone and head"
+  - "Let your back arch gently, opening your chest forward - gaze slightly upward"
+  - "CAT POSE: Exhale and slowly round your spine toward the ceiling"
+  - "Tuck your tailbone under, draw your belly button toward your spine, and let your head drop"
+  - "Imagine a cat arching its back when startled"
+  - "Flow smoothly between cat and cow, coordinating with your breath"
+  - "Move slowly and avoid any positions that cause pain"
+
+common_mistakes:
+  - "Moving too quickly between positions - this should be slow and controlled"
+  - "Only moving the lower or upper back - the movement should flow through the entire spine"
+  - "Holding the breath - use the breath to guide the movement (inhale=cow, exhale=cat)"
+  - "Hyperextending the neck in cow pose - keep the neck as a natural extension of the spine"
+  - "Collapsing into the shoulders - keep arms strong and push the floor away slightly"
+  - "Placing knees too close together - keep them hip-width apart for stability"
+
+body_regions:
+  - lower_back
+  - upper_back
+
+conditions:
+  - lower_back_pain
+  - upper_back_stiffness
+  - spinal_stiffness
+  - postural_dysfunction
+  - mild_disc_issues
+
+therapeutic_goals:
+  - improve_mobility
+  - reduce_stiffness
+  - improve_flexibility
+  - reduce_pain
+
+contraindications:
+  - acute_disc_herniation
+  - spinal_fracture
+  - severe_spinal_stenosis
+  - acute_back_injury
+  - wrist_injury_severe
+
+difficulty: beginner
+
+equipment:
+  - none
+
+default_sets: 2
+default_reps: "10 cycles (cat + cow = 1 cycle)"
+default_rest: "30 seconds"
+
+tags:
+  - mobility
+  - warm_up
+  - yoga_based
+  - home_exercise
+  - breathing
+
+images: []
+
+translations:
+  it:
+    name: "Stretching Gatto-Mucca"
+    description: >
+      Un esercizio di mobilità spinale dolce che alterna tra flessione (gatto) ed
+      estensione (mucca) della colonna vertebrale. Migliora la flessibilità
+      dell'intera colonna, rilascia la tensione nei muscoli della schiena e
+      promuove una sana funzione dei dischi spinali attraverso movimenti delicati.
+      Spesso usato come riscaldamento o per il mantenimento generale della salute
+      della schiena.
+    instructions:
+      - "Inizia a quattro zampe (posizione del tavolo) con i polsi sotto le spalle e le ginocchia sotto i fianchi"
+      - "Mantieni la colonna in posizione neutra con la testa che guarda leggermente verso il basso"
+      - "POSIZIONE MUCCA: Inspira e lascia cadere lentamente la pancia verso il pavimento sollevando il coccige e la testa"
+      - "Lascia che la schiena si inarca delicatamente, aprendo il petto in avanti - guarda leggermente verso l'alto"
+      - "POSIZIONE GATTO: Espira e arrotonda lentamente la colonna verso il soffitto"
+      - "Porta il coccige sotto di te, avvicina l'ombelico alla colonna e lascia cadere la testa"
+      - "Immagina un gatto che inarca la schiena quando è spaventato"
+      - "Fluisci dolcemente tra gatto e mucca, coordinando con il respiro"
+      - "Muoviti lentamente ed evita posizioni che causano dolore"
+    common_mistakes:
+      - "Muoversi troppo velocemente tra le posizioni - dovrebbe essere lento e controllato"
+      - "Muovere solo la parte bassa o alta della schiena - il movimento dovrebbe fluire attraverso tutta la colonna"
+      - "Trattenere il respiro - usa il respiro per guidare il movimento (inspira=mucca, espira=gatto)"
+      - "Iperestendere il collo nella posizione mucca - mantieni il collo come estensione naturale della colonna"
+
+source: ai_assisted
+owner_id: shared

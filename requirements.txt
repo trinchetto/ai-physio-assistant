@@ -1,0 +1,12 @@
+# Core dependencies
+pydantic>=2.0.0
+
+# YAML parsing for exercise content
+pyyaml>=6.0
+
+# Future dependencies (uncomment when needed)
+# google-cloud-firestore>=2.0.0
+# google-cloud-storage>=2.0.0
+# google-cloud-aiplatform>=1.0.0
+# streamlit>=1.30.0
+# weasyprint>=60.0

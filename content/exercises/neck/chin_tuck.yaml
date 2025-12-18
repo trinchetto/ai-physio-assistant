@@ -1,0 +1,97 @@
+# Chin Tuck / Cervical Retraction
+# One of the most fundamental neck exercises for posture and pain relief
+
+id: chin_tuck
+
+name: "Chin Tuck"
+
+primary_language: en
+
+description: >
+  Strengthens the deep cervical flexor muscles and stretches the suboccipital
+  muscles at the base of the skull. This exercise improves posture by
+  counteracting forward head position and can help reduce neck pain and
+  tension headaches.
+
+instructions:
+  - "Sit or stand tall with your back straight and shoulders relaxed"
+  - "Look straight ahead, keeping your eyes level with the horizon"
+  - "Slowly draw your chin straight back, as if making a double chin"
+  - "Keep your eyes and nose pointing forward - do not tilt your head up or down"
+  - "Hold for 5-10 seconds, feeling a gentle stretch at the base of your skull"
+  - "Slowly release and return to the starting position"
+  - "Breathe normally throughout the exercise"
+
+common_mistakes:
+  - "Tilting the head downward instead of retracting straight back - this works the wrong muscles and reduces effectiveness"
+  - "Poking the chin forward first before retracting - start from a neutral position"
+  - "Tensing the shoulders and raising them toward the ears - keep shoulders down and relaxed"
+  - "Pushing too hard and causing pain - the movement should feel like a gentle stretch, not strain"
+  - "Holding the breath - maintain normal breathing throughout"
+
+body_regions:
+  - neck
+
+conditions:
+  - neck_pain
+  - cervical_radiculopathy
+  - tension_headache
+  - forward_head_posture
+  - upper_crossed_syndrome
+  - whiplash
+
+therapeutic_goals:
+  - improve_posture
+  - reduce_pain
+  - increase_strength
+  - reduce_stiffness
+
+contraindications:
+  - cervical_instability
+  - recent_cervical_fusion
+  - acute_disc_herniation_cervical
+  - severe_cervical_stenosis
+
+difficulty: beginner
+
+equipment:
+  - none
+
+default_sets: 3
+default_reps: "10"
+default_hold: "5-10 seconds"
+default_rest: "30 seconds"
+
+tags:
+  - posture
+  - office_exercise
+  - home_exercise
+  - no_equipment
+
+images: []
+
+translations:
+  it:
+    name: "Retrazione del Mento"
+    description: >
+      Rafforza i muscoli flessori cervicali profondi e allunga i muscoli
+      suboccipitali alla base del cranio. Questo esercizio migliora la postura
+      contrastando la posizione della testa in avanti e può aiutare a ridurre
+      il dolore al collo e le cefalee muscolo-tensive.
+    instructions:
+      - "Siediti o stai in piedi con la schiena dritta e le spalle rilassate"
+      - "Guarda dritto davanti a te, mantenendo gli occhi a livello dell'orizzonte"
+      - "Lentamente porta il mento indietro, come per fare un doppio mento"
+      - "Mantieni gli occhi e il naso rivolti in avanti - non inclinare la testa su o giù"
+      - "Mantieni la posizione per 5-10 secondi, sentendo un leggero stiramento alla base del cranio"
+      - "Rilascia lentamente e torna alla posizione iniziale"
+      - "Respira normalmente durante tutto l'esercizio"
+    common_mistakes:
+      - "Inclinare la testa verso il basso invece di ritrarla - questo lavora i muscoli sbagliati"
+      - "Spingere il mento in avanti prima di ritrarlo - parti da una posizione neutra"
+      - "Contrarre le spalle alzandole verso le orecchie - mantieni le spalle basse e rilassate"
+      - "Spingere troppo forte causando dolore - il movimento dovrebbe essere un allungamento gentile"
+      - "Trattenere il respiro - mantieni una respirazione normale"
+
+source: ai_assisted
+owner_id: shared
