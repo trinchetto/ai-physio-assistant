@@ -71,7 +71,19 @@ tags:
   - home_exercise
   - progressive
 
-images: []
+images:
+  - url: "images/exercises/ankle_foot/calf_raises_01_start.png"
+    alt_text: "Starting position standing with heels on ground"
+    order: 1
+    caption: "Starting position"
+  - url: "images/exercises/ankle_foot/calf_raises_02_raised.png"
+    alt_text: "Raised position on tiptoes"
+    order: 2
+    caption: "Raised position"
+  - url: "images/exercises/ankle_foot/calf_raises_03_foot_detail.png"
+    alt_text: "Close-up of foot during calf raise"
+    order: 3
+    caption: "Foot detail"
 
 translations:
   it:

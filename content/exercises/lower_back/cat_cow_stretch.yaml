@@ -73,7 +73,19 @@ tags:
   - home_exercise
   - breathing
 
-images: []
+images:
+  - url: "images/exercises/lower_back/cat_cow_stretch_01_tabletop.png"
+    alt_text: "Starting tabletop position on hands and knees"
+    order: 1
+    caption: "Tabletop position (start)"
+  - url: "images/exercises/lower_back/cat_cow_stretch_02_cat.png"
+    alt_text: "Cat pose with spine rounded toward ceiling"
+    order: 2
+    caption: "Cat position (flexion)"
+  - url: "images/exercises/lower_back/cat_cow_stretch_03_cow.png"
+    alt_text: "Cow pose with belly dropped and back arched"
+    order: 3
+    caption: "Cow position (extension)"
 
 translations:
   it:

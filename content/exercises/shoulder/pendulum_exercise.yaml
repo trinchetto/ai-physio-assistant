@@ -69,7 +69,19 @@ tags:
   - post_surgery
   - home_exercise
 
-images: []
+images:
+  - url: "images/exercises/shoulder/pendulum_exercise_01_start.png"
+    alt_text: "Starting position: bent forward with arm hanging down"
+    order: 1
+    caption: "Starting position"
+  - url: "images/exercises/shoulder/pendulum_exercise_02_circular.png"
+    alt_text: "Arm making small circular movements"
+    order: 2
+    caption: "Circular motion"
+  - url: "images/exercises/shoulder/pendulum_exercise_03_swing.png"
+    alt_text: "Arm swinging forward and backward like a pendulum"
+    order: 3
+    caption: "Forward/backward swing"
 
 translations:
   it:

@@ -71,7 +71,19 @@ tags:
   - home_exercise
   - no_equipment
 
-images: []
+images:
+  - url: "images/exercises/hip/piriformis_stretch_01_start.png"
+    alt_text: "Starting position lying on back with knees bent"
+    order: 1
+    caption: "Starting position"
+  - url: "images/exercises/hip/piriformis_stretch_02_figure4.png"
+    alt_text: "Figure-4 position with ankle crossed over knee"
+    order: 2
+    caption: "Figure-4 position"
+  - url: "images/exercises/hip/piriformis_stretch_03_full.png"
+    alt_text: "Full stretch pulling leg toward chest"
+    order: 3
+    caption: "Full stretch"
 
 translations:
   it:

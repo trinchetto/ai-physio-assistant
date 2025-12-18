@@ -68,7 +68,19 @@ tags:
   - home_exercise
   - no_equipment
 
-images: []
+images:
+  - url: "images/exercises/neck/chin_tuck_01_start.png"
+    alt_text: "Starting position: sitting upright with good posture"
+    order: 1
+    caption: "Starting position"
+  - url: "images/exercises/neck/chin_tuck_02_retracted.png"
+    alt_text: "Chin tucked back creating double chin appearance"
+    order: 2
+    caption: "Chin retracted"
+  - url: "images/exercises/neck/chin_tuck_03_comparison.png"
+    alt_text: "Comparison of forward head posture vs corrected chin tuck position"
+    order: 3
+    caption: "Before and after comparison"
 
 translations:
   it:
