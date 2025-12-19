@@ -49,7 +49,7 @@ Each exercise requires 2-3 images generated using the SDXL image generation serv
 
 #### 4.1 Add Prompts
 
-Add exercise prompts to `src/image_generation/prompts.py`:
+Add exercise prompts to `src/ai_physio_assistant/image_generation/prompts.py`:
 
 ```python
 EXERCISE_PROMPTS["new_exercise"] = [
@@ -70,13 +70,13 @@ EXERCISE_PROMPTS["new_exercise"] = [
 
 ```bash
 # Preview prompts first
-python scripts/generate_images.py --exercise new_exercise --dry-run
+physio-generate-images --exercise new_exercise --dry-run
 
 # Generate images
-python scripts/generate_images.py --exercise new_exercise
+physio-generate-images --exercise new_exercise
 
 # For best quality (slower)
-python scripts/generate_images.py --exercise new_exercise --preset quality
+physio-generate-images --exercise new_exercise --preset quality
 ```
 
 #### 4.3 Review Generated Images

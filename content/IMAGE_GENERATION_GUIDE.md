@@ -34,8 +34,8 @@ pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
 # Apple Silicon:
 pip install torch torchvision
 
-# 2. Install image generation dependencies
-pip install -r requirements-image-gen.txt
+# 2. Install the package with image generation dependencies
+pip install -e ".[image-gen]"
 ```
 
 ## Usage
@@ -44,29 +44,29 @@ pip install -r requirements-image-gen.txt
 
 ```bash
 # List available exercises
-python scripts/generate_images.py --list
+physio-generate-images --list
 
 # Generate images for a specific exercise
-python scripts/generate_images.py --exercise chin_tuck
+physio-generate-images --exercise chin_tuck
 
 # Generate all seed exercises
-python scripts/generate_images.py --all
+physio-generate-images --all
 
 # Use quality preset (slower, better results)
-python scripts/generate_images.py --all --preset quality
+physio-generate-images --all --preset quality
 
 # Use low VRAM preset (for 8GB GPUs)
-python scripts/generate_images.py --all --preset low_vram
+physio-generate-images --all --preset low_vram
 
 # Dry run (show prompts without generating)
-python scripts/generate_images.py --all --dry-run
+physio-generate-images --all --dry-run
 ```
 
 ### Python API
 
 ```python
-from src.image_generation.config import ImageGenerationConfig
-from src.image_generation.service import ImageGenerationService
+from ai_physio_assistant.image_generation import ImageGenerationConfig
+from ai_physio_assistant.image_generation import ImageGenerationService
 
 # Create service with default config
 config = ImageGenerationConfig()
@@ -152,7 +152,7 @@ high contrast black lines, minimal shading, educational diagram
 ### Custom Configuration
 
 ```python
-from src.image_generation.config import ImageGenerationConfig
+from ai_physio_assistant.image_generation import ImageGenerationConfig
 
 config = ImageGenerationConfig(
     model_id="stabilityai/stable-diffusion-xl-base-1.0",
@@ -196,7 +196,7 @@ content/images/exercises/
 
 ## Adding New Exercises
 
-1. **Define prompts** in `src/image_generation/prompts.py`:
+1. **Define prompts** in `src/ai_physio_assistant/image_generation/prompts.py`:
 
 ```python
 EXERCISE_PROMPTS["new_exercise"] = [
@@ -213,7 +213,7 @@ EXERCISE_PROMPTS["new_exercise"] = [
 ]
 ```
 
-2. **Update body region mapping** in `service.py`:
+2. **Update body region mapping** in `src/ai_physio_assistant/image_generation/service.py`:
 
 ```python
 region_map = {
@@ -225,7 +225,7 @@ region_map = {
 3. **Generate images**:
 
 ```bash
-python scripts/generate_images.py --exercise new_exercise
+physio-generate-images --exercise new_exercise
 ```
 
 ## Troubleshooting
@@ -234,7 +234,7 @@ python scripts/generate_images.py --exercise new_exercise
 
 ```bash
 # Use low_vram preset
-python scripts/generate_images.py --all --preset low_vram
+physio-generate-images --all --preset low_vram
 ```
 
 ### Poor Anatomical Accuracy
@@ -256,7 +256,7 @@ The model downloads automatically on first run (~6GB). If interrupted:
 ```bash
 # Clear cache and retry
 rm -rf ~/.cache/huggingface/hub/models--stabilityai--stable-diffusion-xl-base-1.0
-python scripts/generate_images.py --exercise chin_tuck
+physio-generate-images --exercise chin_tuck
 ```
 
 ---

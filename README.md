@@ -22,30 +22,29 @@ We're building the foundational exercise database and generating anatomically ac
 
 ```
 ai-physio-assistant/
-├── src/
-│   ├── models/              # Pydantic data models (Exercise, Routine)
-│   └── image_generation/    # SDXL image generation service
-│       ├── config.py        # Generation settings and presets
-│       ├── prompts.py       # Medical-style prompt templates
-│       └── service.py       # Image generation service
-├── scripts/
-│   └── generate_images.py   # CLI for batch image generation
+├── src/ai_physio_assistant/     # Main Python package
+│   ├── models/                  # Pydantic data models (Exercise, Routine)
+│   ├── image_generation/        # SDXL image generation service
+│   │   ├── config.py            # Generation settings and presets
+│   │   ├── prompts.py           # Medical-style prompt templates
+│   │   └── service.py           # Image generation service
+│   └── cli/                     # Command-line tools
+│       └── generate_images.py   # Image generation CLI
+├── scripts/                     # Development convenience scripts
 ├── content/
-│   ├── exercises/           # Exercise definitions (YAML)
+│   ├── exercises/               # Exercise definitions (YAML)
 │   │   ├── neck/
 │   │   ├── shoulder/
 │   │   ├── lower_back/
 │   │   ├── hip/
 │   │   └── ankle_foot/
-│   ├── images/              # Generated exercise images
-│   │   └── exercises/
+│   ├── images/                  # Generated exercise images
 │   ├── CONTENT_GUIDELINES.md
 │   └── IMAGE_GENERATION_GUIDE.md
 ├── docs/
-│   ├── ARCHITECTURE.md      # System architecture
-│   └── CONTENT_WORKFLOW.md  # Content creation process
-├── requirements.txt         # Core dependencies
-├── requirements-image-gen.txt  # SDXL dependencies
+│   ├── ARCHITECTURE.md          # System architecture
+│   └── CONTENT_WORKFLOW.md      # Content creation process
+├── pyproject.toml               # Package configuration and dependencies
 └── README.md
 ```
 
@@ -77,28 +76,71 @@ cd ai-physio-assistant
 python -m venv venv
 source venv/bin/activate  # or `venv\Scripts\activate` on Windows
 
-# Install core dependencies
-pip install -r requirements.txt
+# Install the package (core dependencies only)
+pip install -e .
 
-# (Optional) Install image generation dependencies
-pip install torch torchvision  # Choose appropriate version for your hardware
-pip install -r requirements-image-gen.txt
+# Or install with image generation support
+pip install -e ".[image-gen]"
+
+# Or install with all optional dependencies
+pip install -e ".[all]"
+
+# For development (includes testing and linting tools)
+pip install -e ".[dev]"
+```
+
+#### PyTorch Installation Note
+
+For image generation, you may need to install PyTorch separately for your hardware:
+
+```bash
+# NVIDIA GPU (CUDA 12.1):
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+
+# Apple Silicon (MPS):
+pip install torch torchvision
+
+# CPU-only (slow, not recommended):
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
 ```
 
 ### Generating Exercise Images
 
+After installation, you can use the CLI:
+
+```bash
+# Using the installed command
+physio-generate-images --list
+physio-generate-images --exercise chin_tuck
+physio-generate-images --all
+
+# Or using Python module syntax
+python -m ai_physio_assistant.cli.generate_images --list
+
+# Or using the convenience script (for development)
+python scripts/generate_images.py --list
+```
+
+#### CLI Options
+
 ```bash
 # List available exercises
-python scripts/generate_images.py --list
+physio-generate-images --list
 
 # Generate images for a specific exercise
-python scripts/generate_images.py --exercise chin_tuck
+physio-generate-images --exercise chin_tuck
 
 # Generate all seed exercises
-python scripts/generate_images.py --all
+physio-generate-images --all
 
-# Preview prompts without generating
-python scripts/generate_images.py --all --dry-run
+# Preview prompts without generating (no GPU needed)
+physio-generate-images --all --dry-run
+
+# Use quality preset (slower, better results)
+physio-generate-images --all --preset quality
+
+# Use low VRAM preset (for 8GB GPUs)
+physio-generate-images --all --preset low_vram
 ```
 
 See [content/IMAGE_GENERATION_GUIDE.md](content/IMAGE_GENERATION_GUIDE.md) for detailed options.
@@ -108,8 +150,8 @@ See [content/IMAGE_GENERATION_GUIDE.md](content/IMAGE_GENERATION_GUIDE.md) for d
 1. Copy `content/exercises/_template.yaml`
 2. Fill in the exercise details following `content/CONTENT_GUIDELINES.md`
 3. Save in the appropriate body region folder
-4. Add image generation prompts in `src/image_generation/prompts.py`
-5. Generate images with `python scripts/generate_images.py --exercise <id>`
+4. Add image generation prompts in `src/ai_physio_assistant/image_generation/prompts.py`
+5. Generate images with `physio-generate-images --exercise <id>`
 
 ## Architecture
 
@@ -122,6 +164,22 @@ Key technologies:
 - **Database**: Firestore
 - **Search**: Vertex AI Vector Search
 - **Deployment**: Cloud Run
+
+## Development
+
+```bash
+# Install with development dependencies
+pip install -e ".[dev]"
+
+# Run tests
+pytest
+
+# Run linter
+ruff check src/
+
+# Run type checker
+mypy src/
+```
 
 ## Documentation
 

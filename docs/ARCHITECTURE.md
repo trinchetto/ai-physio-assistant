@@ -75,7 +75,7 @@ Key attributes:
 - **Media**: 2-3 images showing positions, optional video
 - **Translations**: Cached translations for supported languages
 
-See `src/models/exercise.py` for the full schema.
+See `src/ai_physio_assistant/models/exercise.py` for the full schema.
 
 ### Routine
 
@@ -89,7 +89,7 @@ Key attributes:
 - **Guidance**: General notes, warning signs
 - **Delivery**: Status, shareable URL, PDF URL
 
-See `src/models/routine.py` for the full schema.
+See `src/ai_physio_assistant/models/routine.py` for the full schema.
 
 ## Image Generation
 
@@ -99,10 +99,10 @@ Exercise illustrations are generated using Stable Diffusion XL with medical-styl
 
 | File | Purpose |
 |------|---------|
-| `src/image_generation/config.py` | SDXL settings, presets (fast, quality, low_vram) |
-| `src/image_generation/prompts.py` | Medical prompt templates with anatomical terminology |
-| `src/image_generation/service.py` | Generation service with batch processing |
-| `scripts/generate_images.py` | CLI for generating exercise images |
+| `src/ai_physio_assistant/image_generation/config.py` | SDXL settings, presets (fast, quality, low_vram) |
+| `src/ai_physio_assistant/image_generation/prompts.py` | Medical prompt templates with anatomical terminology |
+| `src/ai_physio_assistant/image_generation/service.py` | Generation service with batch processing |
+| `physio-generate-images` (CLI) | Command-line tool for generating exercise images |
 
 ### Prompt Strategy
 
@@ -193,29 +193,32 @@ See `content/IMAGE_GENERATION_GUIDE.md` for full documentation.
 
 ```
 ai-physio-assistant/
-├── src/
-│   ├── models/              # Pydantic data models
-│   ├── image_generation/    # SDXL image generation service
-│   ├── agent/               # ADK agent and tools (future)
-│   ├── services/            # Business logic (future)
-│   └── api/                 # API endpoints (future)
-├── scripts/
-│   └── generate_images.py   # Image generation CLI
+├── src/ai_physio_assistant/     # Main Python package
+│   ├── models/                  # Pydantic data models
+│   ├── image_generation/        # SDXL image generation service
+│   │   ├── config.py            # Generation settings and presets
+│   │   ├── prompts.py           # Medical-style prompt templates
+│   │   └── service.py           # Image generation service
+│   ├── cli/                     # Command-line tools
+│   │   └── generate_images.py   # Image generation CLI
+│   ├── agent/                   # ADK agent and tools (future)
+│   ├── services/                # Business logic (future)
+│   └── api/                     # API endpoints (future)
+├── scripts/                     # Development convenience scripts
 ├── content/
-│   ├── exercises/           # Seed exercise YAML files
+│   ├── exercises/               # Seed exercise YAML files
 │   │   ├── neck/
 │   │   ├── shoulder/
 │   │   └── ...
-│   ├── images/              # Generated exercise images
+│   ├── images/                  # Generated exercise images
 │   │   └── exercises/
 │   ├── CONTENT_GUIDELINES.md
 │   └── IMAGE_GENERATION_GUIDE.md
 ├── docs/
 │   ├── ARCHITECTURE.md
 │   └── CONTENT_WORKFLOW.md
-├── frontend/                # Streamlit app (future)
-├── infrastructure/          # Terraform configs (future)
-├── tests/                   # Test suite (future)
-├── requirements.txt         # Core dependencies
-└── requirements-image-gen.txt  # SDXL dependencies
+├── frontend/                    # Streamlit app (future)
+├── infrastructure/              # Terraform configs (future)
+├── tests/                       # Test suite (future)
+└── pyproject.toml               # Package configuration and dependencies
 ```
