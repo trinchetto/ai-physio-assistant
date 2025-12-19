@@ -1,204 +1,306 @@
 # Image Generation Guide
 
-This guide provides DALL-E 3 prompts for generating exercise illustrations.
+This guide describes how to generate exercise illustrations using the integrated SDXL-based image generation service.
 
-## Style Specification
+## Overview
 
-**Visual Style**: Simple anatomical line drawings
-- Clean, minimal line art
-- Gender-neutral human figure
-- White/light background
-- Anatomically accurate positions
-- Similar to physical therapy handout illustrations
-- No text, labels, or watermarks
+The AI Physio Assistant includes a built-in image generation service that uses **Stable Diffusion XL (SDXL)** with medical/anatomical prompting to create consistent, accurate exercise illustrations.
 
-**Technical Specs**:
-- Dimensions: 1024x1024 (DALL-E 3 default, crop as needed)
-- Format: PNG
-- Background: White or transparent
+### Why SDXL?
 
-## Master Prompt Template
+- **Anatomical accuracy**: Medical-style prompts produce better anatomical illustrations
+- **Consistency**: Same model + seed = reproducible results across exercises
+- **Local control**: Run on your own hardware, no API costs
+- **Fine-tuning**: Can use medical/anatomy LoRAs for better results
 
-Use this base template for all exercise images:
+## Prerequisites
 
-```
-Simple line drawing illustration of a gender-neutral human figure [DOING ACTION].
-Clean minimal style like a physical therapy instruction diagram.
-Black lines on pure white background.
-Anatomically accurate body proportions.
-No shading, no colors, no text, no labels.
-Side view / front view / back view [CHOOSE ONE].
-The figure should clearly show [KEY POSITION DETAILS].
-```
+### Hardware Requirements
 
-## Prompt Consistency Tips
+| Configuration | VRAM | Notes |
+|---------------|------|-------|
+| **Recommended** | 12GB+ GPU | Full quality, fast generation |
+| **Minimum** | 8GB GPU | Use `low_vram` preset |
+| **Apple Silicon** | 16GB+ RAM | Works with MPS backend |
+| **CPU-only** | 32GB+ RAM | Very slow, not recommended |
 
-1. **Always include**: "Simple line drawing", "gender-neutral", "white background", "no text"
-2. **Specify view**: Side view works best for most exercises
-3. **Describe the key position**: What makes this position correct
-4. **One figure per image**: Avoid multiple figures unless showing progression
-5. **Regenerate if needed**: DALL-E 3 may need 2-3 attempts for best results
+### Software Setup
 
-## Quality Checklist
+```bash
+# 1. Install PyTorch for your hardware
+# NVIDIA GPU (CUDA 12.1):
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
 
-After generating, verify:
-- [ ] Anatomically plausible position
-- [ ] Clear enough to understand the exercise
-- [ ] Consistent style with other images
-- [ ] No text or artifacts
-- [ ] Figure is complete (no cut-off limbs)
+# Apple Silicon:
+pip install torch torchvision
 
----
-
-# Exercise Prompts
-
-## 1. Chin Tuck (Neck)
-
-### Image 1: Starting Position
-```
-Simple line drawing illustration of a gender-neutral human figure sitting upright on a chair, viewed from the side profile. Clean minimal style like a physical therapy instruction diagram. Black lines on pure white background. Anatomically accurate body proportions. No shading, no colors, no text, no labels. The figure has good posture with head in neutral position, looking straight ahead, shoulders relaxed.
+# 2. Install image generation dependencies
+pip install -r requirements-image-gen.txt
 ```
 
-### Image 2: Movement (Chin Retracted)
-```
-Simple line drawing illustration of a gender-neutral human figure sitting upright on a chair, viewed from the side profile, performing a chin tuck exercise. Clean minimal style like a physical therapy instruction diagram. Black lines on pure white background. Anatomically accurate body proportions. No shading, no colors, no text, no labels. The chin is drawn straight back creating a double chin appearance, head remains level not tilting up or down.
+## Usage
+
+### Command-Line Interface
+
+```bash
+# List available exercises
+python scripts/generate_images.py --list
+
+# Generate images for a specific exercise
+python scripts/generate_images.py --exercise chin_tuck
+
+# Generate all seed exercises
+python scripts/generate_images.py --all
+
+# Use quality preset (slower, better results)
+python scripts/generate_images.py --all --preset quality
+
+# Use low VRAM preset (for 8GB GPUs)
+python scripts/generate_images.py --all --preset low_vram
+
+# Dry run (show prompts without generating)
+python scripts/generate_images.py --all --dry-run
 ```
 
-### Image 3: Comparison View (Optional - Before/After)
-```
-Simple line drawing illustration showing two side-profile views of a gender-neutral human head and neck. Clean minimal style like a physical therapy instruction diagram. Black lines on pure white background. No shading, no colors, no text, no labels. Left shows forward head posture with chin jutting forward. Right shows corrected position with chin tucked back, ears aligned over shoulders.
+### Python API
+
+```python
+from src.image_generation.config import ImageGenerationConfig
+from src.image_generation.service import ImageGenerationService
+
+# Create service with default config
+config = ImageGenerationConfig()
+service = ImageGenerationService(config)
+
+# Load model (downloads on first run, ~6GB)
+service.load_model()
+
+# Generate images for an exercise
+results = service.generate_exercise_images("chin_tuck", save=True)
+
+# Or generate a single image with custom prompt
+image = service.generate_image(
+    prompt="anatomical diagram of shoulder external rotation exercise...",
+    seed=42
+)
+
+# Free memory when done
+service.unload_model()
 ```
 
----
+## Prompt Structure
 
-## 2. Pendulum Exercise (Shoulder)
+The service uses medical/anatomical terminology for better results:
 
-### Image 1: Starting Position
-```
-Simple line drawing illustration of a gender-neutral human figure bent forward at the waist, one hand resting on a table for support, the other arm hanging straight down completely relaxed. Viewed from the side. Clean minimal style like a physical therapy instruction diagram. Black lines on pure white background. Anatomically accurate body proportions. No shading, no colors, no text, no labels. The torso is parallel to the ground at approximately 90 degrees hip flexion.
-```
+### Anatomical Viewing Angles
 
-### Image 2: Circular Movement
-```
-Simple line drawing illustration of a gender-neutral human figure bent forward at the waist, one hand on a table for support, performing a pendulum shoulder exercise. Viewed from the front. Clean minimal style like a physical therapy instruction diagram. Black lines on pure white background. Anatomically accurate body proportions. No shading, no colors, no text, no labels. The hanging arm is shown with a small dotted circle indicating the circular swinging motion of the arm.
-```
+| Angle | Description | Use For |
+|-------|-------------|---------|
+| `lateral` | Side view (profile) | Most exercises |
+| `anterior` | Front view | Symmetrical movements |
+| `posterior` | Back view | Back exercises |
+| `oblique` | 3/4 angle | Complex positions |
+| `close-up` | Detail view | Foot, hand positions |
 
-### Image 3: Forward/Backward Swing
-```
-Simple line drawing illustration of a gender-neutral human figure bent forward at the waist, one hand on a table for support, performing a pendulum shoulder exercise. Viewed from the side. Clean minimal style like a physical therapy instruction diagram. Black lines on pure white background. Anatomically accurate body proportions. No shading, no colors, no text, no labels. The hanging arm is shown with dotted lines indicating the forward and backward swinging motion like a pendulum.
-```
+### Body Positions
 
----
+| Position | Description |
+|----------|-------------|
+| `standing` | Upright posture |
+| `seated` | On chair |
+| `supine` | Lying on back |
+| `prone` | Lying face down |
+| `quadruped` | On hands and knees |
 
-## 3. Cat-Cow Stretch (Lower Back)
+### Example Prompt Structure
 
-### Image 1: Starting Position (Tabletop)
-```
-Simple line drawing illustration of a gender-neutral human figure on hands and knees in tabletop position. Viewed from the side. Clean minimal style like a physical therapy instruction diagram. Black lines on pure white background. Anatomically accurate body proportions. No shading, no colors, no text, no labels. Back is flat and neutral, wrists are under shoulders, knees are under hips, head looking slightly down.
-```
-
-### Image 2: Cat Position (Flexion)
-```
-Simple line drawing illustration of a gender-neutral human figure on hands and knees performing the cat pose. Viewed from the side. Clean minimal style like a physical therapy instruction diagram. Black lines on pure white background. Anatomically accurate body proportions. No shading, no colors, no text, no labels. The spine is rounded upward toward the ceiling like an arching cat, head dropped down, tailbone tucked under.
-```
-
-### Image 3: Cow Position (Extension)
-```
-Simple line drawing illustration of a gender-neutral human figure on hands and knees performing the cow pose. Viewed from the side. Clean minimal style like a physical therapy instruction diagram. Black lines on pure white background. Anatomically accurate body proportions. No shading, no colors, no text, no labels. The belly drops toward the floor, back is gently arched, head lifted looking slightly forward, tailbone tilted upward.
-```
-
----
-
-## 4. Piriformis Stretch - Supine Figure-4 (Hip)
-
-### Image 1: Starting Position
-```
-Simple line drawing illustration of a gender-neutral human figure lying on their back on the floor with both knees bent and feet flat on the ground. Viewed from the side at a slight angle. Clean minimal style like a physical therapy instruction diagram. Black lines on pure white background. Anatomically accurate body proportions. No shading, no colors, no text, no labels.
+```python
+ExercisePrompt(
+    exercise_id="piriformis_stretch",
+    image_order=2,
+    description="figure-four stretch with ankle crossed over opposite knee",
+    view_angle=ViewAngle.OBLIQUE,
+    body_position=BodyPosition.SUPINE,
+    muscles_shown=["piriformis muscle", "hip external rotators"],
+    joints_shown=["hip external rotation"],
+)
 ```
 
-### Image 2: Figure-4 Position
+This generates a full prompt like:
 ```
-Simple line drawing illustration of a gender-neutral human figure lying on their back performing the figure-4 piriformis stretch. Viewed from a slight angle showing the leg position clearly. Clean minimal style like a physical therapy instruction diagram. Black lines on pure white background. Anatomically accurate body proportions. No shading, no colors, no text, no labels. One ankle is crossed over the opposite knee creating a figure-4 shape with the legs, foot is flexed.
-```
-
-### Image 3: Full Stretch Position
-```
-Simple line drawing illustration of a gender-neutral human figure lying on their back performing the figure-4 piriformis stretch. Viewed from the side. Clean minimal style like a physical therapy instruction diagram. Black lines on pure white background. Anatomically accurate body proportions. No shading, no colors, no text, no labels. One ankle is crossed over the opposite knee, hands are clasped behind the thigh of the bottom leg pulling it toward the chest, back remains flat on the ground.
-```
-
----
-
-## 5. Calf Raises (Ankle/Foot)
-
-### Image 1: Starting Position
-```
-Simple line drawing illustration of a gender-neutral human figure standing upright with feet hip-width apart, one hand lightly touching a wall for balance. Viewed from the side. Clean minimal style like a physical therapy instruction diagram. Black lines on pure white background. Anatomically accurate body proportions. No shading, no colors, no text, no labels. Heels are flat on the ground, body is straight and vertical.
+anatomical diagram, physiotherapy illustration, medical reference style,
+clean simple lines, professional medical textbook illustration,
+gender-neutral human figure, accurate anatomical proportions,
+oblique view, supine position lying on back,
+figure-four stretch with ankle crossed over opposite knee,
+showing piriformis muscle, hip external rotators,
+highlighting hip external rotation,
+clean white background, no text, no labels, no watermarks,
+high contrast black lines, minimal shading, educational diagram
 ```
 
-### Image 2: Raised Position
+## Configuration
+
+### Presets
+
+| Preset | Steps | Refiner | Resolution | Use Case |
+|--------|-------|---------|------------|----------|
+| `fast` | 20 | No | 1024x1024 | Quick preview |
+| `quality` | 40 | Yes | 1024x1024 | Final production |
+| `low_vram` | 25 | No | 768x768 | Limited GPU memory |
+
+### Custom Configuration
+
+```python
+from src.image_generation.config import ImageGenerationConfig
+
+config = ImageGenerationConfig(
+    model_id="stabilityai/stable-diffusion-xl-base-1.0",
+    num_inference_steps=35,
+    guidance_scale=8.0,
+    base_seed=42,
+    device="cuda",  # or "mps" for Mac
+
+    # Optional: Use a medical LoRA for better anatomy
+    lora_path="models/loras/medical-illustration.safetensors",
+    lora_weight=0.7,
+)
 ```
-Simple line drawing illustration of a gender-neutral human figure standing on tiptoes with heels raised high off the ground, one hand lightly touching a wall for balance. Viewed from the side. Clean minimal style like a physical therapy instruction diagram. Black lines on pure white background. Anatomically accurate body proportions. No shading, no colors, no text, no labels. The body remains straight and vertical, weight is on the balls of the feet.
-```
 
-### Image 3: Foot Detail (Optional)
-```
-Simple line drawing illustration showing a close-up side view of a human foot and lower leg performing a calf raise. Clean minimal style like a physical therapy instruction diagram. Black lines on pure white background. No shading, no colors, no text, no labels. Shows the heel raised high with weight on the ball of the foot, calf muscle slightly defined to show engagement.
-```
+## Recommended LoRAs
 
----
+For better medical/anatomical illustrations, consider these LoRAs from CivitAI:
 
-# File Naming Convention
+| LoRA | Purpose |
+|------|---------|
+| Medical Illustration Style | Clean diagram aesthetic |
+| Anatomy Reference | Accurate body proportions |
+| Line Art / Technical Drawing | Clean black lines |
 
-Format: `{exercise_id}_{position}_{view}.png`
+Place LoRA files in `models/loras/` and reference in config.
 
-Examples:
-- `chin_tuck_01_start_side.png`
-- `chin_tuck_02_retracted_side.png`
-- `pendulum_exercise_01_start_side.png`
-- `pendulum_exercise_02_circular_front.png`
-- `cat_cow_stretch_01_tabletop_side.png`
-- `cat_cow_stretch_02_cat_side.png`
-- `cat_cow_stretch_03_cow_side.png`
+## Output Structure
 
-# Storage Structure
+Generated images are saved to:
 
 ```
 content/images/exercises/
 ├── neck/
-│   ├── chin_tuck_01_start_side.png
-│   ├── chin_tuck_02_retracted_side.png
-│   └── chin_tuck_03_comparison_side.png
+│   ├── chin_tuck_01.png
+│   ├── chin_tuck_02.png
+│   └── chin_tuck_03.png
 ├── shoulder/
-│   ├── pendulum_exercise_01_start_side.png
-│   ├── pendulum_exercise_02_circular_front.png
-│   └── pendulum_exercise_03_swing_side.png
-├── lower_back/
-│   ├── cat_cow_stretch_01_tabletop_side.png
-│   ├── cat_cow_stretch_02_cat_side.png
-│   └── cat_cow_stretch_03_cow_side.png
-├── hip/
-│   ├── piriformis_stretch_01_start_side.png
-│   ├── piriformis_stretch_02_figure4_angle.png
-│   └── piriformis_stretch_03_full_side.png
-└── ankle_foot/
-    ├── calf_raises_01_start_side.png
-    ├── calf_raises_02_raised_side.png
-    └── calf_raises_03_foot_detail_side.png
+│   └── ...
+└── ...
 ```
 
-# Batch Generation Workflow
+## Adding New Exercises
 
-1. **Generate in batches**: Do all images for one exercise before moving to the next
-2. **Review immediately**: Check each image before generating the next
-3. **Note variations**: If a prompt works better with small changes, update this guide
-4. **Consistent session**: Try to generate related images in the same session for consistency
+1. **Define prompts** in `src/image_generation/prompts.py`:
 
-# Post-Processing (Optional)
+```python
+EXERCISE_PROMPTS["new_exercise"] = [
+    ExercisePrompt(
+        exercise_id="new_exercise",
+        image_order=1,
+        description="starting position using anatomical terminology",
+        view_angle=ViewAngle.LATERAL,
+        body_position=BodyPosition.STANDING,
+        muscles_shown=["target muscles"],
+        joints_shown=["relevant joints"],
+    ),
+    # ... more prompts for other positions
+]
+```
 
-If needed, simple post-processing can be done:
-- Crop to focus on the figure
-- Resize to consistent dimensions
-- Convert to PNG if not already
-- Remove any unwanted artifacts
+2. **Update body region mapping** in `service.py`:
 
-Tools: Preview (Mac), Paint.NET (Windows), GIMP (cross-platform)
+```python
+region_map = {
+    # ...existing...
+    "new_exercise": "body_region",
+}
+```
+
+3. **Generate images**:
+
+```bash
+python scripts/generate_images.py --exercise new_exercise
+```
+
+## Troubleshooting
+
+### Out of Memory (OOM)
+
+```bash
+# Use low_vram preset
+python scripts/generate_images.py --all --preset low_vram
+```
+
+### Poor Anatomical Accuracy
+
+- Use a medical/anatomy LoRA
+- Increase guidance scale (8.0-10.0)
+- Add more specific anatomical terms to prompt
+
+### Inconsistent Style
+
+- Use the same seed for related images
+- Generate all images for an exercise in one session
+- Ensure style_prefix and style_suffix are consistent
+
+### Model Download Issues
+
+The model downloads automatically on first run (~6GB). If interrupted:
+
+```bash
+# Clear cache and retry
+rm -rf ~/.cache/huggingface/hub/models--stabilityai--stable-diffusion-xl-base-1.0
+python scripts/generate_images.py --exercise chin_tuck
+```
+
+---
+
+## Seed Exercise Prompts Reference
+
+The following prompts are defined for the 5 seed exercises:
+
+### Chin Tuck (Neck)
+
+| Image | View | Description |
+|-------|------|-------------|
+| 1 | Lateral | Neutral cervical spine alignment, head balanced over shoulders |
+| 2 | Lateral | Cervical retraction, chin drawn posteriorly, suboccipital stretch |
+| 3 | Lateral | Comparison: forward head posture vs corrected position |
+
+### Pendulum Exercise (Shoulder)
+
+| Image | View | Description |
+|-------|------|-------------|
+| 1 | Lateral | Hip flexion, hand on table, arm in dependent position |
+| 2 | Anterior | Circumduction movement pattern with motion indicators |
+| 3 | Lateral | Sagittal plane pendular motion with motion indicators |
+
+### Cat-Cow Stretch (Lower Back)
+
+| Image | View | Description |
+|-------|------|-------------|
+| 1 | Lateral | Quadruped neutral spine (tabletop) |
+| 2 | Lateral | Spinal flexion (cat pose), thoracic/lumbar kyphosis |
+| 3 | Lateral | Spinal extension (cow pose), lumbar lordosis |
+
+### Piriformis Stretch (Hip)
+
+| Image | View | Description |
+|-------|------|-------------|
+| 1 | Oblique | Supine, bilateral hip/knee flexion |
+| 2 | Oblique | Figure-four position, hip external rotation |
+| 3 | Lateral | Full stretch, pulling leg toward chest |
+
+### Calf Raises (Ankle/Foot)
+
+| Image | View | Description |
+|-------|------|-------------|
+| 1 | Lateral | Standing, plantigrade stance, hand on wall |
+| 2 | Lateral | Bilateral heel raise, plantarflexion |
+| 3 | Close-up | Foot/ankle detail showing gastrocnemius/soleus |
