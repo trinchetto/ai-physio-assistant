@@ -49,6 +49,15 @@ The AI Physio Assistant helps physiotherapists and osteopaths create personalize
 │  │  - images/       │  │                 │  │                         │    │
 │  └──────────────────┘  └─────────────────┘  └─────────────────────────┘    │
 │                                                                              │
+│  ┌─────────────────────────────────────────────────────────────────────┐    │
+│  │                    IMAGE GENERATION (SDXL)                           │    │
+│  │                                                                      │    │
+│  │   Local Stable Diffusion XL with medical/anatomical prompts          │    │
+│  │   - Anatomical terminology (lateral view, supine, muscle groups)     │    │
+│  │   - Consistent style via fixed seeds and style prefixes              │    │
+│  │   - Optional LoRA support for medical illustration fine-tuning       │    │
+│  └─────────────────────────────────────────────────────────────────────┘    │
+│                                                                              │
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -82,6 +91,41 @@ Key attributes:
 
 See `src/models/routine.py` for the full schema.
 
+## Image Generation
+
+Exercise illustrations are generated using Stable Diffusion XL with medical-style prompting.
+
+### Components
+
+| File | Purpose |
+|------|---------|
+| `src/image_generation/config.py` | SDXL settings, presets (fast, quality, low_vram) |
+| `src/image_generation/prompts.py` | Medical prompt templates with anatomical terminology |
+| `src/image_generation/service.py` | Generation service with batch processing |
+| `scripts/generate_images.py` | CLI for generating exercise images |
+
+### Prompt Strategy
+
+Prompts use proper anatomical terminology for better results:
+
+- **View angles**: lateral, anterior, posterior, oblique, close-up
+- **Body positions**: standing, seated, supine, prone, quadruped
+- **Muscle references**: piriformis, gastrocnemius, erector spinae, etc.
+- **Joint references**: glenohumeral, cervical spine, hip flexion, etc.
+
+Example generated prompt:
+```
+anatomical diagram, physiotherapy illustration, medical reference style,
+clean simple lines, professional medical textbook illustration,
+gender-neutral human figure, accurate anatomical proportions,
+lateral view, quadruped position on hands and knees,
+spinal flexion cat pose thoracic lumbar kyphosis,
+showing erector spinae muscles,
+clean white background, no text, no labels, no watermarks
+```
+
+See `content/IMAGE_GENERATION_GUIDE.md` for full documentation.
+
 ## Workflow
 
 ### Creating a Routine
@@ -98,7 +142,7 @@ See `src/models/routine.py` for the full schema.
 1. **Physio initiates**: Provides exercise concept or name
 2. **AI assists drafting**: Creates structured content following guidelines
 3. **Physio reviews**: Edits for accuracy and completeness
-4. **Add images**: Upload or generate illustrations
+4. **Generate images**: Run SDXL with anatomical prompts
 5. **Save to library**: Exercise available for future routines
 
 ## Technology Stack
@@ -106,6 +150,7 @@ See `src/models/routine.py` for the full schema.
 | Component | Technology | Purpose |
 |-----------|------------|---------|
 | Agent Framework | Google ADK | AI orchestration and tool calling |
+| Image Generation | Stable Diffusion XL | Anatomical exercise illustrations |
 | Frontend | Streamlit | Physio interface |
 | Database | Firestore | Exercise and routine storage |
 | File Storage | Cloud Storage | Images and generated PDFs |
@@ -144,28 +189,33 @@ See `src/models/routine.py` for the full schema.
 - English (en)
 - Italian (it)
 
-## Content Guidelines
-
-See `content/CONTENT_GUIDELINES.md` for detailed exercise authoring guidelines.
-
 ## Project Structure
 
 ```
 ai-physio-assistant/
 ├── src/
-│   ├── models/           # Pydantic data models
-│   ├── agent/            # ADK agent and tools
-│   ├── services/         # Business logic
-│   └── api/              # API endpoints
+│   ├── models/              # Pydantic data models
+│   ├── image_generation/    # SDXL image generation service
+│   ├── agent/               # ADK agent and tools (future)
+│   ├── services/            # Business logic (future)
+│   └── api/                 # API endpoints (future)
+├── scripts/
+│   └── generate_images.py   # Image generation CLI
 ├── content/
-│   ├── exercises/        # Seed exercise YAML files
+│   ├── exercises/           # Seed exercise YAML files
 │   │   ├── neck/
 │   │   ├── shoulder/
 │   │   └── ...
-│   ├── images/           # Exercise images
-│   └── CONTENT_GUIDELINES.md
-├── frontend/             # Streamlit app
-├── infrastructure/       # Terraform configs
-├── tests/
-└── docs/
+│   ├── images/              # Generated exercise images
+│   │   └── exercises/
+│   ├── CONTENT_GUIDELINES.md
+│   └── IMAGE_GENERATION_GUIDE.md
+├── docs/
+│   ├── ARCHITECTURE.md
+│   └── CONTENT_WORKFLOW.md
+├── frontend/                # Streamlit app (future)
+├── infrastructure/          # Terraform configs (future)
+├── tests/                   # Test suite (future)
+├── requirements.txt         # Core dependencies
+└── requirements-image-gen.txt  # SDXL dependencies
 ```

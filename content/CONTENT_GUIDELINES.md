@@ -170,11 +170,22 @@ Each exercise should have 2-3 images:
 | 2 | Movement/Mid-point | Show the exercise in action |
 | 3 | End position | Show the final position (if different from start) |
 
-Images should be:
-- Clear, uncluttered background
-- Consistent style (illustrations or photos)
-- Show correct form clearly
-- Include any equipment being used
+Images are generated using the SDXL image generation service with anatomical prompts.
+
+### Generating Images
+
+1. Add prompts in `src/image_generation/prompts.py`
+2. Run: `python scripts/generate_images.py --exercise <id>`
+
+See `IMAGE_GENERATION_GUIDE.md` for detailed instructions.
+
+### Image Style
+
+Generated images use:
+- Anatomical diagram style (medical textbook aesthetic)
+- Gender-neutral figure
+- Clean white background
+- Proper anatomical terminology in prompts
 
 ## Complete Example
 

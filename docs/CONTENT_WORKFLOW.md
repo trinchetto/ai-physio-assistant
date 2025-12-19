@@ -43,21 +43,56 @@ Check:
 - [ ] Default parameters (sets, reps, hold) are reasonable
 - [ ] Translations are accurate (if provided)
 
-### Step 4: Add Images
+### Step 4: Generate Images
 
-Each exercise should have 2-3 images:
+Each exercise requires 2-3 images generated using the SDXL image generation service.
 
-| Position | Purpose |
-|----------|---------|
-| Starting | Show initial posture and setup |
-| Movement | Show the action in progress |
-| End | Show final position (if different from start) |
+#### 4.1 Add Prompts
 
-Image requirements:
-- Clear, uncluttered background
-- Consistent style across all exercises
-- Correct form demonstrated
-- Any equipment clearly visible
+Add exercise prompts to `src/image_generation/prompts.py`:
+
+```python
+EXERCISE_PROMPTS["new_exercise"] = [
+    ExercisePrompt(
+        exercise_id="new_exercise",
+        image_order=1,
+        description="starting position description with anatomical terms",
+        view_angle=ViewAngle.LATERAL,
+        body_position=BodyPosition.STANDING,
+        muscles_shown=["target muscle group"],
+        joints_shown=["relevant joints"],
+    ),
+    # Add prompts for image 2, 3...
+]
+```
+
+#### 4.2 Generate Images
+
+```bash
+# Preview prompts first
+python scripts/generate_images.py --exercise new_exercise --dry-run
+
+# Generate images
+python scripts/generate_images.py --exercise new_exercise
+
+# For best quality (slower)
+python scripts/generate_images.py --exercise new_exercise --preset quality
+```
+
+#### 4.3 Review Generated Images
+
+Check each image for:
+- [ ] Anatomically plausible position
+- [ ] Clear enough to understand the exercise
+- [ ] Consistent style with other images
+- [ ] No text or artifacts
+
+If images need adjustment:
+- Modify prompts in `prompts.py`
+- Try different seeds: `--seed 123`
+- Increase guidance scale for more prompt adherence
+
+See `content/IMAGE_GENERATION_GUIDE.md` for detailed options and troubleshooting.
 
 ### Step 5: Save and Validate
 
