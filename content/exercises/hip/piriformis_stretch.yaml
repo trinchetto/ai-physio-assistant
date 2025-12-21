@@ -1,0 +1,114 @@
+# Piriformis Stretch (Supine Figure-4)
+# Essential hip stretch, especially for sciatica symptoms
+
+id: piriformis_stretch_supine
+
+name: "Piriformis Stretch (Supine Figure-4)"
+
+primary_language: en
+
+description: >
+  Stretches the piriformis muscle, a deep hip external rotator that lies
+  beneath the gluteal muscles. When tight, the piriformis can compress the
+  sciatic nerve causing pain, tingling, or numbness down the leg. This
+  supine version is gentle and accessible for most patients.
+
+instructions:
+  - "Lie on your back on a firm surface with both knees bent and feet flat on the floor"
+  - "Cross your affected leg over the other, placing your ankle just above the opposite knee"
+  - "Your legs should form a figure-4 shape"
+  - "Reach both hands behind the thigh of your bottom leg (or in front of the shin)"
+  - "Gently pull the bottom leg toward your chest while keeping your back flat on the floor"
+  - "You should feel a deep stretch in the buttock of the crossed leg"
+  - "Keep the foot of the crossed leg flexed (toes pulled toward shin) to protect the knee"
+  - "Hold for 30 seconds while breathing deeply and slowly"
+  - "Gently release and repeat on the other side if needed"
+
+common_mistakes:
+  - "Lifting the head and shoulders off the floor - keep your upper body relaxed and flat"
+  - "Letting the knee of the crossed leg fall inward - gently press it outward to deepen the stretch"
+  - "Pulling too aggressively - this should be a comfortable stretch, not painful"
+  - "Holding the breath - breathe slowly and deeply to help the muscle relax"
+  - "Forgetting to flex the foot of the crossed leg - this protects the knee joint"
+  - "Rushing the stretch - hold for the full duration to allow the muscle to release"
+
+body_regions:
+  - hip
+
+conditions:
+  - sciatica
+  - piriformis_syndrome
+  - hip_tightness
+  - lower_back_pain
+  - gluteal_pain
+  - it_band_syndrome
+
+therapeutic_goals:
+  - improve_flexibility
+  - reduce_pain
+  - reduce_stiffness
+
+contraindications:
+  - hip_replacement_recent
+  - hip_fracture
+  - severe_hip_osteoarthritis
+  - acute_sciatica_severe
+
+difficulty: beginner
+
+equipment:
+  - none
+
+default_sets: 2
+default_reps: "3 per side"
+default_hold: "30 seconds"
+default_rest: "15 seconds"
+
+tags:
+  - stretch
+  - hip_opener
+  - sciatica_relief
+  - home_exercise
+  - no_equipment
+
+images:
+  - url: "images/exercises/hip/piriformis_stretch_01_start.png"
+    alt_text: "Starting position lying on back with knees bent"
+    order: 1
+    caption: "Starting position"
+  - url: "images/exercises/hip/piriformis_stretch_02_figure4.png"
+    alt_text: "Figure-4 position with ankle crossed over knee"
+    order: 2
+    caption: "Figure-4 position"
+  - url: "images/exercises/hip/piriformis_stretch_03_full.png"
+    alt_text: "Full stretch pulling leg toward chest"
+    order: 3
+    caption: "Full stretch"
+
+translations:
+  it:
+    name: "Stretching del Piriforme (Supino Figura-4)"
+    description: >
+      Allunga il muscolo piriforme, un rotatore esterno profondo dell'anca che
+      si trova sotto i muscoli glutei. Quando è contratto, il piriforme può
+      comprimere il nervo sciatico causando dolore, formicolio o intorpidimento
+      lungo la gamba. Questa versione supina è delicata e accessibile per la
+      maggior parte dei pazienti.
+    instructions:
+      - "Sdraiati sulla schiena su una superficie ferma con entrambe le ginocchia piegate e i piedi appoggiati a terra"
+      - "Incrocia la gamba interessata sull'altra, posizionando la caviglia appena sopra il ginocchio opposto"
+      - "Le tue gambe dovrebbero formare una figura a 4"
+      - "Porta entrambe le mani dietro la coscia della gamba inferiore (o davanti allo stinco)"
+      - "Tira delicatamente la gamba inferiore verso il petto mantenendo la schiena piatta sul pavimento"
+      - "Dovresti sentire un allungamento profondo nel gluteo della gamba incrociata"
+      - "Mantieni il piede della gamba incrociata flesso (dita tirate verso lo stinco) per proteggere il ginocchio"
+      - "Mantieni per 30 secondi respirando profondamente e lentamente"
+      - "Rilascia delicatamente e ripeti dall'altro lato se necessario"
+    common_mistakes:
+      - "Sollevare la testa e le spalle dal pavimento - mantieni la parte superiore del corpo rilassata"
+      - "Lasciare che il ginocchio della gamba incrociata cada verso l'interno - spingi delicatamente verso l'esterno"
+      - "Tirare troppo aggressivamente - dovrebbe essere un allungamento confortevole, non doloroso"
+      - "Trattenere il respiro - respira lentamente e profondamente per aiutare il muscolo a rilassarsi"
+
+source: ai_assisted
+owner_id: shared

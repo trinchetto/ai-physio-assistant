@@ -1,0 +1,99 @@
+# Exercise Template
+# Copy this file and fill in the values for a new exercise
+# Required fields are marked with (REQUIRED)
+
+# Unique identifier - use snake_case (REQUIRED)
+id: exercise_name_here
+
+# Display name (REQUIRED)
+name: "Exercise Name Here"
+
+# Primary language of this content
+primary_language: en
+
+# What this exercise does - 1-2 sentences (REQUIRED)
+description: >
+  Brief description of the exercise purpose, what muscles or structures
+  it targets, and what therapeutic benefit it provides.
+
+# Step-by-step instructions - minimum 3 steps (REQUIRED)
+instructions:
+  - "Starting position: Describe the initial posture and setup"
+  - "Movement: Describe the action to perform"
+  - "Hold: Describe any hold position and duration (if applicable)"
+  - "Return: Describe how to return to starting position"
+  - "Breathing: Include breathing cues if relevant"
+
+# Common mistakes patients make
+common_mistakes:
+  - "Mistake description - why it's wrong and what happens"
+  - "Another common mistake - and its consequence"
+
+# Body regions targeted - at least one (REQUIRED)
+# Values: neck, shoulder, upper_back, lower_back, chest, core, hip, knee, ankle_foot, wrist_hand, elbow, full_body
+body_regions:
+  - lower_back
+
+# Conditions this exercise helps with
+conditions:
+  - lower_back_pain
+  - disc_herniation
+
+# Therapeutic goals
+therapeutic_goals:
+  - improve_mobility
+  - reduce_pain
+
+# When NOT to do this exercise
+contraindications:
+  - acute_inflammation
+  - recent_surgery
+
+# Difficulty: beginner, intermediate, advanced
+difficulty: beginner
+
+# Required equipment (use ["none"] if no equipment needed)
+equipment:
+  - none
+
+# Default parameters
+default_sets: 3
+default_reps: "10-12"
+default_hold: "5 seconds"  # Optional - remove if not applicable
+default_rest: "30 seconds"
+
+# Categorization tags (free-form, for search)
+tags:
+  - mobility
+  - home_exercise
+
+# Images (to be added)
+images: []
+  # - url: "exercises/lower_back/exercise_name_1.png"
+  #   alt_text: "Starting position description"
+  #   order: 1
+  #   caption: "Starting position"
+  # - url: "exercises/lower_back/exercise_name_2.png"
+  #   alt_text: "Movement description"
+  #   order: 2
+  #   caption: "During movement"
+
+# Translations
+translations:
+  it:
+    name: "Nome Esercizio in Italiano"
+    description: >
+      Descrizione in italiano dell'esercizio.
+    instructions:
+      - "Posizione iniziale: Descrizione della postura iniziale"
+      - "Movimento: Descrizione dell'azione da eseguire"
+      - "Mantenere: Descrizione della posizione da mantenere"
+      - "Ritorno: Descrizione del ritorno alla posizione iniziale"
+    common_mistakes:
+      - "Errore comune - perché è sbagliato"
+
+# Metadata (auto-filled by system)
+# created_at: 2024-01-01T00:00:00Z
+# updated_at: 2024-01-01T00:00:00Z
+# source: ai_assisted
+# owner_id: shared

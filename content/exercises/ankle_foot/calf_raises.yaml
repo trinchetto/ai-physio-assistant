@@ -1,0 +1,113 @@
+# Calf Raises
+# Basic lower leg strengthening exercise
+
+id: calf_raises
+
+name: "Calf Raises"
+
+primary_language: en
+
+description: >
+  Strengthens the gastrocnemius and soleus muscles of the calf. Essential for
+  ankle stability, walking, running, and climbing stairs. Can be modified for
+  different difficulty levels by changing the surface, adding weight, or
+  performing single-leg variations.
+
+instructions:
+  - "Stand with your feet hip-width apart, near a wall or chair for balance support if needed"
+  - "Keep your body straight and core engaged - avoid leaning forward"
+  - "Slowly rise up onto the balls of your feet, lifting your heels as high as comfortable"
+  - "Hold the top position for 1-2 seconds, squeezing your calf muscles"
+  - "Slowly lower your heels back to the starting position in a controlled manner"
+  - "Keep the movement smooth - avoid bouncing or jerking"
+  - "Breathe normally throughout: exhale as you rise, inhale as you lower"
+  - "For added challenge: perform on a step with heels hanging off the edge"
+
+common_mistakes:
+  - "Rising up too quickly and bouncing - the movement should be slow and controlled"
+  - "Not going through full range of motion - lift heels as high as possible"
+  - "Leaning forward excessively - keep your body vertical"
+  - "Bending the knees during the movement - keep legs straight (slight bend is okay)"
+  - "Holding onto support too tightly - use light touch for balance only"
+  - "Rolling outward onto the pinky toe side - keep weight centered over all toes"
+  - "Rushing through repetitions - take 2 seconds up and 2 seconds down"
+
+body_regions:
+  - ankle_foot
+
+conditions:
+  - achilles_tendinopathy
+  - ankle_sprain_recovery
+  - plantar_fasciitis
+  - calf_weakness
+  - ankle_instability
+  - post_surgery_ankle
+
+therapeutic_goals:
+  - increase_strength
+  - improve_stability
+  - improve_balance
+
+contraindications:
+  - acute_achilles_rupture
+  - acute_ankle_sprain
+  - severe_plantar_fasciitis_acute
+  - calf_muscle_tear_acute
+
+difficulty: beginner
+
+equipment:
+  - wall
+  - chair
+
+default_sets: 3
+default_reps: "15"
+default_hold: "1-2 seconds at top"
+default_rest: "30 seconds"
+
+tags:
+  - strengthening
+  - balance
+  - home_exercise
+  - progressive
+
+images:
+  - url: "images/exercises/ankle_foot/calf_raises_01_start.png"
+    alt_text: "Starting position standing with heels on ground"
+    order: 1
+    caption: "Starting position"
+  - url: "images/exercises/ankle_foot/calf_raises_02_raised.png"
+    alt_text: "Raised position on tiptoes"
+    order: 2
+    caption: "Raised position"
+  - url: "images/exercises/ankle_foot/calf_raises_03_foot_detail.png"
+    alt_text: "Close-up of foot during calf raise"
+    order: 3
+    caption: "Foot detail"
+
+translations:
+  it:
+    name: "Sollevamento sui Polpacci"
+    description: >
+      Rafforza i muscoli gastrocnemio e soleo del polpaccio. Essenziale per la
+      stabilità della caviglia, camminare, correre e salire le scale. Può essere
+      modificato per diversi livelli di difficoltà cambiando la superficie,
+      aggiungendo peso, o eseguendo variazioni su una gamba sola.
+    instructions:
+      - "Stai in piedi con i piedi alla larghezza delle anche, vicino a un muro o una sedia per supporto"
+      - "Mantieni il corpo dritto e il core attivato - evita di piegarti in avanti"
+      - "Alzati lentamente sulle punte dei piedi, sollevando i talloni il più in alto possibile"
+      - "Mantieni la posizione in alto per 1-2 secondi, contraendo i muscoli del polpaccio"
+      - "Abbassa lentamente i talloni alla posizione iniziale in modo controllato"
+      - "Mantieni il movimento fluido - evita di rimbalzare o fare scatti"
+      - "Respira normalmente: espira salendo, inspira scendendo"
+      - "Per una sfida maggiore: esegui su un gradino con i talloni che sporgono dal bordo"
+    common_mistakes:
+      - "Salire troppo velocemente e rimbalzare - il movimento dovrebbe essere lento e controllato"
+      - "Non eseguire l'intera ampiezza di movimento - solleva i talloni il più in alto possibile"
+      - "Piegarsi eccessivamente in avanti - mantieni il corpo verticale"
+      - "Piegare le ginocchia durante il movimento - mantieni le gambe dritte"
+      - "Aggrapparsi troppo forte al supporto - usa un tocco leggero solo per l'equilibrio"
+
+source: ai_assisted
+owner_id: shared
