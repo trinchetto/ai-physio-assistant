@@ -1,11 +1,17 @@
 """
 Configuration for SDXL image generation.
 
+CPU FALLBACK:
+When device="cpu", the service automatically switches to Stable Diffusion 1.5
+for ~4x faster generation. Quality will be lower but acceptable for development
+and testing. Use --device cuda or --device mps for production quality.
+
 Recommended models and LoRAs for medical/anatomical illustrations:
 
 BASE MODELS (pick one):
-- stabilityai/stable-diffusion-xl-base-1.0 (default SDXL)
+- stabilityai/stable-diffusion-xl-base-1.0 (default SDXL, best quality)
 - RunDiffusion/Juggernaut-XL-v9 (good for realistic anatomy)
+- runwayml/stable-diffusion-v1-5 (CPU fallback, faster but lower quality)
 
 RECOMMENDED LoRAs (from CivitAI or HuggingFace):
 - Medical illustration style LoRAs
@@ -27,6 +33,12 @@ class ImageGenerationConfig:
     model_id: str = "stabilityai/stable-diffusion-xl-base-1.0"
     refiner_id: str | None = "stabilityai/stable-diffusion-xl-refiner-1.0"
     use_refiner: bool = False  # Refiner can improve details but slower
+
+    # CPU fallback model (much faster for development/testing)
+    # SD 1.5 is ~4x faster than SDXL and works well on CPU
+    cpu_fallback_model: str = "runwayml/stable-diffusion-v1-5"
+    cpu_fallback_steps: int = 20  # Fewer steps for faster CPU generation
+    cpu_fallback_size: int = 512  # SD 1.5 is trained on 512x512
 
     # LoRA settings (optional)
     lora_path: str | None = None  # Path to medical/anatomy LoRA
@@ -83,5 +95,11 @@ PRESETS = {
         height=768,
         enable_attention_slicing=True,
         enable_vae_tiling=True,
+    ),
+    "cpu": ImageGenerationConfig(
+        device="cpu",
+        cpu_fallback_steps=15,  # Even fewer steps for faster CPU generation
+        num_inference_steps=15,
+        use_refiner=False,
     ),
 }

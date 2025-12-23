@@ -152,7 +152,7 @@ def main() -> int:
         "-p",
         type=str,
         choices=list(PRESETS.keys()),
-        help="Use a preset configuration (fast, quality, low_vram)",
+        help="Use a preset configuration (fast, quality, low_vram, cpu)",
     )
     parser.add_argument(
         "--model",

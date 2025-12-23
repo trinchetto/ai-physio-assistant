@@ -38,27 +38,50 @@ class ImageGenerationService:
         self.pipeline = None
         self.refiner = None
         self._loaded = False
+        self._using_cpu_fallback = False
 
     def load_model(self) -> None:
-        """Load the SDXL model and optional refiner."""
+        """Load the SDXL model and optional refiner, or CPU fallback if needed."""
         if self._loaded:
             logger.info("Model already loaded")
             return
 
         try:
-            from diffusers import StableDiffusionXLImg2ImgPipeline, StableDiffusionXLPipeline
+            from diffusers import (
+                StableDiffusionPipeline,
+                StableDiffusionXLImg2ImgPipeline,
+                StableDiffusionXLPipeline,
+            )
 
-            logger.info(f"Loading SDXL model: {self.config.model_id}")
+            # Detect CPU and use fallback model for faster generation
+            self._using_cpu_fallback = self.config.device == "cpu"
 
-            # Determine torch dtype
-            dtype = torch.float16 if self.config.dtype == "float16" else torch.float32
+            if self._using_cpu_fallback:
+                logger.warning(
+                    f"CPU detected - using faster fallback model: {self.config.cpu_fallback_model}"
+                )
+                logger.info(
+                    "Quality will be lower but generation ~4x faster. "
+                    "Use --device cuda or --device mps for better quality."
+                )
+                model_id = self.config.cpu_fallback_model
+                # Use float32 for CPU, don't use variant
+                dtype = torch.float32
+                variant = None
+                pipeline_class = StableDiffusionPipeline
+            else:
+                logger.info(f"Loading SDXL model: {self.config.model_id}")
+                model_id = self.config.model_id
+                dtype = torch.float16 if self.config.dtype == "float16" else torch.float32
+                variant = "fp16" if dtype == torch.float16 else None
+                pipeline_class = StableDiffusionXLPipeline
 
             # Load base model
-            self.pipeline = StableDiffusionXLPipeline.from_pretrained(
-                self.config.model_id,
+            self.pipeline = pipeline_class.from_pretrained(
+                model_id,
                 torch_dtype=dtype,
                 use_safetensors=True,
-                variant="fp16" if dtype == torch.float16 else None,
+                variant=variant,
             )
 
             # Move to device
@@ -76,8 +99,8 @@ class ImageGenerationService:
                 logger.info(f"Loading LoRA: {self.config.lora_path}")
                 self.pipeline.load_lora_weights(self.config.lora_path)  # type: ignore[attr-defined]
 
-            # Load refiner if specified
-            if self.config.use_refiner and self.config.refiner_id:
+            # Load refiner if specified (skip for CPU fallback)
+            if self.config.use_refiner and self.config.refiner_id and not self._using_cpu_fallback:
                 logger.info(f"Loading refiner: {self.config.refiner_id}")
                 self.refiner = StableDiffusionXLImg2ImgPipeline.from_pretrained(
                     self.config.refiner_id,
@@ -121,13 +144,25 @@ class ImageGenerationService:
         # Set defaults from config
         negative_prompt = negative_prompt or self.config.negative_prompt
         seed = seed if seed is not None else self.config.base_seed
-        num_inference_steps = num_inference_steps or self.config.num_inference_steps
+
+        # Use CPU fallback settings if on CPU
+        if self._using_cpu_fallback:
+            num_inference_steps = num_inference_steps or self.config.cpu_fallback_steps
+            width = self.config.cpu_fallback_size
+            height = self.config.cpu_fallback_size
+        else:
+            num_inference_steps = num_inference_steps or self.config.num_inference_steps
+            width = self.config.width
+            height = self.config.height
+
         guidance_scale = guidance_scale or self.config.guidance_scale
 
         # Create generator for reproducibility
         generator = torch.Generator(device=self.config.device).manual_seed(seed)
 
-        logger.info(f"Generating image with seed {seed}")
+        logger.info(
+            f"Generating image with seed {seed} ({width}x{height}, {num_inference_steps} steps)"
+        )
         logger.debug(f"Prompt: {prompt}")
 
         # Generate base image
@@ -137,8 +172,8 @@ class ImageGenerationService:
             negative_prompt=negative_prompt,
             num_inference_steps=num_inference_steps,
             guidance_scale=guidance_scale,
-            width=self.config.width,
-            height=self.config.height,
+            width=width,
+            height=height,
             generator=generator,
         )
 

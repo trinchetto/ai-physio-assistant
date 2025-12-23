@@ -63,7 +63,9 @@ ai-physio-assistant/
 ### Prerequisites
 
 - Python 3.10+
-- For image generation: NVIDIA GPU (8GB+ VRAM) or Apple Silicon Mac
+- For image generation:
+  - **Recommended**: NVIDIA GPU (8GB+ VRAM) or Apple Silicon Mac
+  - **CPU fallback**: Available for development/testing (much slower, lower quality)
 
 ### Installation
 
@@ -100,7 +102,7 @@ pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
 # Apple Silicon (MPS):
 pip install torch torchvision
 
-# CPU-only (slow, not recommended):
+# CPU-only (automatically uses SD 1.5 fallback for faster generation):
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
 ```
 
@@ -141,7 +143,17 @@ physio-generate-images --all --preset quality
 
 # Use low VRAM preset (for 8GB GPUs)
 physio-generate-images --all --preset low_vram
+
+# Use CPU preset (faster on CPU, automatically uses SD 1.5)
+physio-generate-images --all --preset cpu
+
+# Or manually specify device (automatically switches to SD 1.5 on CPU)
+physio-generate-images --exercise chin_tuck --device cpu
+physio-generate-images --exercise chin_tuck --device mps  # For Apple Silicon
+physio-generate-images --exercise chin_tuck --device cuda # For NVIDIA GPUs
 ```
+
+**Note**: When using CPU, the system automatically switches to Stable Diffusion 1.5 (instead of SDXL) for ~4x faster generation. Images will be 512x512 instead of 1024x1024, with fewer inference steps. This is perfect for development and testing!
 
 See [content/IMAGE_GENERATION_GUIDE.md](content/IMAGE_GENERATION_GUIDE.md) for detailed options.
 
