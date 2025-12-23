@@ -11,6 +11,7 @@ from enum import Enum
 
 class ViewAngle(str, Enum):
     """Standard anatomical viewing angles."""
+
     LATERAL = "lateral view"  # Side view
     ANTERIOR = "anterior view"  # Front view
     POSTERIOR = "posterior view"  # Back view
@@ -23,6 +24,7 @@ class ViewAngle(str, Enum):
 
 class BodyPosition(str, Enum):
     """Common body positions in physiotherapy."""
+
     STANDING = "standing position, upright posture"
     SEATED = "seated position on chair, upright posture"
     SUPINE = "supine position, lying on back"
@@ -35,6 +37,7 @@ class BodyPosition(str, Enum):
 @dataclass
 class MuscleGroup:
     """Muscle groups for anatomical reference."""
+
     # Neck
     DEEP_CERVICAL_FLEXORS = "deep cervical flexor muscles, longus colli, longus capitis"
     SUBOCCIPITALS = "suboccipital muscles"
@@ -78,6 +81,7 @@ class MuscleGroup:
 @dataclass
 class ExercisePrompt:
     """A complete prompt for generating an exercise illustration."""
+
     exercise_id: str
     image_order: int
     description: str
@@ -160,7 +164,6 @@ EXERCISE_PROMPTS: dict[str, list[ExercisePrompt]] = {
             muscles_shown=["cervical alignment comparison"],
         ),
     ],
-
     "pendulum_exercise": [
         ExercisePrompt(
             exercise_id="pendulum_exercise",
@@ -192,7 +195,6 @@ EXERCISE_PROMPTS: dict[str, list[ExercisePrompt]] = {
             movement_indicators=True,
         ),
     ],
-
     "cat_cow_stretch": [
         ExercisePrompt(
             exercise_id="cat_cow_stretch",
@@ -222,7 +224,6 @@ EXERCISE_PROMPTS: dict[str, list[ExercisePrompt]] = {
             joints_shown=["lumbar lordosis", "thoracic extension", "anterior pelvic tilt"],
         ),
     ],
-
     "piriformis_stretch_supine": [
         ExercisePrompt(
             exercise_id="piriformis_stretch_supine",
@@ -248,11 +249,14 @@ EXERCISE_PROMPTS: dict[str, list[ExercisePrompt]] = {
             description="human figure in supine position performing deep piriformis stretch, hands clasped behind thigh pulling leg toward chest, maintaining figure-four position, back flat on surface",
             view_angle=ViewAngle.LATERAL,
             body_position=BodyPosition.SUPINE,
-            muscles_shown=[MuscleGroup.PIRIFORMIS, MuscleGroup.GLUTEUS_MAXIMUS, "deep hip rotators stretched"],
+            muscles_shown=[
+                MuscleGroup.PIRIFORMIS,
+                MuscleGroup.GLUTEUS_MAXIMUS,
+                "deep hip rotators stretched",
+            ],
             joints_shown=["hip flexion with external rotation"],
         ),
     ],
-
     "calf_raises": [
         ExercisePrompt(
             exercise_id="calf_raises",
@@ -270,7 +274,11 @@ EXERCISE_PROMPTS: dict[str, list[ExercisePrompt]] = {
             description="human figure performing bilateral heel raise, plantarflexion at ankle, standing on metatarsal heads, heels elevated off floor, calf muscles contracted",
             view_angle=ViewAngle.LATERAL,
             body_position=BodyPosition.STANDING,
-            muscles_shown=[MuscleGroup.GASTROCNEMIUS, MuscleGroup.SOLEUS, "contracted triceps surae"],
+            muscles_shown=[
+                MuscleGroup.GASTROCNEMIUS,
+                MuscleGroup.SOLEUS,
+                "contracted triceps surae",
+            ],
             joints_shown=["ankle plantarflexion", "metatarsophalangeal extension"],
             equipment=["wall for support"],
         ),

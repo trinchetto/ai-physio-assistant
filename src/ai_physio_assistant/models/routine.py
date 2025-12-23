@@ -7,13 +7,13 @@ created by a physiotherapist with AI assistance.
 
 from datetime import datetime
 from enum import Enum
-from typing import Optional
 
 from pydantic import BaseModel, Field
 
 
 class RoutineStatus(str, Enum):
     """Routine lifecycle status."""
+
     DRAFT = "draft"  # Being composed/edited
     READY = "ready"  # Ready for delivery
     DELIVERED = "delivered"  # Sent to patient
@@ -24,23 +24,22 @@ class RoutineExercise(BaseModel):
     """
     An exercise within a routine, with patient-specific customizations.
     """
+
     exercise_id: str = Field(..., description="Reference to Exercise.id")
     order: int = Field(..., description="Position in the routine sequence", ge=1)
 
     # Parameter overrides (None = use exercise defaults)
-    sets: Optional[int] = Field(None, ge=1, le=10)
-    reps: Optional[str] = Field(None, description="Override reps/duration")
-    hold: Optional[str] = Field(None, description="Override hold duration")
-    rest: Optional[str] = Field(None, description="Override rest period")
+    sets: int | None = Field(None, ge=1, le=10)
+    reps: str | None = Field(None, description="Override reps/duration")
+    hold: str | None = Field(None, description="Override hold duration")
+    rest: str | None = Field(None, description="Override rest period")
 
     # Patient-specific notes
-    notes: Optional[str] = Field(
-        None,
-        description="Special instructions for this patient (e.g., 'Use lighter resistance')"
+    notes: str | None = Field(
+        None, description="Special instructions for this patient (e.g., 'Use lighter resistance')"
     )
-    progression: Optional[str] = Field(
-        None,
-        description="How to progress this exercise (e.g., 'Add 2 reps each week')"
+    progression: str | None = Field(
+        None, description="How to progress this exercise (e.g., 'Add 2 reps each week')"
     )
 
     # Flags
@@ -63,91 +62,65 @@ class Routine(BaseModel):
     # Patient info
     patient_name: str = Field(..., description="Patient's name for the handout")
     patient_language: str = Field(
-        default="en",
-        description="ISO 639-1 code for patient's preferred language"
+        default="en", description="ISO 639-1 code for patient's preferred language"
     )
-    patient_id: Optional[str] = Field(
-        None,
-        description="Optional reference to patient record"
-    )
+    patient_id: str | None = Field(None, description="Optional reference to patient record")
 
     # Clinical context
-    diagnosis: str = Field(
-        ...,
-        description="Primary diagnosis or reason for treatment"
-    )
+    diagnosis: str = Field(..., description="Primary diagnosis or reason for treatment")
     therapeutic_goals: list[str] = Field(
         ...,
         description="What we want to achieve (e.g., 'Reduce shoulder pain', 'Improve ROM')",
-        min_length=1
+        min_length=1,
     )
     precautions: list[str] = Field(
-        default_factory=list,
-        description="Patient-specific precautions to observe"
+        default_factory=list, description="Patient-specific precautions to observe"
     )
 
     # The routine content
     title: str = Field(
-        ...,
-        description="Routine title shown to patient (e.g., 'Shoulder Recovery Program')"
+        ..., description="Routine title shown to patient (e.g., 'Shoulder Recovery Program')"
     )
     exercises: list[RoutineExercise] = Field(
-        ...,
-        description="Ordered list of exercises",
-        min_length=1
+        ..., description="Ordered list of exercises", min_length=1
     )
 
     # Schedule
     frequency: str = Field(
         default="once daily",
-        description="How often to perform (e.g., 'twice daily', '3x per week')"
+        description="How often to perform (e.g., 'twice daily', '3x per week')",
     )
-    duration_weeks: Optional[int] = Field(
-        None,
-        description="Recommended program duration in weeks"
-    )
-    estimated_time_minutes: Optional[int] = Field(
-        None,
-        description="Estimated time to complete one session"
+    duration_weeks: int | None = Field(None, description="Recommended program duration in weeks")
+    estimated_time_minutes: int | None = Field(
+        None, description="Estimated time to complete one session"
     )
 
     # Patient guidance
-    general_notes: Optional[str] = Field(
-        None,
-        description="General instructions or context for the patient"
+    general_notes: str | None = Field(
+        None, description="General instructions or context for the patient"
     )
     warning_signs: list[str] = Field(
         default_factory=lambda: [
             "Stop immediately if you experience sharp or sudden pain",
-            "Contact your physiotherapist if symptoms worsen"
+            "Contact your physiotherapist if symptoms worsen",
         ],
-        description="When to stop and seek help"
+        description="When to stop and seek help",
     )
 
     # Delivery
     status: RoutineStatus = Field(default=RoutineStatus.DRAFT)
-    delivery_url: Optional[str] = Field(
-        None,
-        description="Shareable web link for the patient"
-    )
-    pdf_url: Optional[str] = Field(
-        None,
-        description="Generated PDF download link"
-    )
+    delivery_url: str | None = Field(None, description="Shareable web link for the patient")
+    pdf_url: str | None = Field(None, description="Generated PDF download link")
 
     # Metadata
     created_at: datetime = Field(default_factory=datetime.utcnow)
     updated_at: datetime = Field(default_factory=datetime.utcnow)
-    delivered_at: Optional[datetime] = Field(None)
+    delivered_at: datetime | None = Field(None)
 
     # AI assistance tracking
-    ai_generated: bool = Field(
-        default=False,
-        description="Whether initial draft was AI-generated"
-    )
-    ai_prompt: Optional[str] = Field(
-        None,
-        description="The prompt used to generate this routine (for learning)"
+    ai_generated: bool = Field(default=False, description="Whether initial draft was AI-generated")
+    ai_prompt: str | None = Field(
+        None, description="The prompt used to generate this routine (for learning)"
     )
 
     class Config:

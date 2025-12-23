@@ -18,15 +18,15 @@ import sys
 from pathlib import Path
 
 from ai_physio_assistant.image_generation import (
-    ImageGenerationConfig,
     PRESETS,
+    ImageGenerationConfig,
     get_prompts_for_exercise,
 )
+from ai_physio_assistant.image_generation.prompts import get_all_exercise_ids
 from ai_physio_assistant.image_generation.service import (
     ImageGenerationService,
     generate_all_seed_exercises,
 )
-from ai_physio_assistant.image_generation.prompts import get_all_exercise_ids
 
 
 def setup_logging(verbose: bool = False) -> None:
@@ -80,7 +80,7 @@ def generate_single_exercise(
         results = service.generate_exercise_images(exercise_id, save=True)
 
         print(f"\nGenerated {len(results)} images:")
-        for image, path in results:
+        for _image, path in results:
             if path:
                 print(f"  - {path}")
 
@@ -128,24 +128,28 @@ def main() -> int:
     # Action arguments
     action = parser.add_mutually_exclusive_group(required=True)
     action.add_argument(
-        "--exercise", "-e",
+        "--exercise",
+        "-e",
         type=str,
         help="Generate images for a specific exercise ID",
     )
     action.add_argument(
-        "--all", "-a",
+        "--all",
+        "-a",
         action="store_true",
         help="Generate images for all seed exercises",
     )
     action.add_argument(
-        "--list", "-l",
+        "--list",
+        "-l",
         action="store_true",
         help="List available exercises",
     )
 
     # Configuration arguments
     parser.add_argument(
-        "--preset", "-p",
+        "--preset",
+        "-p",
         type=str,
         choices=list(PRESETS.keys()),
         help="Use a preset configuration (fast, quality, low_vram)",
@@ -189,7 +193,8 @@ def main() -> int:
 
     # Output arguments
     parser.add_argument(
-        "--output-dir", "-o",
+        "--output-dir",
+        "-o",
         type=str,
         help="Output directory for generated images",
     )
@@ -199,7 +204,8 @@ def main() -> int:
         help="Show what would be generated without running",
     )
     parser.add_argument(
-        "--verbose", "-v",
+        "--verbose",
+        "-v",
         action="store_true",
         help="Enable verbose logging",
     )

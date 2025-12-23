@@ -7,7 +7,6 @@ using Stable Diffusion XL with optional medical/anatomy fine-tuned models.
 
 import logging
 from pathlib import Path
-from typing import Optional
 
 import torch
 from PIL import Image
@@ -47,7 +46,7 @@ class ImageGenerationService:
             return
 
         try:
-            from diffusers import StableDiffusionXLPipeline, StableDiffusionXLImg2ImgPipeline
+            from diffusers import StableDiffusionXLImg2ImgPipeline, StableDiffusionXLPipeline
 
             logger.info(f"Loading SDXL model: {self.config.model_id}")
 
@@ -63,19 +62,19 @@ class ImageGenerationService:
             )
 
             # Move to device
-            self.pipeline = self.pipeline.to(self.config.device)
+            self.pipeline = self.pipeline.to(self.config.device)  # type: ignore[attr-defined]
 
             # Apply memory optimizations
             if self.config.enable_attention_slicing:
-                self.pipeline.enable_attention_slicing()
+                self.pipeline.enable_attention_slicing()  # type: ignore[attr-defined]
 
             if self.config.enable_vae_tiling:
-                self.pipeline.enable_vae_tiling()
+                self.pipeline.enable_vae_tiling()  # type: ignore[attr-defined]
 
             # Load LoRA if specified
             if self.config.lora_path:
                 logger.info(f"Loading LoRA: {self.config.lora_path}")
-                self.pipeline.load_lora_weights(self.config.lora_path)
+                self.pipeline.load_lora_weights(self.config.lora_path)  # type: ignore[attr-defined]
 
             # Load refiner if specified
             if self.config.use_refiner and self.config.refiner_id:
@@ -86,7 +85,7 @@ class ImageGenerationService:
                     use_safetensors=True,
                     variant="fp16" if dtype == torch.float16 else None,
                 )
-                self.refiner = self.refiner.to(self.config.device)
+                self.refiner = self.refiner.to(self.config.device)  # type: ignore[attr-defined]
 
             self._loaded = True
             logger.info("Model loaded successfully")
@@ -132,6 +131,7 @@ class ImageGenerationService:
         logger.debug(f"Prompt: {prompt}")
 
         # Generate base image
+        assert self.pipeline is not None
         result = self.pipeline(
             prompt=prompt,
             negative_prompt=negative_prompt,
