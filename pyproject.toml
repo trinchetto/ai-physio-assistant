@@ -31,7 +31,9 @@ pyyaml = "^6.0"
 diffusers = "^0.25.0"
 transformers = "^4.36.0"
 accelerate = "^0.25.0"
-torch = "^2.0.0"
+# Use PyTorch CPU version to avoid platform-specific issues
+# Users can install CUDA/ROCm versions separately if needed
+torch = {version = "^2.0.0", source = "pypi"}
 pillow = "^10.0.0"
 safetensors = "^0.4.0"
 

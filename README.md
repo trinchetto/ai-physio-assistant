@@ -83,7 +83,25 @@ poetry install --with dev
 
 That's it! Poetry will automatically install all dependencies including PyTorch.
 
-**Note**: If you need a specific PyTorch version for your hardware (CUDA, ROCm, etc.), you can install it separately after the Poetry installation. The default installation includes the CPU version of PyTorch, which will automatically use the SD 1.5 fallback for faster generation.
+#### Platform Notes
+
+**Linux**: Full installation including all dependencies works out of the box.
+
+**macOS/Windows**: If you encounter errors with `triton` (a Linux-only dependency), you have two options:
+
+1. **Recommended**: Install PyTorch separately first, then install the project:
+   ```bash
+   # Install PyTorch without triton
+   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+
+   # Then install the project
+   poetry install --no-root
+   poetry install --only-root
+   ```
+
+2. **Alternative**: Edit `poetry.lock` and remove triton entries (not recommended as it breaks the lock file).
+
+**Note**: The CPU fallback (SD 1.5) works on all platforms and is perfect for development/testing!
 
 ### Generating Exercise Images
 
