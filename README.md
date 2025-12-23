@@ -74,83 +74,60 @@ ai-physio-assistant/
 git clone <repository-url>
 cd ai-physio-assistant
 
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # or `venv\Scripts\activate` on Windows
-
-# Install the package (core dependencies only)
-pip install -e .
-
-# Or install with image generation support
-pip install -e ".[image-gen]"
-
-# Or install with all optional dependencies
-pip install -e ".[all]"
+# Install dependencies with Poetry
+poetry install
 
 # For development (includes testing and linting tools)
-pip install -e ".[dev]"
+poetry install --with dev
 ```
 
-#### PyTorch Installation Note
+That's it! Poetry will automatically install all dependencies including PyTorch.
 
-For image generation, you may need to install PyTorch separately for your hardware:
-
-```bash
-# NVIDIA GPU (CUDA 12.1):
-pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
-
-# Apple Silicon (MPS):
-pip install torch torchvision
-
-# CPU-only (automatically uses SD 1.5 fallback for faster generation):
-pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
-```
+**Note**: If you need a specific PyTorch version for your hardware (CUDA, ROCm, etc.), you can install it separately after the Poetry installation. The default installation includes the CPU version of PyTorch, which will automatically use the SD 1.5 fallback for faster generation.
 
 ### Generating Exercise Images
 
 After installation, you can use the CLI:
 
 ```bash
-# Using the installed command
+# Using Poetry
+poetry run physio-generate-images --list
+poetry run physio-generate-images --exercise chin_tuck
+poetry run physio-generate-images --all
+
+# Or activate the virtual environment first
+poetry shell
 physio-generate-images --list
-physio-generate-images --exercise chin_tuck
-physio-generate-images --all
-
-# Or using Python module syntax
-python -m ai_physio_assistant.cli.generate_images --list
-
-# Or using the convenience script (for development)
-python scripts/generate_images.py --list
 ```
 
 #### CLI Options
 
 ```bash
 # List available exercises
-physio-generate-images --list
+poetry run physio-generate-images --list
 
 # Generate images for a specific exercise
-physio-generate-images --exercise chin_tuck
+poetry run physio-generate-images --exercise chin_tuck
 
 # Generate all seed exercises
-physio-generate-images --all
+poetry run physio-generate-images --all
 
 # Preview prompts without generating (no GPU needed)
-physio-generate-images --all --dry-run
+poetry run physio-generate-images --all --dry-run
 
 # Use quality preset (slower, better results)
-physio-generate-images --all --preset quality
+poetry run physio-generate-images --all --preset quality
 
 # Use low VRAM preset (for 8GB GPUs)
-physio-generate-images --all --preset low_vram
+poetry run physio-generate-images --all --preset low_vram
 
 # Use CPU preset (faster on CPU, automatically uses SD 1.5)
-physio-generate-images --all --preset cpu
+poetry run physio-generate-images --all --preset cpu
 
 # Or manually specify device (automatically switches to SD 1.5 on CPU)
-physio-generate-images --exercise chin_tuck --device cpu
-physio-generate-images --exercise chin_tuck --device mps  # For Apple Silicon
-physio-generate-images --exercise chin_tuck --device cuda # For NVIDIA GPUs
+poetry run physio-generate-images --exercise chin_tuck --device cpu
+poetry run physio-generate-images --exercise chin_tuck --device mps  # For Apple Silicon
+poetry run physio-generate-images --exercise chin_tuck --device cuda # For NVIDIA GPUs
 ```
 
 **Note**: When using CPU, the system automatically switches to Stable Diffusion 1.5 (instead of SDXL) for ~4x faster generation. Images will be 512x512 instead of 1024x1024, with fewer inference steps. This is perfect for development and testing!
@@ -181,16 +158,22 @@ Key technologies:
 
 ```bash
 # Install with development dependencies
-pip install -e ".[dev]"
+poetry install --with dev
 
 # Run tests
-pytest
+poetry run pytest
 
 # Run linter
-ruff check src/
+poetry run ruff check src/
+
+# Run formatter
+poetry run ruff format src/
 
 # Run type checker
-mypy src/
+poetry run mypy src/
+
+# Run pre-commit hooks
+poetry run pre-commit run --all-files
 ```
 
 ## Documentation

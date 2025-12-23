@@ -1,24 +1,14 @@
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
-
-[project]
+[tool.poetry]
 name = "ai-physio-assistant"
 version = "0.1.0"
 description = "An AI-powered assistant that helps physiotherapists create personalized exercise routines"
+authors = ["AI Physio Assistant Team"]
 readme = "README.md"
 license = "MIT"
-requires-python = ">=3.10"
-authors = [
-    { name = "AI Physio Assistant Team" }
-]
-keywords = [
-    "physiotherapy",
-    "exercise",
-    "healthcare",
-    "ai",
-    "stable-diffusion",
-]
+homepage = "https://github.com/trinchetto/ai-physio-assistant"
+repository = "https://github.com/trinchetto/ai-physio-assistant"
+documentation = "https://github.com/trinchetto/ai-physio-assistant#readme"
+keywords = ["physiotherapy", "exercise", "healthcare", "ai", "stable-diffusion"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Healthcare Industry",
@@ -29,73 +19,35 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
     "Topic :: Scientific/Engineering :: Medical Science Apps.",
 ]
-
-dependencies = [
-    "pydantic>=2.0.0",
-    "pyyaml>=6.0",
+packages = [
+    { include = "ai_physio_assistant", from = "src" }
 ]
 
-[project.optional-dependencies]
-# Image generation with Stable Diffusion XL
-# Install with: pip install ai-physio-assistant[image-gen]
-# Note: Requires ~10GB disk space and GPU with 8GB+ VRAM
-image-gen = [
-    "diffusers>=0.25.0",
-    "transformers>=4.36.0",
-    "accelerate>=0.25.0",
-    "torch>=2.0.0",
-    "Pillow>=10.0.0",
-    "safetensors>=0.4.0",
-]
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^2.0.0"
+pyyaml = "^6.0"
+# Image generation dependencies
+diffusers = "^0.25.0"
+transformers = "^4.36.0"
+accelerate = "^0.25.0"
+torch = "^2.0.0"
+pillow = "^10.0.0"
+safetensors = "^0.4.0"
 
-# Future: Google Cloud Platform integration
-# gcp = [
-#     "google-cloud-firestore>=2.0.0",
-#     "google-cloud-storage>=2.0.0",
-#     "google-cloud-aiplatform>=1.0.0",
-# ]
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0.0"
+pytest-cov = "^4.0.0"
+ruff = "^0.1.0"
+mypy = "^1.0.0"
+pre-commit = "^3.0.0"
 
-# Future: Web frontend
-# frontend = [
-#     "streamlit>=1.30.0",
-# ]
-
-# Future: PDF generation
-# pdf = [
-#     "weasyprint>=60.0",
-# ]
-
-# Development dependencies
-dev = [
-    "pytest>=7.0.0",
-    "pytest-cov>=4.0.0",
-    "ruff>=0.1.0",
-    "mypy>=1.0.0",
-]
-
-# All optional dependencies (except dev)
-all = [
-    "ai-physio-assistant[image-gen]",
-]
-
-[project.scripts]
-# CLI entry points
+[tool.poetry.scripts]
 physio-generate-images = "ai_physio_assistant.cli.generate_images:main"
 
-[project.urls]
-Homepage = "https://github.com/trinchetto/ai-physio-assistant"
-Repository = "https://github.com/trinchetto/ai-physio-assistant"
-Documentation = "https://github.com/trinchetto/ai-physio-assistant#readme"
-
-[tool.hatch.build.targets.wheel]
-packages = ["src/ai_physio_assistant"]
-
-[tool.hatch.build.targets.sdist]
-include = [
-    "/src",
-    "/content",
-    "/scripts",
-]
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
 
 # Ruff configuration (linter + formatter)
 [tool.ruff]
