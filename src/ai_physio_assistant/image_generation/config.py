@@ -53,21 +53,14 @@ class ImageGenerationConfig:
     enable_vae_tiling: bool = True  # For large images with limited VRAM
 
     # Style settings (embedded in all prompts)
-    style_prefix: str = (
-        "anatomical diagram, physiotherapy illustration, medical reference style, "
-        "clean simple lines, professional medical textbook illustration, "
-        "gender-neutral human figure, accurate anatomical proportions"
-    )
-    style_suffix: str = (
-        "clean white background, no text, no labels, no watermarks, "
-        "high contrast black lines, minimal shading, educational diagram"
-    )
+    # Kept concise to stay under CLIP's 77 token limit
+    style_prefix: str = "medical diagram, simple line art, accurate anatomy"
+    style_suffix: str = "white background, no text, black lines"
 
     negative_prompt: str = (
-        "photo, photograph, realistic skin texture, face details, "
-        "colored background, text, labels, watermark, signature, "
-        "blurry, low quality, distorted anatomy, extra limbs, "
-        "artistic, painterly, sketch, rough lines"
+        "photo, photograph, realistic skin, colored background, text, labels, "
+        "watermark, blurry, low quality, distorted anatomy, extra limbs, "
+        "painterly, sketch, shading, gradients"
     )
 
 
