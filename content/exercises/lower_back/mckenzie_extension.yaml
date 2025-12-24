@@ -1,0 +1,99 @@
+# McKenzie Extension / Prone Press-Up
+# Extension exercise for the lumbar spine
+
+id: mckenzie_extension
+
+name: "McKenzie Extension"
+
+primary_language: en
+
+description: >
+  A lumbar extension exercise often used in the McKenzie Method for treating
+  certain types of lower back pain, particularly disc-related pain with
+  centralization. The exercise uses repeated extension movements to reduce
+  disc pressure and centralize symptoms.
+
+instructions:
+  - "Lie face down on a firm surface with your hands under your shoulders"
+  - "Keep your hips and legs completely relaxed on the floor"
+  - "Slowly push your upper body up by straightening your elbows"
+  - "Keep your hips, pelvis, and legs in contact with the floor - do not lift them"
+  - "Rise up as far as comfortable, allowing your lower back to arch"
+  - "Hold at the top for 1-2 seconds"
+  - "Slowly lower back down"
+  - "Repeat, trying to go slightly higher each time if comfortable"
+  - "Stop immediately if pain moves further down the leg (peripheralizes)"
+
+common_mistakes:
+  - "Lifting the hips off the floor - keep pelvis down throughout"
+  - "Tensing the lower back muscles - let the arms do the work, back muscles stay relaxed"
+  - "Holding the breath - exhale as you press up"
+  - "Continuing if symptoms move further down the leg - this indicates the exercise is not appropriate"
+
+body_regions:
+  - lower_back
+
+conditions:
+  - disc_herniation
+  - lower_back_pain
+  - sciatica_with_centralization
+  - lumbar_flexion_intolerance
+
+therapeutic_goals:
+  - reduce_pain
+  - centralize_symptoms
+  - improve_mobility
+  - reduce_disc_pressure
+
+contraindications:
+  - spinal_stenosis
+  - spondylolisthesis
+  - facet_joint_syndrome
+  - extension_intolerance
+  - symptoms_peripheralize
+
+difficulty: beginner
+
+equipment:
+  - none
+
+default_sets: 1
+default_reps: "10"
+default_hold: "1-2 seconds"
+default_rest: "as needed"
+
+tags:
+  - mobility
+  - therapeutic
+  - home_exercise
+  - no_equipment
+  - mckenzie
+
+images: []
+
+translations:
+  it:
+    name: "Estensione McKenzie"
+    description: >
+      Un esercizio di estensione lombare spesso utilizzato nel Metodo McKenzie
+      per trattare certi tipi di mal di schiena, particolarmente il dolore
+      discale con centralizzazione. L'esercizio usa movimenti di estensione
+      ripetuti per ridurre la pressione sul disco.
+    instructions:
+      - "Sdraiati a pancia in giù su una superficie rigida con le mani sotto le spalle"
+      - "Mantieni i fianchi e le gambe completamente rilassati sul pavimento"
+      - "Spingi lentamente la parte superiore del corpo in alto raddrizzando i gomiti"
+      - "Mantieni fianchi, bacino e gambe a contatto con il pavimento"
+      - "Solleva fin dove è confortevole, lasciando che la schiena si inarchhi"
+      - "Mantieni in alto per 1-2 secondi"
+      - "Abbassati lentamente"
+      - "Ripeti, cercando di andare leggermente più in alto ogni volta"
+      - "Fermati immediatamente se il dolore scende più in basso nella gamba"
+    common_mistakes:
+      - "Sollevare i fianchi dal pavimento - mantieni il bacino a terra"
+      - "Contrarre i muscoli della schiena - lascia che le braccia facciano il lavoro"
+      - "Trattenere il respiro - espira mentre ti sollevi"
+      - "Continuare se i sintomi si spostano più in basso nella gamba"
+
+source: ai_assisted
+owner_id: shared

@@ -1,0 +1,102 @@
+# YTWL Exercise
+# Scapular stabilization and posterior shoulder strengthening
+
+id: ytwl_exercise
+
+name: "YTWL Exercise"
+
+primary_language: en
+
+description: >
+  A comprehensive scapular stabilization exercise that targets the lower trapezius,
+  middle trapezius, and rhomboids. The exercise involves four arm positions that
+  together strengthen the posterior shoulder and improve scapular control.
+  Essential for shoulder health and posture correction.
+
+instructions:
+  - "Lie face down on a bench or bed with your arms hanging toward the floor"
+  - "Keep your forehead resting on the surface and neck in neutral"
+  - "Y: Raise both arms up and out at 45 degrees, thumbs pointing up, forming a Y shape"
+  - "Lower slowly, then..."
+  - "T: Raise both arms out to the sides at shoulder level, thumbs up, forming a T"
+  - "Lower slowly, then..."
+  - "W: With elbows bent 90 degrees, raise arms and squeeze shoulder blades together"
+  - "Lower slowly, then..."
+  - "L: Keep elbows at sides bent 90 degrees, rotate forearms outward and up"
+  - "That completes one repetition - perform all four positions in sequence"
+
+common_mistakes:
+  - "Lifting the head and arching the neck - keep forehead down and neck neutral"
+  - "Shrugging shoulders toward ears - focus on pulling shoulder blades down and back"
+  - "Using momentum to swing the arms - move slowly with control"
+  - "Starting with weights too heavy - begin with no weight or very light weights"
+
+body_regions:
+  - shoulder
+  - upper_back
+
+conditions:
+  - shoulder_impingement
+  - scapular_dyskinesia
+  - rounded_shoulders
+  - upper_crossed_syndrome
+  - rotator_cuff_tendinopathy
+
+therapeutic_goals:
+  - increase_strength
+  - improve_posture
+  - improve_scapular_control
+  - prevent_injury
+
+contraindications:
+  - acute_shoulder_injury
+  - severe_shoulder_impingement
+  - rotator_cuff_tear_acute
+  - shoulder_dislocation_recent
+
+difficulty: intermediate
+
+equipment:
+  - bench
+  - light_dumbbells_optional
+
+default_sets: 3
+default_reps: "8-10 of each position"
+default_hold: "2 seconds at top"
+default_rest: "60 seconds"
+
+tags:
+  - strengthening
+  - scapular_stability
+  - posture
+  - rehabilitation
+
+images: []
+
+translations:
+  it:
+    name: "Esercizio YTWL"
+    description: >
+      Un esercizio completo di stabilizzazione scapolare che lavora su trapezio
+      inferiore, trapezio medio e romboidi. L'esercizio coinvolge quattro posizioni
+      delle braccia che insieme rafforzano la spalla posteriore e migliorano il
+      controllo scapolare.
+    instructions:
+      - "Sdraiati a pancia in giù su una panca con le braccia che pendono verso il pavimento"
+      - "Mantieni la fronte appoggiata sulla superficie e il collo in posizione neutra"
+      - "Y: Solleva entrambe le braccia in alto e in fuori a 45 gradi, pollici in su, formando una Y"
+      - "Abbassa lentamente, poi..."
+      - "T: Solleva le braccia ai lati all'altezza delle spalle, pollici in su, formando una T"
+      - "Abbassa lentamente, poi..."
+      - "W: Con i gomiti piegati a 90 gradi, solleva le braccia stringendo le scapole"
+      - "Abbassa lentamente, poi..."
+      - "L: Mantieni i gomiti ai fianchi piegati a 90 gradi, ruota gli avambracci verso l'esterno"
+      - "Questo completa una ripetizione - esegui tutte e quattro le posizioni in sequenza"
+    common_mistakes:
+      - "Sollevare la testa e inarcare il collo - mantieni la fronte appoggiata"
+      - "Sollevare le spalle verso le orecchie - concentrati sulle scapole in basso e indietro"
+      - "Usare lo slancio - muoviti lentamente e con controllo"
+      - "Iniziare con pesi troppo pesanti - inizia senza peso o molto leggero"
+
+source: ai_assisted
+owner_id: shared

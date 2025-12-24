@@ -1,0 +1,103 @@
+# Glute Bridge
+# Hip extension and core stabilization exercise
+
+id: glute_bridge
+
+name: "Glute Bridge"
+
+primary_language: en
+
+description: >
+  A fundamental exercise that strengthens the glutes, hamstrings, and core
+  while promoting hip extension. The glute bridge helps address glute weakness,
+  which is often associated with lower back pain, and teaches proper hip
+  hinge mechanics.
+
+instructions:
+  - "Lie on your back with knees bent and feet flat on the floor, hip-width apart"
+  - "Place your arms at your sides with palms down"
+  - "Position your feet close enough that you can almost touch your heels with your fingertips"
+  - "Engage your core by gently bracing your abdominals"
+  - "Press through your heels and squeeze your glutes to lift your hips off the floor"
+  - "Raise your hips until your body forms a straight line from shoulders to knees"
+  - "Do not arch your lower back at the top - keep core engaged"
+  - "Hold at the top for 2-3 seconds, squeezing your glutes"
+  - "Slowly lower your hips back down with control"
+  - "Keep your weight in your heels throughout the movement"
+
+common_mistakes:
+  - "Pushing through toes instead of heels - this activates quads more than glutes"
+  - "Arching the lower back excessively at the top - stop when hips align with shoulders"
+  - "Letting knees fall inward - keep knees in line with toes"
+  - "Rising up too quickly - use controlled movements"
+  - "Not fully engaging glutes - focus on squeezing glutes to drive the movement"
+
+body_regions:
+  - lower_back
+  - hip
+  - core
+
+conditions:
+  - lower_back_pain
+  - glute_weakness
+  - hip_weakness
+  - anterior_pelvic_tilt
+
+therapeutic_goals:
+  - increase_strength
+  - improve_stability
+  - reduce_pain
+  - improve_hip_mechanics
+
+contraindications:
+  - acute_lower_back_pain
+  - pregnancy_late_stage
+  - recent_abdominal_surgery
+
+difficulty: beginner
+
+equipment:
+  - none
+
+default_sets: 3
+default_reps: "10-15"
+default_hold: "2-3 seconds at top"
+default_rest: "60 seconds"
+
+tags:
+  - strengthening
+  - core
+  - glutes
+  - home_exercise
+  - no_equipment
+
+images: []
+
+translations:
+  it:
+    name: "Ponte Gluteo"
+    description: >
+      Un esercizio fondamentale che rafforza glutei, muscoli posteriori della
+      coscia e core, promuovendo l'estensione dell'anca. Il ponte gluteo affronta
+      la debolezza dei glutei, spesso associata al mal di schiena, e insegna
+      la corretta meccanica dell'anca.
+    instructions:
+      - "Sdraiati sulla schiena con le ginocchia piegate e i piedi a terra, larghezza fianchi"
+      - "Posiziona le braccia ai lati con i palmi verso il basso"
+      - "Posiziona i piedi abbastanza vicini da quasi toccare i talloni con le dita"
+      - "Attiva il core contraendo delicatamente gli addominali"
+      - "Spingi attraverso i talloni e stringi i glutei per sollevare i fianchi"
+      - "Solleva i fianchi finché il corpo forma una linea dritta dalle spalle alle ginocchia"
+      - "Non inarcare eccessivamente la schiena - mantieni il core attivo"
+      - "Mantieni in alto per 2-3 secondi, stringendo i glutei"
+      - "Abbassa lentamente i fianchi con controllo"
+      - "Mantieni il peso sui talloni durante tutto il movimento"
+    common_mistakes:
+      - "Spingere attraverso le punte invece dei talloni - attiva più i quadricipiti che i glutei"
+      - "Inarcare eccessivamente la schiena in alto - fermati quando i fianchi si allineano"
+      - "Lasciare che le ginocchia cadano verso l'interno - mantienile in linea con le dita"
+      - "Salire troppo velocemente - usa movimenti controllati"
+      - "Non attivare completamente i glutei - concentrati sulla contrazione"
+
+source: ai_assisted
+owner_id: shared

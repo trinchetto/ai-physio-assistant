@@ -1,0 +1,97 @@
+# Scalene Stretch
+# Stretches the anterior, middle, and posterior scalene muscles
+
+id: scalene_stretch
+
+name: "Scalene Stretch"
+
+primary_language: en
+
+description: >
+  A stretch targeting the scalene muscles on the side of the neck. The scalenes
+  can become tight from forward head posture, stress, and respiratory issues.
+  Stretching these muscles can help with neck pain, thoracic outlet symptoms,
+  and improve breathing mechanics.
+
+instructions:
+  - "Sit or stand tall with good posture"
+  - "Place your right hand behind your back or hold onto a chair for stability"
+  - "Tilt your head to the left, bringing your left ear toward your left shoulder"
+  - "Rotate your head slightly to look up toward the ceiling"
+  - "You should feel a stretch along the right side of your neck, toward the collarbone"
+  - "For a deeper stretch, gently depress your right shoulder downward"
+  - "Hold for 20-30 seconds while breathing deeply"
+  - "Slowly return to neutral and repeat on the other side"
+
+common_mistakes:
+  - "Not adding the rotation component - the upward look is key to target scalenes"
+  - "Holding the breath - breathe normally or take slow deep breaths"
+  - "Letting the shoulder creep up - actively keep it depressed"
+  - "Overstretching and causing numbness or tingling - ease off if you feel these"
+
+body_regions:
+  - neck
+
+conditions:
+  - neck_pain
+  - neck_stiffness
+  - thoracic_outlet_syndrome
+  - forward_head_posture
+  - upper_crossed_syndrome
+
+therapeutic_goals:
+  - reduce_muscle_tension
+  - improve_mobility
+  - reduce_pain
+  - improve_breathing
+
+contraindications:
+  - cervical_instability
+  - acute_disc_herniation_cervical
+  - vertebral_artery_insufficiency
+  - active_thoracic_outlet_syndrome
+
+difficulty: beginner
+
+equipment:
+  - none
+
+default_sets: 2
+default_reps: "2-3 each side"
+default_hold: "20-30 seconds"
+default_rest: "15 seconds"
+
+tags:
+  - stretching
+  - office_exercise
+  - home_exercise
+  - breathing
+  - no_equipment
+
+images: []
+
+translations:
+  it:
+    name: "Stretching degli Scaleni"
+    description: >
+      Uno stretching mirato per i muscoli scaleni sul lato del collo. Gli
+      scaleni possono irrigidirsi a causa della postura con testa in avanti,
+      stress e problemi respiratori. Allungarli può aiutare con il dolore
+      al collo e migliorare la meccanica respiratoria.
+    instructions:
+      - "Siediti o stai in piedi con una buona postura"
+      - "Metti la mano destra dietro la schiena o tieni una sedia per stabilità"
+      - "Inclina la testa a sinistra, portando l'orecchio sinistro verso la spalla"
+      - "Ruota leggermente la testa per guardare verso il soffitto"
+      - "Dovresti sentire lo stiramento lungo il lato destro del collo, verso la clavicola"
+      - "Per uno stretching più profondo, abbassa attivamente la spalla destra"
+      - "Mantieni per 20-30 secondi respirando profondamente"
+      - "Torna lentamente alla posizione neutra e ripeti dall'altro lato"
+    common_mistakes:
+      - "Non aggiungere la rotazione - guardare verso l'alto è fondamentale per gli scaleni"
+      - "Trattenere il respiro - respira normalmente o fai respiri profondi"
+      - "Lasciare che la spalla si sollevi - mantienila attivamente abbassata"
+      - "Stretching eccessivo che causa formicolio - riduci l'intensità se lo senti"
+
+source: ai_assisted
+owner_id: shared

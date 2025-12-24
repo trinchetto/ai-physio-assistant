@@ -1,0 +1,94 @@
+# Cross-Body Shoulder Stretch / Posterior Capsule Stretch
+# Stretches the posterior shoulder capsule and rotator cuff
+
+id: cross_body_stretch
+
+name: "Cross-Body Shoulder Stretch"
+
+primary_language: en
+
+description: >
+  A stretch targeting the posterior shoulder capsule and posterior rotator cuff
+  muscles. This exercise improves internal rotation range of motion and helps
+  address posterior shoulder tightness common in overhead athletes and those
+  with shoulder impingement.
+
+instructions:
+  - "Stand or sit with good posture"
+  - "Bring your right arm across your body at shoulder height"
+  - "Use your left hand to gently pull your right arm closer to your chest"
+  - "Hold the stretch at the back of your right shoulder"
+  - "Keep your right shoulder down - do not let it shrug up"
+  - "Hold for 20-30 seconds while breathing normally"
+  - "Release and repeat on the other side"
+  - "You should feel a comfortable stretch, not pain"
+
+common_mistakes:
+  - "Rotating the torso toward the stretched arm - keep chest facing forward"
+  - "Raising the shoulder toward the ear - actively keep it depressed"
+  - "Pulling too aggressively causing pain - use gentle sustained pressure"
+  - "Holding the breath - maintain relaxed breathing throughout"
+
+body_regions:
+  - shoulder
+
+conditions:
+  - shoulder_impingement
+  - posterior_shoulder_tightness
+  - glenohumeral_internal_rotation_deficit
+  - rotator_cuff_tendinopathy
+
+therapeutic_goals:
+  - improve_mobility
+  - reduce_stiffness
+  - increase_range_of_motion
+  - reduce_pain
+
+contraindications:
+  - shoulder_dislocation_recent
+  - labral_tear_acute
+  - posterior_instability
+  - acute_shoulder_injury
+
+difficulty: beginner
+
+equipment:
+  - none
+
+default_sets: 2
+default_reps: "3 each side"
+default_hold: "20-30 seconds"
+default_rest: "15 seconds"
+
+tags:
+  - stretching
+  - office_exercise
+  - home_exercise
+  - no_equipment
+
+images: []
+
+translations:
+  it:
+    name: "Stretching Incrociato della Spalla"
+    description: >
+      Uno stretching mirato per la capsula posteriore della spalla e i muscoli
+      posteriori della cuffia dei rotatori. Questo esercizio migliora la rotazione
+      interna e affronta la rigidità posteriore della spalla.
+    instructions:
+      - "Stai in piedi o seduto con buona postura"
+      - "Porta il braccio destro attraverso il corpo all'altezza della spalla"
+      - "Usa la mano sinistra per tirare delicatamente il braccio destro verso il petto"
+      - "Senti lo stiramento nella parte posteriore della spalla destra"
+      - "Mantieni la spalla destra abbassata - non lasciarla sollevare"
+      - "Mantieni per 20-30 secondi respirando normalmente"
+      - "Rilascia e ripeti dall'altro lato"
+      - "Dovresti sentire uno stretching confortevole, non dolore"
+    common_mistakes:
+      - "Ruotare il busto verso il braccio - mantieni il petto rivolto in avanti"
+      - "Sollevare la spalla verso l'orecchio - mantienila attivamente abbassata"
+      - "Tirare troppo aggressivamente - usa una pressione delicata e sostenuta"
+      - "Trattenere il respiro - mantieni una respirazione rilassata"
+
+source: ai_assisted
+owner_id: shared

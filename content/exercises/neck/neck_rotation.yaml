@@ -1,0 +1,94 @@
+# Neck Rotation / Cervical Rotation
+# Improves rotational mobility of the cervical spine
+
+id: neck_rotation
+
+name: "Neck Rotation"
+
+primary_language: en
+
+description: >
+  Gentle rotational stretching of the cervical spine to improve neck mobility
+  and reduce stiffness. This exercise targets the sternocleidomastoid, scalenes,
+  and deep cervical rotators, helping to restore normal range of motion.
+
+instructions:
+  - "Sit or stand tall with your back straight and shoulders relaxed"
+  - "Look straight ahead with your chin level"
+  - "Slowly turn your head to the right, as if looking over your shoulder"
+  - "Rotate only as far as comfortable without pain"
+  - "Hold for 5 seconds, feeling a gentle stretch on the left side of your neck"
+  - "Slowly return to center"
+  - "Repeat to the left side"
+  - "Breathe normally throughout the movement"
+
+common_mistakes:
+  - "Rotating the shoulders along with the head - keep shoulders facing forward"
+  - "Tilting the head while rotating - keep chin level throughout"
+  - "Moving too quickly or forcing the rotation - use slow, controlled movements"
+  - "Holding the breath during the stretch - maintain relaxed breathing"
+
+body_regions:
+  - neck
+
+conditions:
+  - neck_pain
+  - neck_stiffness
+  - cervical_spondylosis
+  - torticollis
+  - whiplash
+
+therapeutic_goals:
+  - improve_mobility
+  - reduce_stiffness
+  - increase_range_of_motion
+
+contraindications:
+  - cervical_instability
+  - acute_disc_herniation_cervical
+  - vertebral_artery_insufficiency
+  - recent_cervical_surgery
+
+difficulty: beginner
+
+equipment:
+  - none
+
+default_sets: 2
+default_reps: "10 each side"
+default_hold: "5 seconds"
+default_rest: "30 seconds"
+
+tags:
+  - mobility
+  - stretching
+  - office_exercise
+  - home_exercise
+  - no_equipment
+
+images: []
+
+translations:
+  it:
+    name: "Rotazione del Collo"
+    description: >
+      Stretching rotazionale delicato della colonna cervicale per migliorare
+      la mobilità del collo e ridurre la rigidità. Questo esercizio lavora
+      sullo sternocleidomastoideo, scaleni e rotatori cervicali profondi.
+    instructions:
+      - "Siediti o stai in piedi con la schiena dritta e le spalle rilassate"
+      - "Guarda dritto davanti a te con il mento a livello"
+      - "Gira lentamente la testa verso destra, come per guardare sopra la spalla"
+      - "Ruota solo fin dove è confortevole, senza dolore"
+      - "Mantieni per 5 secondi, sentendo un leggero stiramento sul lato sinistro del collo"
+      - "Torna lentamente al centro"
+      - "Ripeti verso sinistra"
+      - "Respira normalmente durante il movimento"
+    common_mistakes:
+      - "Ruotare le spalle insieme alla testa - mantieni le spalle rivolte in avanti"
+      - "Inclinare la testa mentre ruoti - mantieni il mento a livello"
+      - "Muoversi troppo velocemente o forzare - usa movimenti lenti e controllati"
+      - "Trattenere il respiro - mantieni una respirazione rilassata"
+
+source: ai_assisted
+owner_id: shared
