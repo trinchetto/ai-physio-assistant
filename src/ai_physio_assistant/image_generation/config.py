@@ -24,6 +24,23 @@ Place LoRA files in: models/loras/
 from dataclasses import dataclass, field
 from pathlib import Path
 
+import torch
+
+
+def get_default_device() -> str:
+    """Auto-detect the best available device for inference.
+
+    Returns:
+        "cuda" if CUDA-enabled PyTorch is available
+        "mps" if running on Apple Silicon (macOS)
+        "cpu" as fallback
+    """
+    if torch.cuda.is_available():
+        return "cuda"
+    if hasattr(torch.backends, "mps") and torch.backends.mps.is_available():
+        return "mps"
+    return "cpu"
+
 
 @dataclass
 class ImageGenerationConfig:
@@ -59,7 +76,7 @@ class ImageGenerationConfig:
     output_format: str = "png"
 
     # Hardware settings
-    device: str = "cuda"  # "cuda", "mps" (Mac), or "cpu"
+    device: str = field(default_factory=get_default_device)  # Auto-detected
     dtype: str = "float16"  # "float16" for GPU, "float32" for CPU
     enable_attention_slicing: bool = True  # Reduce VRAM usage
     enable_vae_tiling: bool = True  # For large images with limited VRAM

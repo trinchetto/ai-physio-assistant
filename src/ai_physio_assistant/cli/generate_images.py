@@ -20,6 +20,7 @@ from pathlib import Path
 from ai_physio_assistant.image_generation import (
     PRESETS,
     ImageGenerationConfig,
+    get_default_device,
     get_prompts_for_exercise,
 )
 from ai_physio_assistant.image_generation.prompts import get_all_exercise_ids
@@ -187,8 +188,8 @@ def main() -> int:
         "--device",
         type=str,
         choices=["cuda", "mps", "cpu"],
-        default="cuda",
-        help="Device to use (default: cuda)",
+        default=get_default_device(),
+        help="Device to use (default: auto-detected)",
     )
 
     # Output arguments

@@ -7,7 +7,7 @@ exercise illustrations using SDXL with medical-style prompting.
 
 from typing import TYPE_CHECKING
 
-from .config import PRESETS, ImageGenerationConfig
+from .config import PRESETS, ImageGenerationConfig, get_default_device
 from .prompts import BodyPosition, ExercisePrompt, ViewAngle, get_prompts_for_exercise
 
 # Lazy import to avoid torch dependency when not needed
@@ -21,6 +21,7 @@ __all__ = [
     "ViewAngle",
     "BodyPosition",
     "get_prompts_for_exercise",
+    "get_default_device",
     "ImageGenerationService",
     "generate_all_seed_exercises",
 ]
