@@ -16,7 +16,7 @@ from pathlib import Path
 src_path = Path(__file__).parent.parent / "src"
 sys.path.insert(0, str(src_path))
 
-from ai_physio_assistant.cli.generate_images import main
+from ai_physio_assistant.cli.generate_images import main  # noqa: E402
 
 if __name__ == "__main__":
     sys.exit(main())

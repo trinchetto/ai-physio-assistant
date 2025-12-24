@@ -63,7 +63,9 @@ ai-physio-assistant/
 ### Prerequisites
 
 - Python 3.10+
-- For image generation: NVIDIA GPU (8GB+ VRAM) or Apple Silicon Mac
+- For image generation:
+  - **Recommended**: NVIDIA GPU (8GB+ VRAM) or Apple Silicon Mac
+  - **CPU fallback**: Available for development/testing (much slower, lower quality)
 
 ### Installation
 
@@ -72,76 +74,75 @@ ai-physio-assistant/
 git clone <repository-url>
 cd ai-physio-assistant
 
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # or `venv\Scripts\activate` on Windows
-
-# Install the package (core dependencies only)
-pip install -e .
-
-# Or install with image generation support
-pip install -e ".[image-gen]"
-
-# Or install with all optional dependencies
-pip install -e ".[all]"
+# Install dependencies with Poetry
+poetry install
 
 # For development (includes testing and linting tools)
-pip install -e ".[dev]"
+poetry install --with dev
 ```
 
-#### PyTorch Installation Note
+That's it! Poetry will install all dependencies including PyTorch (CPU version).
 
-For image generation, you may need to install PyTorch separately for your hardware:
+#### GPU Support
+
+The default installation uses PyTorch CPU. For GPU acceleration, install the appropriate PyTorch version after Poetry:
 
 ```bash
 # NVIDIA GPU (CUDA 12.1):
-pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+poetry run pip install torch --index-url https://download.pytorch.org/whl/cu121
 
-# Apple Silicon (MPS):
-pip install torch torchvision
-
-# CPU-only (slow, not recommended):
-pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+# Apple Silicon (MPS) - already works with CPU version
+# No additional installation needed
 ```
+
+**Note**: Even with CPU-only PyTorch, the SD 1.5 fallback makes development and testing practical!
 
 ### Generating Exercise Images
 
 After installation, you can use the CLI:
 
 ```bash
-# Using the installed command
+# Using Poetry
+poetry run physio-generate-images --list
+poetry run physio-generate-images --exercise chin_tuck
+poetry run physio-generate-images --all
+
+# Or activate the virtual environment first
+poetry shell
 physio-generate-images --list
-physio-generate-images --exercise chin_tuck
-physio-generate-images --all
-
-# Or using Python module syntax
-python -m ai_physio_assistant.cli.generate_images --list
-
-# Or using the convenience script (for development)
-python scripts/generate_images.py --list
 ```
 
 #### CLI Options
 
 ```bash
 # List available exercises
-physio-generate-images --list
+poetry run physio-generate-images --list
 
 # Generate images for a specific exercise
-physio-generate-images --exercise chin_tuck
+poetry run physio-generate-images --exercise chin_tuck
 
 # Generate all seed exercises
-physio-generate-images --all
+poetry run physio-generate-images --all
 
 # Preview prompts without generating (no GPU needed)
-physio-generate-images --all --dry-run
+poetry run physio-generate-images --all --dry-run
 
 # Use quality preset (slower, better results)
-physio-generate-images --all --preset quality
+poetry run physio-generate-images --all --preset quality
 
 # Use low VRAM preset (for 8GB GPUs)
-physio-generate-images --all --preset low_vram
+poetry run physio-generate-images --all --preset low_vram
+
+# Use CPU preset (faster on CPU, automatically uses SD 1.5)
+poetry run physio-generate-images --all --preset cpu
+
+# Or manually specify device (automatically switches to SD 1.5 on CPU)
+poetry run physio-generate-images --exercise chin_tuck --device cpu
+poetry run physio-generate-images --exercise chin_tuck --device mps  # For Apple Silicon
+poetry run physio-generate-images --exercise chin_tuck --device cuda # For NVIDIA GPUs
 ```
+
+**Note**: When using CPU, the system automatically switches to Stable Diffusion 1.5 (instead of SDXL) for ~4x faster generation. Images will be 512x512 instead of 1024x1024, with fewer inference steps. This is perfect for development and testing!
 
 See [content/IMAGE_GENERATION_GUIDE.md](content/IMAGE_GENERATION_GUIDE.md) for detailed options.
 
@@ -169,16 +170,22 @@ Key technologies:
 
 ```bash
 # Install with development dependencies
-pip install -e ".[dev]"
+poetry install --with dev
 
 # Run tests
-pytest
+poetry run pytest
 
 # Run linter
-ruff check src/
+poetry run ruff check src/
+
+# Run formatter
+poetry run ruff format src/
 
 # Run type checker
-mypy src/
+poetry run mypy src/
+
+# Run pre-commit hooks
+poetry run pre-commit run --all-files
 ```
 
 ## Documentation
