@@ -1,0 +1,95 @@
+# Sleeper Stretch
+# Stretches the posterior shoulder capsule in side-lying position
+
+id: sleeper_stretch
+
+name: "Sleeper Stretch"
+
+primary_language: en
+
+description: >
+  A side-lying stretch specifically targeting the posterior shoulder capsule
+  to improve internal rotation. Named because it's performed in a sleeping
+  position, this exercise is particularly beneficial for throwing athletes
+  and those with glenohumeral internal rotation deficit (GIRD).
+
+instructions:
+  - "Lie on your right side with your right arm straight out in front of you"
+  - "Bend your right elbow to 90 degrees so your forearm points toward the ceiling"
+  - "Make sure your shoulder is stacked directly on the ground (not rolling back)"
+  - "Use your left hand to gently push your right forearm toward the floor"
+  - "Keep your elbow bent at 90 degrees throughout"
+  - "You should feel a stretch in the back of your right shoulder"
+  - "Hold for 20-30 seconds, breathing normally"
+  - "Release slowly and repeat on the other side"
+
+common_mistakes:
+  - "Rolling backward onto the shoulder blade - keep shoulder stacked vertically"
+  - "Pushing too hard causing pain - use gentle, sustained pressure"
+  - "Allowing the elbow to slide up or down - maintain 90-degree angle"
+  - "Performing when posterior shoulder pain is acute - avoid during flare-ups"
+
+body_regions:
+  - shoulder
+
+conditions:
+  - glenohumeral_internal_rotation_deficit
+  - posterior_shoulder_tightness
+  - throwing_athlete_maintenance
+  - shoulder_impingement
+
+therapeutic_goals:
+  - improve_mobility
+  - increase_range_of_motion
+  - prevent_injury
+  - reduce_stiffness
+
+contraindications:
+  - posterior_instability
+  - labral_tear_acute
+  - shoulder_dislocation_recent
+  - acute_posterior_shoulder_pain
+
+difficulty: beginner
+
+equipment:
+  - none
+
+default_sets: 2
+default_reps: "3 each side"
+default_hold: "20-30 seconds"
+default_rest: "15 seconds"
+
+tags:
+  - stretching
+  - home_exercise
+  - no_equipment
+  - sport_specific
+
+images: []
+
+translations:
+  it:
+    name: "Stretching del Dormiente"
+    description: >
+      Uno stretching in posizione laterale mirato specificamente alla capsula
+      posteriore della spalla per migliorare la rotazione interna. Chiamato così
+      perché si esegue in posizione di riposo, è particolarmente benefico per
+      atleti di lancio.
+    instructions:
+      - "Sdraiati sul lato destro con il braccio destro steso davanti a te"
+      - "Piega il gomito destro a 90 gradi così l'avambraccio punta verso il soffitto"
+      - "Assicurati che la spalla sia direttamente appoggiata a terra (non ruotare indietro)"
+      - "Usa la mano sinistra per spingere delicatamente l'avambraccio destro verso il pavimento"
+      - "Mantieni il gomito piegato a 90 gradi per tutto il tempo"
+      - "Dovresti sentire lo stiramento nella parte posteriore della spalla destra"
+      - "Mantieni per 20-30 secondi, respirando normalmente"
+      - "Rilascia lentamente e ripeti dall'altro lato"
+    common_mistakes:
+      - "Ruotare indietro sulla scapola - mantieni la spalla verticale"
+      - "Spingere troppo forte causando dolore - usa una pressione delicata"
+      - "Lasciare che il gomito scivoli - mantieni l'angolo di 90 gradi"
+      - "Eseguire durante dolore acuto - evita durante le riacutizzazioni"
+
+source: ai_assisted
+owner_id: shared

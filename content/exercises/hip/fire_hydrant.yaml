@@ -1,0 +1,98 @@
+# Fire Hydrant / Quadruped Hip Abduction
+# Hip abductor strengthening in quadruped position
+
+id: fire_hydrant
+
+name: "Fire Hydrant"
+
+primary_language: en
+
+description: >
+  A quadruped exercise that strengthens the hip abductors (gluteus medius and
+  minimus) through hip abduction with the knee bent. Named for its resemblance
+  to a dog at a fire hydrant, this exercise builds hip stability and is
+  effective for runners and those with lateral hip weakness.
+
+instructions:
+  - "Start on your hands and knees in a tabletop position"
+  - "Place hands directly under shoulders, knees directly under hips"
+  - "Keep your spine in a neutral position and core engaged"
+  - "Keeping your knee bent at 90 degrees, lift your right leg out to the side"
+  - "Raise your leg until your thigh is parallel to the floor or as high as comfortable"
+  - "Keep your hips level - do not let the body shift to the opposite side"
+  - "Hold at the top for 1-2 seconds"
+  - "Slowly lower your leg back to the starting position"
+  - "Complete all repetitions on one side before switching"
+
+common_mistakes:
+  - "Shifting body weight to the opposite side - maintain centered position"
+  - "Rotating the hips as you lift - keep hips facing the floor"
+  - "Arching or rounding the lower back - maintain neutral spine"
+  - "Using momentum - lift with control using the hip muscles"
+
+body_regions:
+  - hip
+
+conditions:
+  - hip_weakness
+  - gluteal_weakness
+  - hip_instability
+  - lower_back_pain
+  - itb_syndrome
+
+therapeutic_goals:
+  - increase_strength
+  - improve_stability
+  - improve_hip_control
+  - prevent_injury
+
+contraindications:
+  - wrist_injury
+  - knee_injury_cannot_kneel
+  - acute_hip_pain
+
+difficulty: beginner
+
+equipment:
+  - none
+  - resistance_band_optional
+
+default_sets: 3
+default_reps: "12-15 each side"
+default_hold: "1-2 seconds at top"
+default_rest: "30 seconds"
+
+tags:
+  - strengthening
+  - glutes
+  - home_exercise
+  - no_equipment
+
+images: []
+
+translations:
+  it:
+    name: "Idrante"
+    description: >
+      Un esercizio in quadrupedia che rafforza gli abduttori dell'anca (gluteo
+      medio e minimo) attraverso l'abduzione con ginocchio piegato. Chiamato così
+      per la somiglianza con un cane a un idrante, costruisce stabilità dell'anca
+      ed è efficace per i corridori.
+    instructions:
+      - "Inizia a quattro zampe in posizione di tavolo"
+      - "Posiziona le mani sotto le spalle, le ginocchia sotto i fianchi"
+      - "Mantieni la colonna in posizione neutra e il core attivo"
+      - "Mantenendo il ginocchio piegato a 90 gradi, solleva la gamba destra di lato"
+      - "Solleva la gamba finché la coscia è parallela al pavimento"
+      - "Mantieni i fianchi a livello - non spostare il corpo verso il lato opposto"
+      - "Mantieni in alto per 1-2 secondi"
+      - "Abbassa lentamente la gamba alla posizione iniziale"
+      - "Completa tutte le ripetizioni su un lato prima di cambiare"
+    common_mistakes:
+      - "Spostare il peso sul lato opposto - mantieni la posizione centrata"
+      - "Ruotare i fianchi mentre sollevi - mantienili rivolti verso il pavimento"
+      - "Inarcare o arrotondare la schiena - mantieni la colonna neutra"
+      - "Usare lo slancio - solleva con controllo usando i muscoli dell'anca"
+
+source: ai_assisted
+owner_id: shared

@@ -1,0 +1,101 @@
+# Abdominal Bracing
+# Core activation and stabilization technique
+
+id: abdominal_bracing
+
+name: "Abdominal Bracing"
+
+primary_language: en
+
+description: >
+  A foundational core activation technique that teaches how to properly engage
+  the deep core muscles for spinal protection. Abdominal bracing creates a
+  360-degree cylinder of stiffness around the spine and is the foundation
+  for all safe lifting and movement. This technique should be mastered
+  before progressing to more challenging core exercises.
+
+instructions:
+  - "Lie on your back with knees bent and feet flat on the floor"
+  - "Find your neutral spine position - small natural curve in lower back"
+  - "Place your fingertips just inside your hip bones to feel the muscles"
+  - "Take a breath in, then as you exhale, gently brace your abdominals"
+  - "Imagine tightening a wide belt around your entire midsection"
+  - "Your core should feel firm like you're preparing for a punch to the stomach"
+  - "Do not suck your belly button in - this is hollowing, not bracing"
+  - "Do not hold your breath - continue breathing while maintaining the brace"
+  - "Hold the brace for 10 seconds while breathing normally"
+  - "Relax and repeat"
+
+common_mistakes:
+  - "Sucking the belly in (hollowing) instead of bracing - push out slightly as you brace"
+  - "Holding the breath - the brace should be maintained while breathing"
+  - "Only tightening the front - engage all 360 degrees including sides and back"
+  - "Over-bracing and creating too much tension - start with about 20-30% effort"
+  - "Losing the brace when adding movement - practice maintaining brace during limb movements"
+
+body_regions:
+  - core
+
+conditions:
+  - lower_back_pain
+  - core_weakness
+  - spinal_instability
+  - post_pregnancy
+  - pre_lifting_training
+
+therapeutic_goals:
+  - improve_stability
+  - increase_awareness
+  - muscle_activation
+  - injury_prevention
+
+contraindications:
+  - recent_abdominal_surgery
+  - abdominal_hernia
+
+difficulty: beginner
+
+equipment:
+  - none
+
+default_sets: 3
+default_reps: "10"
+default_hold: "10 seconds"
+default_rest: "30 seconds"
+
+tags:
+  - core
+  - activation
+  - technique
+  - home_exercise
+  - no_equipment
+
+images: []
+
+translations:
+  it:
+    name: "Contrazione Addominale"
+    description: >
+      Una tecnica fondamentale di attivazione del core che insegna come attivare
+      correttamente i muscoli profondi del core per la protezione spinale. La
+      contrazione addominale crea un cilindro di rigidità a 360 gradi attorno
+      alla colonna ed è la base per tutti i sollevamenti sicuri.
+    instructions:
+      - "Sdraiati sulla schiena con le ginocchia piegate e i piedi a terra"
+      - "Trova la posizione neutra della colonna - piccola curva naturale nella parte bassa"
+      - "Posiziona le dita appena dentro le ossa del bacino per sentire i muscoli"
+      - "Inspira, poi mentre espiri, contrai delicatamente gli addominali"
+      - "Immagina di stringere una cintura larga attorno a tutta la vita"
+      - "Il core dovrebbe sentirsi saldo come se ti preparassi a un pugno allo stomaco"
+      - "Non risucchiare l'ombelico - questo è svuotare, non contrarre"
+      - "Non trattenere il respiro - continua a respirare mantenendo la contrazione"
+      - "Mantieni la contrazione per 10 secondi respirando normalmente"
+      - "Rilassa e ripeti"
+    common_mistakes:
+      - "Risucchiare la pancia invece di contrarre - spingi leggermente fuori mentre contrai"
+      - "Trattenere il respiro - la contrazione va mantenuta respirando"
+      - "Contrarre solo la parte anteriore - attiva tutti i 360 gradi inclusi fianchi e schiena"
+      - "Contrarre troppo creando troppa tensione - inizia con circa 20-30% dello sforzo"
+
+source: ai_assisted
+owner_id: shared

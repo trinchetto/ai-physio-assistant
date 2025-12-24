@@ -1,0 +1,94 @@
+# Wrist Extensor Stretch
+# Stretches the forearm extensor muscles
+
+id: wrist_extensor_stretch
+
+name: "Wrist Extensor Stretch"
+
+primary_language: en
+
+description: >
+  A stretch targeting the wrist and finger extensor muscles on the outer
+  forearm. These muscles are commonly affected in tennis elbow (lateral
+  epicondylitis) and become tight from keyboard and mouse use. Essential
+  for office workers and racquet sport athletes.
+
+instructions:
+  - "Extend your right arm straight out in front of you at shoulder height"
+  - "Turn your palm to face downward (pronated position)"
+  - "Make a gentle fist with your right hand"
+  - "Use your left hand to gently push the fist down, flexing the wrist"
+  - "Keep your right elbow straight throughout the stretch"
+  - "You should feel a stretch along the outer/top of your forearm"
+  - "Hold for 20-30 seconds"
+  - "Release and repeat on the other arm"
+
+common_mistakes:
+  - "Bending the elbow - keep it straight for maximum stretch"
+  - "Not making a fist - the fist position increases the stretch"
+  - "Pushing too hard and causing pain - use gentle pressure"
+  - "Rushing through the stretch - hold for full duration"
+
+body_regions:
+  - wrist_hand
+
+conditions:
+  - tennis_elbow
+  - lateral_epicondylitis
+  - forearm_tightness
+  - wrist_pain
+  - repetitive_strain_injury
+
+therapeutic_goals:
+  - reduce_stiffness
+  - improve_mobility
+  - reduce_pain
+  - prevent_injury
+
+contraindications:
+  - acute_wrist_fracture
+  - acute_lateral_epicondylitis
+  - acute_tendon_injury
+
+difficulty: beginner
+
+equipment:
+  - none
+
+default_sets: 2
+default_reps: "2-3 each arm"
+default_hold: "20-30 seconds"
+default_rest: "15 seconds"
+
+tags:
+  - stretching
+  - office_exercise
+  - desk_worker
+  - tennis_elbow
+  - no_equipment
+
+images: []
+
+translations:
+  it:
+    name: "Stretching degli Estensori del Polso"
+    description: >
+      Uno stretching mirato ai muscoli estensori del polso e delle dita
+      nell'avambraccio esterno. Questi muscoli sono comunemente colpiti nel
+      gomito del tennista e si irrigidiscono dall'uso di tastiera e mouse.
+    instructions:
+      - "Estendi il braccio destro dritto davanti a te all'altezza della spalla"
+      - "Gira il palmo verso il basso (posizione pronata)"
+      - "Fai un pugno delicato con la mano destra"
+      - "Usa la mano sinistra per spingere delicatamente il pugno verso il basso"
+      - "Mantieni il gomito destro dritto durante lo stretching"
+      - "Dovresti sentire lo stiramento lungo l'esterno dell'avambraccio"
+      - "Mantieni per 20-30 secondi"
+      - "Rilascia e ripeti sull'altro braccio"
+    common_mistakes:
+      - "Piegare il gomito - mantienilo dritto per il massimo stretching"
+      - "Non fare il pugno - la posizione del pugno aumenta lo stretching"
+      - "Spingere troppo forte causando dolore - usa una pressione delicata"
+
+source: ai_assisted
+owner_id: shared

@@ -1,0 +1,96 @@
+# Thoracic Extension Over Foam Roller
+# Improves thoracic spine extension mobility
+
+id: thoracic_extension
+
+name: "Thoracic Extension"
+
+primary_language: en
+
+description: >
+  A mobility exercise that improves extension in the thoracic spine (upper and
+  mid back). The thoracic spine often becomes stiff and rounded from prolonged
+  sitting. Restoring extension mobility helps with posture, shoulder function,
+  and can reduce compensatory strain on the neck and lower back.
+
+instructions:
+  - "Place a foam roller horizontally on the floor"
+  - "Sit on the floor and position the foam roller under your upper back, at shoulder blade level"
+  - "Support your head with your hands interlaced behind your neck"
+  - "Keep your buttocks on the floor and knees bent with feet flat"
+  - "Slowly extend backward over the roller, letting your upper back arch"
+  - "Hold for 2-3 seconds at the end range"
+  - "Return to the starting position using your core muscles"
+  - "Move the roller up or down slightly and repeat to target different thoracic segments"
+
+common_mistakes:
+  - "Extending from the lower back instead of thoracic spine - keep buttocks down"
+  - "Pulling on the neck with the hands - hands only support, not pull"
+  - "Holding the breath - exhale as you extend backward"
+  - "Moving the roller too low onto the lumbar spine - keep it in the upper/mid back region"
+
+body_regions:
+  - upper_back
+
+conditions:
+  - thoracic_kyphosis
+  - upper_back_stiffness
+  - postural_dysfunction
+  - shoulder_impingement
+  - neck_pain
+
+therapeutic_goals:
+  - improve_mobility
+  - improve_posture
+  - reduce_stiffness
+  - increase_range_of_motion
+
+contraindications:
+  - osteoporosis
+  - thoracic_disc_herniation
+  - spinal_fracture
+  - ankylosing_spondylitis
+
+difficulty: beginner
+
+equipment:
+  - foam_roller
+
+default_sets: 2
+default_reps: "10-15"
+default_hold: "2-3 seconds"
+default_rest: "30 seconds"
+
+tags:
+  - mobility
+  - posture
+  - foam_roller
+  - home_exercise
+
+images: []
+
+translations:
+  it:
+    name: "Estensione Toracica"
+    description: >
+      Un esercizio di mobilità che migliora l'estensione nella colonna toracica
+      (parte alta e media della schiena). La colonna toracica spesso diventa
+      rigida dalla posizione seduta prolungata. Ripristinare la mobilità in
+      estensione aiuta con la postura e la funzione della spalla.
+    instructions:
+      - "Posiziona un rullo di schiuma orizzontalmente sul pavimento"
+      - "Siediti e posiziona il rullo sotto la parte alta della schiena, a livello delle scapole"
+      - "Sostieni la testa con le mani intrecciate dietro il collo"
+      - "Mantieni i glutei sul pavimento e le ginocchia piegate con i piedi a terra"
+      - "Estenditi lentamente indietro sul rullo, lasciando che la schiena si inarchhi"
+      - "Mantieni per 2-3 secondi alla fine del movimento"
+      - "Torna alla posizione iniziale usando i muscoli del core"
+      - "Sposta il rullo leggermente su o giù e ripeti per diversi segmenti"
+    common_mistakes:
+      - "Estendere dalla parte bassa della schiena - mantieni i glutei a terra"
+      - "Tirare il collo con le mani - le mani solo supportano, non tirano"
+      - "Trattenere il respiro - espira mentre ti estendi"
+      - "Spostare il rullo troppo in basso sulla zona lombare - mantienilo nella parte alta/media"
+
+source: ai_assisted
+owner_id: shared

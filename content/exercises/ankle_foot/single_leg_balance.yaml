@@ -1,0 +1,104 @@
+# Single Leg Balance
+# Balance and proprioception exercise
+
+id: single_leg_balance
+
+name: "Single Leg Balance"
+
+primary_language: en
+
+description: >
+  A fundamental balance exercise that challenges proprioception and
+  strengthens the ankle, knee, and hip stabilizers. Single leg balance
+  is essential for fall prevention, athletic performance, and rehabilitation
+  from lower extremity injuries. Can be progressed by closing eyes or
+  standing on an unstable surface.
+
+instructions:
+  - "Stand near a wall or sturdy surface for safety (don't hold unless needed)"
+  - "Stand tall with good posture, feet hip-width apart"
+  - "Shift your weight onto your right leg"
+  - "Slowly lift your left foot off the floor"
+  - "Hold your left knee at about hip height or let it hang naturally"
+  - "Focus your eyes on a fixed point at eye level"
+  - "Engage your core and keep your standing hip level"
+  - "Hold the balance for the prescribed time"
+  - "If you wobble, that's normal - try to correct without putting foot down"
+  - "Lower your foot with control and repeat on the other side"
+
+common_mistakes:
+  - "Looking down at the floor - look straight ahead at a fixed point"
+  - "Locking the standing knee - keep a slight bend"
+  - "Letting the hip drop on the lifted side - keep pelvis level"
+  - "Holding the breath - breathe normally throughout"
+  - "Gripping with the toes - try to keep foot relaxed"
+
+body_regions:
+  - ankle_foot
+  - knee
+  - hip
+
+conditions:
+  - balance_impairment
+  - ankle_instability
+  - post_ankle_sprain
+  - fall_prevention
+  - proprioception_deficit
+
+therapeutic_goals:
+  - improve_balance
+  - improve_proprioception
+  - improve_stability
+  - prevent_falls
+
+contraindications:
+  - severe_vertigo
+  - severe_balance_impairment_without_support
+  - acute_lower_extremity_injury
+
+difficulty: beginner
+
+equipment:
+  - none
+
+default_sets: 3
+default_reps: "1 each leg"
+default_hold: "30-60 seconds"
+default_rest: "15 seconds"
+
+tags:
+  - balance
+  - proprioception
+  - home_exercise
+  - no_equipment
+  - fall_prevention
+
+images: []
+
+translations:
+  it:
+    name: "Equilibrio su Una Gamba"
+    description: >
+      Un esercizio di equilibrio fondamentale che sfida la propriocezione e
+      rinforza gli stabilizzatori di caviglia, ginocchio e anca. Essenziale
+      per la prevenzione delle cadute, le prestazioni atletiche e la
+      riabilitazione da infortuni agli arti inferiori.
+    instructions:
+      - "Stai vicino a un muro o superficie stabile per sicurezza"
+      - "Stai eretto con buona postura, piedi alla larghezza dei fianchi"
+      - "Sposta il peso sulla gamba destra"
+      - "Solleva lentamente il piede sinistro dal pavimento"
+      - "Mantieni il ginocchio sinistro all'altezza dell'anca o lascialo pendere"
+      - "Fissa gli occhi su un punto fisso all'altezza degli occhi"
+      - "Attiva il core e mantieni l'anca di appoggio a livello"
+      - "Mantieni l'equilibrio per il tempo prescritto"
+      - "Se oscilli, è normale - prova a correggere senza appoggiare il piede"
+      - "Abbassa il piede con controllo e ripeti dall'altro lato"
+    common_mistakes:
+      - "Guardare il pavimento - guarda dritto davanti a un punto fisso"
+      - "Bloccare il ginocchio di appoggio - mantieni una leggera flessione"
+      - "Lasciare cadere l'anca sul lato sollevato - mantieni il bacino a livello"
+      - "Trattenere il respiro - respira normalmente"
+
+source: ai_assisted
+owner_id: shared

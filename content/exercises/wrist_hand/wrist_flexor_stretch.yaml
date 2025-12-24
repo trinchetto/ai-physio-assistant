@@ -1,0 +1,91 @@
+# Wrist Flexor Stretch
+# Stretches the forearm flexor muscles
+
+id: wrist_flexor_stretch
+
+name: "Wrist Flexor Stretch"
+
+primary_language: en
+
+description: >
+  A stretch targeting the wrist and finger flexor muscles on the inner forearm.
+  These muscles commonly become tight from repetitive gripping, typing, and
+  mouse use. Regular stretching helps prevent and treat conditions like
+  carpal tunnel syndrome and golfer's elbow.
+
+instructions:
+  - "Extend your right arm straight out in front of you at shoulder height"
+  - "Turn your palm to face upward (supinated position)"
+  - "Use your left hand to gently pull your right fingers down toward the floor"
+  - "Keep your right elbow straight throughout the stretch"
+  - "You should feel a stretch along the inner forearm"
+  - "Hold for 20-30 seconds"
+  - "Release and repeat on the other arm"
+
+common_mistakes:
+  - "Bending the elbow during the stretch - keep it straight for full stretch"
+  - "Pulling too aggressively - use gentle, sustained pressure"
+  - "Only stretching the wrist without the fingers - include fingers for complete stretch"
+  - "Holding the breath - breathe normally throughout"
+
+body_regions:
+  - wrist_hand
+
+conditions:
+  - carpal_tunnel_syndrome
+  - golfers_elbow
+  - forearm_tightness
+  - repetitive_strain_injury
+  - wrist_pain
+
+therapeutic_goals:
+  - reduce_stiffness
+  - improve_mobility
+  - reduce_pain
+  - prevent_injury
+
+contraindications:
+  - acute_wrist_fracture
+  - acute_tendon_injury
+  - severe_carpal_tunnel
+
+difficulty: beginner
+
+equipment:
+  - none
+
+default_sets: 2
+default_reps: "2-3 each arm"
+default_hold: "20-30 seconds"
+default_rest: "15 seconds"
+
+tags:
+  - stretching
+  - office_exercise
+  - desk_worker
+  - no_equipment
+
+images: []
+
+translations:
+  it:
+    name: "Stretching dei Flessori del Polso"
+    description: >
+      Uno stretching mirato ai muscoli flessori del polso e delle dita
+      nell'avambraccio interno. Questi muscoli si irrigidiscono comunemente
+      da presa ripetitiva, digitazione e uso del mouse.
+    instructions:
+      - "Estendi il braccio destro dritto davanti a te all'altezza della spalla"
+      - "Gira il palmo verso l'alto (posizione supinata)"
+      - "Usa la mano sinistra per tirare delicatamente le dita destre verso il basso"
+      - "Mantieni il gomito destro dritto durante lo stretching"
+      - "Dovresti sentire lo stiramento lungo l'avambraccio interno"
+      - "Mantieni per 20-30 secondi"
+      - "Rilascia e ripeti sull'altro braccio"
+    common_mistakes:
+      - "Piegare il gomito durante lo stretching - mantienilo dritto"
+      - "Tirare troppo aggressivamente - usa una pressione delicata e sostenuta"
+      - "Stirare solo il polso senza le dita - includi le dita per uno stretching completo"
+
+source: ai_assisted
+owner_id: shared

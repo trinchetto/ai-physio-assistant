@@ -1,0 +1,94 @@
+# Seated Hip Internal Rotation Stretch
+# Targets internal rotation of the hip joint
+
+id: seated_hip_internal_rotation
+
+name: "Seated Hip Internal Rotation Stretch"
+
+primary_language: en
+
+description: >
+  A seated stretch targeting hip internal rotation, which is often limited in
+  those with hip stiffness or anterior hip pain. Adequate internal rotation is
+  essential for walking, running, and squatting. This stretch is particularly
+  important for athletes and those recovering from hip injuries.
+
+instructions:
+  - "Sit on the floor with both knees bent and feet flat, wider than hip-width"
+  - "Sit up tall with your spine straight"
+  - "Let your right knee drop inward toward the floor"
+  - "Keep your right foot in place as your knee rotates in"
+  - "You should feel a stretch in the outer hip and possibly the groin"
+  - "Hold for 20-30 seconds"
+  - "Return to starting position and repeat on the other side"
+  - "You can also do both knees at once, letting them drop toward each other"
+
+common_mistakes:
+  - "Rounding the back to force more rotation - keep spine upright"
+  - "Lifting the opposite hip off the floor - keep both sit bones grounded"
+  - "Forcing the movement beyond your available range - stretch to mild tension only"
+  - "Holding the breath - maintain relaxed breathing"
+
+body_regions:
+  - hip
+
+conditions:
+  - hip_stiffness
+  - limited_hip_internal_rotation
+  - femoroacetabular_impingement
+  - hip_osteoarthritis
+  - groin_tightness
+
+therapeutic_goals:
+  - improve_mobility
+  - increase_range_of_motion
+  - reduce_stiffness
+  - improve_hip_function
+
+contraindications:
+  - hip_replacement_recent
+  - hip_labral_tear_acute
+  - severe_hip_impingement
+
+difficulty: beginner
+
+equipment:
+  - none
+
+default_sets: 2
+default_reps: "2-3 each side"
+default_hold: "20-30 seconds"
+default_rest: "15 seconds"
+
+tags:
+  - stretching
+  - mobility
+  - home_exercise
+  - no_equipment
+
+images: []
+
+translations:
+  it:
+    name: "Stretching Rotazione Interna dell'Anca da Seduti"
+    description: >
+      Uno stretching da seduti mirato alla rotazione interna dell'anca, spesso
+      limitata in chi ha rigidità dell'anca o dolore anteriore. Una rotazione
+      interna adeguata è essenziale per camminare, correre e fare squat.
+    instructions:
+      - "Siediti sul pavimento con entrambe le ginocchia piegate e i piedi a terra, più larghi dei fianchi"
+      - "Siediti eretto con la colonna dritta"
+      - "Lascia cadere il ginocchio destro verso l'interno, verso il pavimento"
+      - "Mantieni il piede destro in posizione mentre il ginocchio ruota verso l'interno"
+      - "Dovresti sentire uno stiramento nell'anca esterna e possibilmente nell'inguine"
+      - "Mantieni per 20-30 secondi"
+      - "Torna alla posizione iniziale e ripeti dall'altro lato"
+      - "Puoi anche fare entrambe le ginocchia insieme, lasciandole cadere l'una verso l'altra"
+    common_mistakes:
+      - "Arrotondare la schiena per forzare più rotazione - mantieni la colonna eretta"
+      - "Sollevare l'anca opposta - mantieni entrambe le ossa ischiatiche a terra"
+      - "Forzare il movimento oltre la tua ampiezza - stira solo fino a leggera tensione"
+      - "Trattenere il respiro - mantieni una respirazione rilassata"
+
+source: ai_assisted
+owner_id: shared

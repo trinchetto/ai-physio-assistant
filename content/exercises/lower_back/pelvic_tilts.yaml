@@ -1,0 +1,98 @@
+# Pelvic Tilts
+# Gentle lower back mobility and core activation exercise
+
+id: pelvic_tilts
+
+name: "Pelvic Tilts"
+
+primary_language: en
+
+description: >
+  A gentle exercise that mobilizes the lower back and pelvis while activating
+  the deep core muscles. Pelvic tilts teach awareness of spinal position and
+  are often the first exercise prescribed for acute lower back pain. They help
+  reduce stiffness and can provide relief during flare-ups.
+
+instructions:
+  - "Lie on your back with knees bent and feet flat on the floor, hip-width apart"
+  - "Place your arms at your sides, palms down"
+  - "Start in a neutral spine position with a small natural curve in your lower back"
+  - "Slowly flatten your lower back against the floor by tilting your pelvis backward"
+  - "Imagine pulling your belly button toward your spine"
+  - "Hold the flattened position for 3-5 seconds"
+  - "Slowly release and return to the neutral position"
+  - "You can also practice tilting in the opposite direction (anterior tilt) for full mobility"
+  - "Breathe normally throughout the exercise"
+
+common_mistakes:
+  - "Using the legs to create the movement - the motion should come from the pelvis and core"
+  - "Holding the breath - maintain relaxed breathing"
+  - "Moving too quickly - use slow, controlled movements"
+  - "Pushing through pain - this should be a gentle, pain-free exercise"
+
+body_regions:
+  - lower_back
+  - core
+
+conditions:
+  - lower_back_pain
+  - lower_back_stiffness
+  - postpartum_recovery
+  - disc_herniation
+  - sciatica
+
+therapeutic_goals:
+  - improve_mobility
+  - reduce_pain
+  - reduce_stiffness
+  - increase_awareness
+
+contraindications:
+  - acute_fracture
+  - severe_spinal_stenosis
+
+difficulty: beginner
+
+equipment:
+  - none
+
+default_sets: 2
+default_reps: "10-15"
+default_hold: "3-5 seconds"
+default_rest: "30 seconds"
+
+tags:
+  - mobility
+  - core
+  - gentle
+  - home_exercise
+  - no_equipment
+
+images: []
+
+translations:
+  it:
+    name: "Basculamenti del Bacino"
+    description: >
+      Un esercizio delicato che mobilizza la parte bassa della schiena e il bacino
+      attivando i muscoli profondi del core. I basculamenti del bacino insegnano
+      la consapevolezza della posizione spinale e sono spesso il primo esercizio
+      prescritto per il mal di schiena acuto.
+    instructions:
+      - "Sdraiati sulla schiena con le ginocchia piegate e i piedi a terra, larghezza fianchi"
+      - "Posiziona le braccia ai lati, palmi verso il basso"
+      - "Inizia in posizione neutra con una piccola curva naturale nella parte bassa"
+      - "Appiattisci lentamente la parte bassa della schiena contro il pavimento"
+      - "Immagina di tirare l'ombelico verso la colonna"
+      - "Mantieni la posizione appiattita per 3-5 secondi"
+      - "Rilascia lentamente e torna alla posizione neutra"
+      - "Puoi anche praticare il movimento nella direzione opposta per mobilità completa"
+      - "Respira normalmente durante l'esercizio"
+    common_mistakes:
+      - "Usare le gambe per creare il movimento - il movimento deve venire dal bacino e core"
+      - "Trattenere il respiro - mantieni una respirazione rilassata"
+      - "Muoversi troppo velocemente - usa movimenti lenti e controllati"
+      - "Continuare con dolore - questo dovrebbe essere un esercizio delicato e senza dolore"
+
+source: ai_assisted
+owner_id: shared

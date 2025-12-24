@@ -1,0 +1,96 @@
+# Lateral Neck Flexion / Side Neck Stretch
+# Stretches the lateral neck muscles including upper trapezius and scalenes
+
+id: lateral_neck_flexion
+
+name: "Lateral Neck Flexion"
+
+primary_language: en
+
+description: >
+  A gentle side-bending stretch for the neck that targets the upper trapezius,
+  levator scapulae, and scalene muscles. This exercise helps relieve tension
+  from desk work and improves lateral flexibility of the cervical spine.
+
+instructions:
+  - "Sit or stand tall with your back straight and shoulders relaxed"
+  - "Let your arms hang naturally at your sides"
+  - "Slowly tilt your head toward your right shoulder, bringing your ear toward the shoulder"
+  - "Keep your shoulders down and level - do not raise the shoulder to meet your ear"
+  - "Hold for 15-30 seconds, feeling a stretch on the left side of your neck"
+  - "Slowly return to center"
+  - "Repeat on the left side"
+  - "For a deeper stretch, gently place your hand on your head to add light pressure"
+
+common_mistakes:
+  - "Raising the shoulder toward the ear instead of dropping the ear to shoulder - keep shoulders down"
+  - "Rotating the head while tilting - keep your nose pointing forward"
+  - "Forcing the stretch by pulling hard on the head - use only gentle pressure"
+  - "Tensing up during the stretch - keep the opposite shoulder relaxed"
+
+body_regions:
+  - neck
+
+conditions:
+  - neck_pain
+  - neck_stiffness
+  - tension_headache
+  - upper_crossed_syndrome
+  - trapezius_pain
+
+therapeutic_goals:
+  - reduce_stiffness
+  - improve_mobility
+  - reduce_pain
+  - reduce_muscle_tension
+
+contraindications:
+  - cervical_instability
+  - acute_disc_herniation_cervical
+  - severe_cervical_stenosis
+  - acute_torticollis
+
+difficulty: beginner
+
+equipment:
+  - none
+
+default_sets: 2
+default_reps: "3-5 each side"
+default_hold: "15-30 seconds"
+default_rest: "15 seconds"
+
+tags:
+  - stretching
+  - office_exercise
+  - home_exercise
+  - no_equipment
+  - tension_relief
+
+images: []
+
+translations:
+  it:
+    name: "Flessione Laterale del Collo"
+    description: >
+      Uno stretching laterale delicato per il collo che lavora sul trapezio
+      superiore, elevatore della scapola e muscoli scaleni. Questo esercizio
+      aiuta ad alleviare la tensione da lavoro alla scrivania e migliora
+      la flessibilità laterale della colonna cervicale.
+    instructions:
+      - "Siediti o stai in piedi con la schiena dritta e le spalle rilassate"
+      - "Lascia le braccia naturalmente lungo i fianchi"
+      - "Inclina lentamente la testa verso la spalla destra, portando l'orecchio verso la spalla"
+      - "Mantieni le spalle basse e a livello - non sollevare la spalla verso l'orecchio"
+      - "Mantieni per 15-30 secondi, sentendo lo stiramento sul lato sinistro del collo"
+      - "Torna lentamente al centro"
+      - "Ripeti sul lato sinistro"
+      - "Per uno stretching più profondo, appoggia delicatamente la mano sulla testa"
+    common_mistakes:
+      - "Sollevare la spalla verso l'orecchio - mantieni le spalle basse"
+      - "Ruotare la testa mentre inclini - mantieni il naso rivolto in avanti"
+      - "Forzare lo stretching tirando forte la testa - usa solo una pressione leggera"
+      - "Contrarre durante lo stretching - mantieni la spalla opposta rilassata"
+
+source: ai_assisted
+owner_id: shared

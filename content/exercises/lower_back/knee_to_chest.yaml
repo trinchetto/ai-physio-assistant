@@ -1,0 +1,99 @@
+# Knee to Chest Stretch
+# Flexion stretch for the lower back
+
+id: knee_to_chest
+
+name: "Knee to Chest Stretch"
+
+primary_language: en
+
+description: >
+  A gentle flexion stretch for the lower back that helps relieve tension and
+  stiffness in the lumbar paraspinal muscles and glutes. This exercise can
+  provide relief from lower back pain and is often used as part of a morning
+  routine or cool-down after activity.
+
+instructions:
+  - "Lie on your back with both knees bent and feet flat on the floor"
+  - "Slowly bring one knee toward your chest"
+  - "Grasp behind your thigh or on top of your shin (avoid pulling on the knee)"
+  - "Gently pull the knee closer to your chest until you feel a comfortable stretch"
+  - "Keep your other foot flat on the floor or extend that leg straight if preferred"
+  - "Keep your lower back pressed gently into the floor"
+  - "Hold for 20-30 seconds, breathing deeply"
+  - "Slowly lower the leg and repeat on the other side"
+  - "You can also do both knees at once for a double knee-to-chest stretch"
+
+common_mistakes:
+  - "Pulling on the kneecap instead of behind the thigh - this can strain the knee"
+  - "Lifting the head and shoulders off the floor - keep upper body relaxed"
+  - "Holding the breath - maintain slow, deep breathing"
+  - "Bouncing or jerking the leg - use gentle, sustained pressure"
+
+body_regions:
+  - lower_back
+  - hip
+
+conditions:
+  - lower_back_pain
+  - lower_back_stiffness
+  - sciatica
+  - piriformis_syndrome
+  - hip_tightness
+
+therapeutic_goals:
+  - reduce_stiffness
+  - reduce_muscle_tension
+  - improve_mobility
+  - reduce_pain
+
+contraindications:
+  - hip_replacement_recent
+  - hip_fracture
+  - osteoporosis_severe
+  - acute_disc_herniation
+
+difficulty: beginner
+
+equipment:
+  - none
+
+default_sets: 2
+default_reps: "3-5 each side"
+default_hold: "20-30 seconds"
+default_rest: "15 seconds"
+
+tags:
+  - stretching
+  - gentle
+  - home_exercise
+  - no_equipment
+  - morning_routine
+
+images: []
+
+translations:
+  it:
+    name: "Ginocchio al Petto"
+    description: >
+      Uno stretching delicato in flessione per la parte bassa della schiena che
+      aiuta ad alleviare tensione e rigidità nei muscoli paraspinali lombari e
+      nei glutei. Questo esercizio può fornire sollievo dal mal di schiena.
+    instructions:
+      - "Sdraiati sulla schiena con entrambe le ginocchia piegate e i piedi a terra"
+      - "Porta lentamente un ginocchio verso il petto"
+      - "Afferra dietro la coscia o sopra lo stinco (evita di tirare sul ginocchio)"
+      - "Tira delicatamente il ginocchio più vicino al petto finché senti uno stretching"
+      - "Mantieni l'altro piede a terra o estendi quella gamba dritta se preferisci"
+      - "Mantieni la parte bassa della schiena delicatamente premuta a terra"
+      - "Mantieni per 20-30 secondi, respirando profondamente"
+      - "Abbassa lentamente la gamba e ripeti dall'altro lato"
+      - "Puoi anche fare entrambe le ginocchia insieme"
+    common_mistakes:
+      - "Tirare sulla rotula invece che dietro la coscia - questo può forzare il ginocchio"
+      - "Sollevare testa e spalle dal pavimento - mantieni la parte superiore rilassata"
+      - "Trattenere il respiro - mantieni una respirazione lenta e profonda"
+      - "Rimbalzare o strattonare la gamba - usa una pressione delicata e sostenuta"
+
+source: ai_assisted
+owner_id: shared

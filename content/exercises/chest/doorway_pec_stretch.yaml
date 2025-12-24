@@ -1,0 +1,94 @@
+# Doorway Pec Stretch
+# Stretches the pectoralis major and minor
+
+id: doorway_pec_stretch
+
+name: "Doorway Pec Stretch"
+
+primary_language: en
+
+description: >
+  A stretch targeting the pectoralis major and minor muscles using a doorway
+  for support. Tight pectorals contribute to rounded shoulders and forward
+  head posture. This stretch is essential for desk workers and anyone with
+  upper crossed syndrome.
+
+instructions:
+  - "Stand in a doorway with your right arm raised to shoulder height"
+  - "Bend your elbow to 90 degrees and place your forearm against the door frame"
+  - "Step forward with your right foot through the doorway"
+  - "Lean your body forward until you feel a stretch across your chest"
+  - "Keep your core engaged and avoid arching your lower back"
+  - "Hold for 20-30 seconds"
+  - "Return to starting position and repeat on the other side"
+  - "For a different stretch angle, try raising your arm higher or lower"
+
+common_mistakes:
+  - "Arching the lower back - keep core engaged and spine neutral"
+  - "Rotating the body away from the stretch - keep torso facing forward"
+  - "Shrugging the shoulder - keep it down and relaxed"
+  - "Not stepping far enough forward - step through to create adequate stretch"
+
+body_regions:
+  - chest
+  - shoulder
+
+conditions:
+  - rounded_shoulders
+  - upper_crossed_syndrome
+  - chest_tightness
+  - shoulder_impingement
+  - forward_head_posture
+
+therapeutic_goals:
+  - improve_mobility
+  - improve_posture
+  - reduce_stiffness
+  - reduce_pain
+
+contraindications:
+  - shoulder_dislocation_recent
+  - acute_shoulder_injury
+  - labral_tear_acute
+
+difficulty: beginner
+
+equipment:
+  - doorway
+
+default_sets: 2
+default_reps: "2-3 each side"
+default_hold: "20-30 seconds"
+default_rest: "15 seconds"
+
+tags:
+  - stretching
+  - posture
+  - office_exercise
+  - desk_worker
+
+images: []
+
+translations:
+  it:
+    name: "Stretching Pettorale alla Porta"
+    description: >
+      Uno stretching mirato ai muscoli grande e piccolo pettorale usando uno
+      stipite per supporto. Pettorali tesi contribuiscono a spalle arrotondate
+      e postura con testa in avanti. Essenziale per chi lavora alla scrivania.
+    instructions:
+      - "Stai in piedi in una porta con il braccio destro sollevato all'altezza della spalla"
+      - "Piega il gomito a 90 gradi e appoggia l'avambraccio contro lo stipite"
+      - "Fai un passo avanti con il piede destro attraverso la porta"
+      - "Inclina il corpo in avanti finché senti uno stiramento attraverso il petto"
+      - "Mantieni il core attivo ed evita di inarcare la parte bassa della schiena"
+      - "Mantieni per 20-30 secondi"
+      - "Torna alla posizione iniziale e ripeti dall'altro lato"
+      - "Per un angolo diverso, prova a sollevare il braccio più in alto o più in basso"
+    common_mistakes:
+      - "Inarcare la parte bassa della schiena - mantieni il core attivo"
+      - "Ruotare il corpo lontano dallo stretching - mantieni il busto rivolto in avanti"
+      - "Sollevare la spalla - mantienila bassa e rilassata"
+
+source: ai_assisted
+owner_id: shared

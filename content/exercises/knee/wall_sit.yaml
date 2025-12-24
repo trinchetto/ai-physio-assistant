@@ -1,0 +1,100 @@
+# Wall Sit / Wall Squat
+# Isometric quadriceps and lower body strengthening
+
+id: wall_sit
+
+name: "Wall Sit"
+
+primary_language: en
+
+description: >
+  An isometric exercise that strengthens the quadriceps, hamstrings, and glutes
+  by holding a seated position against a wall. Wall sits build muscular
+  endurance and are effective for knee rehabilitation when dynamic exercises
+  are not yet appropriate. The difficulty can be adjusted by changing knee angle.
+
+instructions:
+  - "Stand with your back against a smooth wall"
+  - "Walk your feet forward about 2 feet from the wall"
+  - "Slowly slide your back down the wall, bending your knees"
+  - "Stop when your thighs are parallel to the floor (or higher if this is too difficult)"
+  - "Keep your knees aligned over your ankles, not past your toes"
+  - "Press your lower back firmly against the wall"
+  - "Hold your arms at your sides or crossed over your chest"
+  - "Hold this position for the prescribed time"
+  - "To finish, slide back up the wall slowly"
+
+common_mistakes:
+  - "Letting knees travel past toes - keep knees over ankles"
+  - "Sliding too low initially - start with a higher position and progress"
+  - "Allowing lower back to arch away from the wall - press it flat"
+  - "Holding the breath - breathe normally throughout the hold"
+  - "Placing hands on thighs for support - this reduces the work on the muscles"
+
+body_regions:
+  - knee
+  - hip
+
+conditions:
+  - quadriceps_weakness
+  - patellofemoral_pain
+  - knee_rehabilitation
+  - general_lower_body_weakness
+
+therapeutic_goals:
+  - increase_strength
+  - build_endurance
+  - improve_stability
+  - rehabilitation
+
+contraindications:
+  - acute_knee_pain
+  - severe_knee_osteoarthritis
+  - unstable_knee_joint
+
+difficulty: intermediate
+
+equipment:
+  - wall
+
+default_sets: 3
+default_reps: "1"
+default_hold: "30-60 seconds"
+default_rest: "60 seconds"
+
+tags:
+  - strengthening
+  - isometric
+  - endurance
+  - home_exercise
+  - no_equipment
+
+images: []
+
+translations:
+  it:
+    name: "Sedia a Muro"
+    description: >
+      Un esercizio isometrico che rafforza quadricipiti, muscoli posteriori della
+      coscia e glutei mantenendo una posizione seduta contro il muro. La sedia
+      a muro costruisce resistenza muscolare ed è efficace per la riabilitazione
+      del ginocchio quando gli esercizi dinamici non sono ancora appropriati.
+    instructions:
+      - "Stai con la schiena contro un muro liscio"
+      - "Cammina con i piedi in avanti di circa 60 cm dal muro"
+      - "Scivola lentamente con la schiena lungo il muro, piegando le ginocchia"
+      - "Fermati quando le cosce sono parallele al pavimento (o più in alto se troppo difficile)"
+      - "Mantieni le ginocchia allineate sulle caviglie, non oltre le dita dei piedi"
+      - "Premi saldamente la parte bassa della schiena contro il muro"
+      - "Tieni le braccia ai lati o incrociate sul petto"
+      - "Mantieni questa posizione per il tempo prescritto"
+      - "Per finire, scivola lentamente indietro lungo il muro"
+    common_mistakes:
+      - "Lasciare che le ginocchia vadano oltre le dita - mantieni le ginocchia sulle caviglie"
+      - "Scendere troppo inizialmente - inizia più in alto e progredisci"
+      - "Lasciare che la schiena si inarchhi - premila piatta"
+      - "Trattenere il respiro - respira normalmente durante la tenuta"
+      - "Mettere le mani sulle cosce per supporto - riduce il lavoro sui muscoli"
+
+source: ai_assisted
+owner_id: shared

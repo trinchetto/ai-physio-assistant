@@ -1,0 +1,97 @@
+# Side Plank
+# Lateral core strengthening
+
+id: side_plank
+
+name: "Side Plank"
+
+primary_language: en
+
+description: >
+  An isometric exercise that targets the obliques, quadratus lumborum, and
+  gluteus medius. The side plank builds lateral core stability, which is
+  essential for spinal health, athletic performance, and injury prevention.
+  Can be modified by bending the bottom knee for beginners.
+
+instructions:
+  - "Lie on your right side with your legs extended and stacked"
+  - "Place your right elbow directly under your shoulder"
+  - "Keep your forearm on the floor, perpendicular to your body"
+  - "Engage your core and lift your hips off the floor"
+  - "Create a straight line from your head to your feet"
+  - "Keep your hips stacked - don't let the top hip roll forward or back"
+  - "Hold the position while breathing normally"
+  - "Lower with control and repeat on the other side"
+  - "Modification: Bend your bottom knee and rest it on the floor for support"
+
+common_mistakes:
+  - "Letting hips sag toward the floor - keep them lifted"
+  - "Rolling the top hip forward or backward - keep hips stacked"
+  - "Placing elbow too far forward or back - keep it under the shoulder"
+  - "Holding the breath - maintain normal breathing"
+  - "Looking up or down - keep neck neutral, in line with spine"
+
+body_regions:
+  - core
+
+conditions:
+  - core_weakness
+  - lower_back_pain
+  - hip_weakness
+  - scoliosis
+
+therapeutic_goals:
+  - increase_strength
+  - improve_stability
+  - build_endurance
+  - improve_posture
+
+contraindications:
+  - shoulder_injury_acute
+  - wrist_injury
+  - severe_lower_back_pain
+
+difficulty: intermediate
+
+equipment:
+  - none
+
+default_sets: 3
+default_reps: "1 each side"
+default_hold: "20-45 seconds"
+default_rest: "30 seconds"
+
+tags:
+  - core
+  - strengthening
+  - isometric
+  - home_exercise
+  - no_equipment
+
+images: []
+
+translations:
+  it:
+    name: "Plank Laterale"
+    description: >
+      Un esercizio isometrico che lavora su obliqui, quadrato dei lombi e gluteo
+      medio. Il plank laterale costruisce stabilità laterale del core, essenziale
+      per la salute spinale, prestazioni atletiche e prevenzione degli infortuni.
+    instructions:
+      - "Sdraiati sul lato destro con le gambe estese e sovrapposte"
+      - "Posiziona il gomito destro direttamente sotto la spalla"
+      - "Mantieni l'avambraccio sul pavimento, perpendicolare al corpo"
+      - "Attiva il core e solleva i fianchi dal pavimento"
+      - "Crea una linea dritta dalla testa ai piedi"
+      - "Mantieni i fianchi sovrapposti - non lasciare che l'anca superiore ruoti"
+      - "Mantieni la posizione respirando normalmente"
+      - "Abbassa con controllo e ripeti dall'altro lato"
+      - "Modifica: piega il ginocchio inferiore e appoggialo a terra per supporto"
+    common_mistakes:
+      - "Lasciare che i fianchi cedano verso il pavimento - mantienili sollevati"
+      - "Ruotare l'anca superiore avanti o indietro - mantieni i fianchi sovrapposti"
+      - "Posizionare il gomito troppo avanti o indietro - mantienilo sotto la spalla"
+      - "Trattenere il respiro - mantieni una respirazione normale"
+
+source: ai_assisted
+owner_id: shared

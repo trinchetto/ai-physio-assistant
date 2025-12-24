@@ -1,0 +1,99 @@
+# Supine Spinal Twist
+# Rotational stretch for the lower back and hips
+
+id: supine_spinal_twist
+
+name: "Supine Spinal Twist"
+
+primary_language: en
+
+description: >
+  A gentle rotational stretch performed lying on the back that targets the
+  lower back, glutes, and outer hip. This exercise helps relieve tension
+  in the lumbar spine and can provide relief from lower back stiffness.
+  The supine position makes it safe and comfortable for most people.
+
+instructions:
+  - "Lie on your back with both legs extended"
+  - "Bend your right knee and bring it toward your chest"
+  - "Keeping your shoulders flat on the floor, use your left hand to guide your right knee across your body"
+  - "Let your right knee drop toward the floor on your left side"
+  - "Extend your right arm out to the side for balance"
+  - "Turn your head to look toward your right hand (optional)"
+  - "Keep both shoulders in contact with the floor"
+  - "Hold for 30-60 seconds, breathing deeply"
+  - "Slowly return to center and repeat on the other side"
+
+common_mistakes:
+  - "Letting the shoulder lift off the floor - keep both shoulders grounded"
+  - "Forcing the knee to the floor - let gravity do the work"
+  - "Holding the breath - use deep breaths to relax into the stretch"
+  - "Twisting too quickly - move slowly and with control"
+
+body_regions:
+  - lower_back
+  - hip
+
+conditions:
+  - lower_back_stiffness
+  - lower_back_pain
+  - hip_tightness
+  - sciatica
+  - piriformis_syndrome
+
+therapeutic_goals:
+  - improve_mobility
+  - reduce_stiffness
+  - reduce_muscle_tension
+  - relaxation
+
+contraindications:
+  - acute_disc_herniation
+  - spinal_fracture
+  - severe_spinal_stenosis
+  - recent_spinal_surgery
+
+difficulty: beginner
+
+equipment:
+  - none
+
+default_sets: 2
+default_reps: "1 each side"
+default_hold: "30-60 seconds"
+default_rest: "15 seconds"
+
+tags:
+  - stretching
+  - mobility
+  - relaxation
+  - home_exercise
+  - no_equipment
+
+images: []
+
+translations:
+  it:
+    name: "Torsione Spinale Supina"
+    description: >
+      Uno stretching rotazionale delicato eseguito sdraiati sulla schiena che
+      lavora sulla parte bassa della schiena, glutei e anca esterna. Questo
+      esercizio aiuta ad alleviare la tensione nella colonna lombare.
+    instructions:
+      - "Sdraiati sulla schiena con entrambe le gambe distese"
+      - "Piega il ginocchio destro e portalo verso il petto"
+      - "Mantenendo le spalle piatte sul pavimento, usa la mano sinistra per guidare il ginocchio"
+      - "Lascia cadere il ginocchio destro verso il pavimento sul lato sinistro"
+      - "Estendi il braccio destro di lato per equilibrio"
+      - "Gira la testa per guardare verso la mano destra (opzionale)"
+      - "Mantieni entrambe le spalle a contatto con il pavimento"
+      - "Mantieni per 30-60 secondi, respirando profondamente"
+      - "Torna lentamente al centro e ripeti dall'altro lato"
+    common_mistakes:
+      - "Lasciare che la spalla si sollevi - mantieni entrambe le spalle a terra"
+      - "Forzare il ginocchio a terra - lascia che la gravità faccia il lavoro"
+      - "Trattenere il respiro - usa respiri profondi per rilassarti"
+      - "Ruotare troppo velocemente - muoviti lentamente e con controllo"
+
+source: ai_assisted
+owner_id: shared

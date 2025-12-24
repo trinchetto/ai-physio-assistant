@@ -1,0 +1,96 @@
+# Terminal Knee Extension
+# Quadriceps strengthening in the final degrees of extension
+
+id: terminal_knee_extension
+
+name: "Terminal Knee Extension"
+
+primary_language: en
+
+description: >
+  An exercise targeting the quadriceps, specifically the vastus medialis
+  obliquus (VMO), through the final 30 degrees of knee extension. Terminal
+  knee extension is crucial for knee stability and is commonly prescribed
+  for patellofemoral pain and post-surgical rehabilitation.
+
+instructions:
+  - "Stand facing a wall or sturdy surface for balance"
+  - "Place a resistance band around a fixed anchor point at knee height"
+  - "Loop the band around the back of your right knee"
+  - "Step back until there is tension in the band pulling your knee into slight flexion"
+  - "Your knee should be bent about 20-30 degrees"
+  - "Keeping your thigh still, straighten your knee completely against the band"
+  - "Focus on locking out the knee and tightening the muscle above your kneecap"
+  - "Hold the straight position for 2-3 seconds"
+  - "Slowly allow the knee to bend again with control"
+
+common_mistakes:
+  - "Moving the whole leg instead of just extending the knee - keep thigh stationary"
+  - "Not fully straightening the knee - lock it out completely"
+  - "Using too much resistance and compensating with poor form - start light"
+  - "Rushing through repetitions - use slow, controlled movements"
+
+body_regions:
+  - knee
+
+conditions:
+  - patellofemoral_pain
+  - quadriceps_weakness
+  - post_surgical_knee
+  - acl_rehabilitation
+  - knee_instability
+
+therapeutic_goals:
+  - increase_strength
+  - improve_stability
+  - rehabilitation
+  - vmo_activation
+
+contraindications:
+  - acute_knee_inflammation
+  - severe_knee_pain
+  - immediately_post_surgery
+
+difficulty: beginner
+
+equipment:
+  - resistance_band
+
+default_sets: 3
+default_reps: "15-20 each leg"
+default_hold: "2-3 seconds"
+default_rest: "30 seconds"
+
+tags:
+  - strengthening
+  - rehabilitation
+  - patellofemoral
+
+images: []
+
+translations:
+  it:
+    name: "Estensione Terminale del Ginocchio"
+    description: >
+      Un esercizio mirato al quadricipite, specificamente al vasto mediale
+      obliquo (VMO), attraverso gli ultimi 30 gradi di estensione del ginocchio.
+      L'estensione terminale è cruciale per la stabilità del ginocchio ed è
+      comunemente prescritta per il dolore femoro-rotuleo.
+    instructions:
+      - "Stai in piedi di fronte a un muro o superficie stabile per equilibrio"
+      - "Posiziona una banda elastica attorno a un punto fisso all'altezza del ginocchio"
+      - "Avvolgi la banda dietro il ginocchio destro"
+      - "Fai un passo indietro finché c'è tensione nella banda che tira il ginocchio in flessione"
+      - "Il ginocchio dovrebbe essere piegato di circa 20-30 gradi"
+      - "Mantenendo la coscia ferma, raddrizza completamente il ginocchio contro la banda"
+      - "Concentrati sul bloccare il ginocchio e contrarre il muscolo sopra la rotula"
+      - "Mantieni la posizione dritta per 2-3 secondi"
+      - "Lascia lentamente che il ginocchio si pieghi di nuovo con controllo"
+    common_mistakes:
+      - "Muovere tutta la gamba invece di estendere solo il ginocchio - mantieni la coscia ferma"
+      - "Non raddrizzare completamente il ginocchio - bloccalo completamente"
+      - "Usare troppa resistenza e compensare con cattiva forma - inizia leggero"
+      - "Affrettarsi nelle ripetizioni - usa movimenti lenti e controllati"
+
+source: ai_assisted
+owner_id: shared

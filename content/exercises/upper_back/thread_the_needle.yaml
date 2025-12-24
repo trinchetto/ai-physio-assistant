@@ -1,0 +1,96 @@
+# Thread the Needle
+# Rotational stretch for the thoracic spine
+
+id: thread_the_needle
+
+name: "Thread the Needle"
+
+primary_language: en
+
+description: >
+  A rotational mobility exercise for the thoracic spine performed in quadruped
+  position. This exercise improves thoracic rotation while stretching the
+  muscles of the upper back, shoulders, and sides of the torso. Excellent
+  for counteracting the effects of prolonged sitting.
+
+instructions:
+  - "Start on your hands and knees in a tabletop position"
+  - "Place your hands directly under your shoulders and knees under your hips"
+  - "Lift your right hand off the floor and reach it under your left arm"
+  - "Slide your right arm along the floor, threading it through until your right shoulder and temple rest on the floor"
+  - "Keep your hips level and avoid sitting back toward your heels"
+  - "You should feel a rotation through your upper back and a stretch in your right shoulder"
+  - "Hold for 5-10 seconds, breathing deeply"
+  - "Slowly unwind and return to the starting position"
+  - "Repeat on the other side"
+
+common_mistakes:
+  - "Sitting back onto the heels instead of keeping hips over knees - maintain hip position"
+  - "Collapsing into the supporting arm - keep that arm strong"
+  - "Forcing the rotation too far - move only as far as comfortable"
+  - "Rotating from the lower back instead of thoracic spine - focus on mid-back twist"
+
+body_regions:
+  - upper_back
+
+conditions:
+  - thoracic_stiffness
+  - upper_back_pain
+  - postural_dysfunction
+  - shoulder_stiffness
+
+therapeutic_goals:
+  - improve_mobility
+  - reduce_stiffness
+  - increase_range_of_motion
+  - reduce_muscle_tension
+
+contraindications:
+  - shoulder_injury_acute
+  - thoracic_disc_herniation
+  - severe_osteoporosis
+  - recent_spinal_surgery
+
+difficulty: beginner
+
+equipment:
+  - none
+
+default_sets: 2
+default_reps: "5-8 each side"
+default_hold: "5-10 seconds"
+default_rest: "15 seconds"
+
+tags:
+  - mobility
+  - stretching
+  - home_exercise
+  - no_equipment
+
+images: []
+
+translations:
+  it:
+    name: "Infila l'Ago"
+    description: >
+      Un esercizio di mobilità rotazionale per la colonna toracica eseguito
+      in posizione quadrupedica. Questo esercizio migliora la rotazione toracica
+      allungando i muscoli della parte alta della schiena e delle spalle.
+    instructions:
+      - "Inizia a quattro zampe in posizione di tavolo"
+      - "Posiziona le mani direttamente sotto le spalle e le ginocchia sotto i fianchi"
+      - "Solleva la mano destra e falla passare sotto il braccio sinistro"
+      - "Fai scivolare il braccio destro lungo il pavimento finché spalla e tempia appoggiano a terra"
+      - "Mantieni i fianchi a livello e non sederti verso i talloni"
+      - "Dovresti sentire una rotazione nella parte alta della schiena e uno stiramento nella spalla"
+      - "Mantieni per 5-10 secondi, respirando profondamente"
+      - "Torna lentamente alla posizione iniziale"
+      - "Ripeti dall'altro lato"
+    common_mistakes:
+      - "Sedersi sui talloni invece di mantenere i fianchi sulle ginocchia"
+      - "Crollare sul braccio di appoggio - mantienilo forte"
+      - "Forzare troppo la rotazione - muoviti solo fin dove è confortevole"
+      - "Ruotare dalla parte bassa della schiena - concentrati sulla torsione del dorso medio"
+
+source: ai_assisted
+owner_id: shared

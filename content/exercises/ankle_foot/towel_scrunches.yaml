@@ -1,0 +1,94 @@
+# Towel Scrunches / Toe Curls
+# Intrinsic foot muscle strengthening
+
+id: towel_scrunches
+
+name: "Towel Scrunches"
+
+primary_language: en
+
+description: >
+  An exercise that strengthens the intrinsic muscles of the foot by using
+  the toes to scrunch a towel. Strong foot muscles support the arch, improve
+  balance, and help prevent conditions like plantar fasciitis and flat feet.
+  This exercise is fundamental for foot health and athletic performance.
+
+instructions:
+  - "Sit in a chair with your feet flat on the floor"
+  - "Place a small towel flat on the floor under your foot"
+  - "Keep your heel on the floor throughout the exercise"
+  - "Using only your toes, scrunch the towel toward you"
+  - "Curl your toes to grip and pull the towel under your foot"
+  - "Continue scrunching until the entire towel is bunched under your arch"
+  - "Spread the towel back out and repeat"
+  - "Complete the exercise with both feet"
+
+common_mistakes:
+  - "Lifting the heel off the floor - keep it planted"
+  - "Using the whole foot to slide the towel - only use the toes to grip and pull"
+  - "Moving too quickly - use controlled, deliberate toe movements"
+  - "Not fully extending the toes between scrunches - spread toes fully before each scrunch"
+
+body_regions:
+  - ankle_foot
+
+conditions:
+  - plantar_fasciitis
+  - flat_feet
+  - foot_weakness
+  - toe_weakness
+  - metatarsalgia
+
+therapeutic_goals:
+  - increase_strength
+  - improve_arch_support
+  - improve_balance
+  - prevent_injury
+
+contraindications:
+  - acute_toe_injury
+  - severe_foot_pain
+  - open_wounds_on_foot
+
+difficulty: beginner
+
+equipment:
+  - towel
+
+default_sets: 3
+default_reps: "10-15 scrunches"
+default_hold: "none"
+default_rest: "30 seconds"
+
+tags:
+  - strengthening
+  - foot_health
+  - home_exercise
+
+images: []
+
+translations:
+  it:
+    name: "Arricciamento dell'Asciugamano"
+    description: >
+      Un esercizio che rafforza i muscoli intrinseci del piede usando le dita
+      per arricciare un asciugamano. Muscoli del piede forti supportano l'arco,
+      migliorano l'equilibrio e aiutano a prevenire condizioni come la fascite
+      plantare e i piedi piatti.
+    instructions:
+      - "Siediti su una sedia con i piedi piatti sul pavimento"
+      - "Posiziona un piccolo asciugamano piatto sul pavimento sotto il piede"
+      - "Mantieni il tallone sul pavimento durante tutto l'esercizio"
+      - "Usando solo le dita, arriccia l'asciugamano verso di te"
+      - "Piega le dita per afferrare e tirare l'asciugamano sotto il piede"
+      - "Continua ad arricciare finché tutto l'asciugamano è ammucchiato sotto l'arco"
+      - "Distendi di nuovo l'asciugamano e ripeti"
+      - "Completa l'esercizio con entrambi i piedi"
+    common_mistakes:
+      - "Sollevare il tallone dal pavimento - mantienilo a terra"
+      - "Usare tutto il piede per far scivolare l'asciugamano - usa solo le dita"
+      - "Muoversi troppo velocemente - usa movimenti delle dita controllati"
+      - "Non estendere completamente le dita tra un arricciamento e l'altro"
+
+source: ai_assisted
+owner_id: shared

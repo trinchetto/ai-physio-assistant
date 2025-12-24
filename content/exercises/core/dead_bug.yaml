@@ -1,0 +1,96 @@
+# Dead Bug Exercise
+# Core stabilization with contralateral limb movement
+
+id: dead_bug
+
+name: "Dead Bug"
+
+primary_language: en
+
+description: >
+  A core stabilization exercise that challenges the ability to maintain a
+  neutral spine while moving the arms and legs. The dead bug teaches proper
+  core bracing and is excellent for those with lower back pain, as it
+  strengthens the core without spinal loading.
+
+instructions:
+  - "Lie on your back with your arms extended toward the ceiling"
+  - "Lift your legs so your hips and knees are both at 90 degrees (tabletop position)"
+  - "Press your lower back firmly into the floor - this is your starting position"
+  - "Slowly lower your right arm overhead and left leg toward the floor simultaneously"
+  - "Keep your lower back pressed into the floor throughout - do not let it arch"
+  - "Lower only as far as you can while maintaining back contact with the floor"
+  - "Return to the starting position with control"
+  - "Repeat with the left arm and right leg"
+  - "Continue alternating sides"
+
+common_mistakes:
+  - "Letting the lower back arch off the floor - this is the most common and important error"
+  - "Moving too quickly - use slow, controlled movements"
+  - "Holding the breath - exhale as you extend the limbs"
+  - "Extending too far before building adequate strength - reduce range if back arches"
+
+body_regions:
+  - core
+
+conditions:
+  - lower_back_pain
+  - core_weakness
+  - postural_dysfunction
+  - post_pregnancy
+
+therapeutic_goals:
+  - increase_strength
+  - improve_stability
+  - improve_coordination
+  - reduce_pain
+
+contraindications:
+  - acute_lower_back_pain_severe
+  - recent_abdominal_surgery
+
+difficulty: intermediate
+
+equipment:
+  - none
+
+default_sets: 3
+default_reps: "8-10 each side"
+default_hold: "none"
+default_rest: "60 seconds"
+
+tags:
+  - core
+  - strengthening
+  - stabilization
+  - home_exercise
+  - no_equipment
+
+images: []
+
+translations:
+  it:
+    name: "Dead Bug"
+    description: >
+      Un esercizio di stabilizzazione del core che sfida la capacità di mantenere
+      una colonna neutra mentre si muovono braccia e gambe. Il dead bug insegna
+      la corretta attivazione del core ed è eccellente per chi ha mal di schiena,
+      poiché rinforza il core senza caricare la colonna.
+    instructions:
+      - "Sdraiati sulla schiena con le braccia estese verso il soffitto"
+      - "Solleva le gambe così che anche e ginocchia siano entrambe a 90 gradi"
+      - "Premi saldamente la parte bassa della schiena nel pavimento - questa è la posizione iniziale"
+      - "Abbassa lentamente il braccio destro sopra la testa e la gamba sinistra verso il pavimento"
+      - "Mantieni la schiena premuta nel pavimento - non lasciarla inarcare"
+      - "Abbassa solo fin dove puoi mantenendo il contatto della schiena con il pavimento"
+      - "Torna alla posizione iniziale con controllo"
+      - "Ripeti con braccio sinistro e gamba destra"
+      - "Continua alternando i lati"
+    common_mistakes:
+      - "Lasciare che la schiena si inarchhi dal pavimento - l'errore più comune e importante"
+      - "Muoversi troppo velocemente - usa movimenti lenti e controllati"
+      - "Trattenere il respiro - espira mentre estendi gli arti"
+      - "Estendere troppo prima di costruire forza adeguata - riduci l'ampiezza se la schiena s'inarcha"
+
+source: ai_assisted
+owner_id: shared
