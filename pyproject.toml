@@ -38,7 +38,8 @@ transformers = ">=4.36.0"
 accelerate = ">=0.25.0"
 # Use PyTorch CPU-only to avoid triton dependency issues
 torch = {version = ">=2.0.0", source = "pytorch-cpu"}
-# Use flexible versions to get pre-built wheels
+# Pin numpy to stable version with all platform wheels
+numpy = "~2.1.0"
 pillow = ">=10.0.0"
 safetensors = ">=0.4.0"
 
