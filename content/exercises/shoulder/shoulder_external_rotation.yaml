@@ -1,0 +1,97 @@
+# Shoulder External Rotation with Resistance Band
+# Strengthens the rotator cuff, specifically infraspinatus and teres minor
+
+id: shoulder_external_rotation
+
+name: "Shoulder External Rotation"
+
+primary_language: en
+
+description: >
+  Strengthens the external rotators of the shoulder (infraspinatus and teres minor),
+  which are critical for shoulder stability and injury prevention. This exercise
+  is fundamental in rotator cuff rehabilitation and prevention programs.
+
+instructions:
+  - "Stand or sit with good posture, holding a resistance band"
+  - "Bend your elbow to 90 degrees and keep it tucked against your side"
+  - "You can place a small towel roll between your elbow and body to maintain position"
+  - "Hold the band with palm facing inward toward your belly"
+  - "Keeping your elbow at your side, rotate your forearm outward away from your body"
+  - "Move slowly and with control - about 2 seconds out, 2 seconds back"
+  - "Do not let your elbow drift away from your side"
+  - "Return slowly to the starting position"
+
+common_mistakes:
+  - "Letting the elbow move away from the body - keep it pinned to your side"
+  - "Using momentum instead of controlled movement - move slowly"
+  - "Rotating the whole body instead of just the arm - keep torso still"
+  - "Shrugging the shoulder - keep it relaxed and down"
+  - "Using too strong a resistance band - start light and progress gradually"
+
+body_regions:
+  - shoulder
+
+conditions:
+  - rotator_cuff_tendinopathy
+  - shoulder_impingement
+  - shoulder_instability
+  - rotator_cuff_tear_partial
+  - post_surgical_shoulder
+
+therapeutic_goals:
+  - increase_strength
+  - improve_stability
+  - prevent_injury
+  - rehabilitation
+
+contraindications:
+  - acute_rotator_cuff_tear
+  - acute_shoulder_pain
+  - shoulder_dislocation_recent
+  - post_surgery_without_clearance
+
+difficulty: beginner
+
+equipment:
+  - resistance_band
+
+default_sets: 3
+default_reps: "15"
+default_hold: "none"
+default_rest: "60 seconds"
+
+tags:
+  - strengthening
+  - rotator_cuff
+  - rehabilitation
+  - prevention
+
+images: []
+
+translations:
+  it:
+    name: "Rotazione Esterna della Spalla"
+    description: >
+      Rafforza i rotatori esterni della spalla (infraspinato e piccolo rotondo),
+      fondamentali per la stabilità della spalla e la prevenzione degli infortuni.
+      Questo esercizio è fondamentale nei programmi di riabilitazione della cuffia
+      dei rotatori.
+    instructions:
+      - "Stai in piedi o seduto con buona postura, tenendo una banda elastica"
+      - "Piega il gomito a 90 gradi e mantienilo aderente al fianco"
+      - "Puoi mettere un piccolo asciugamano arrotolato tra gomito e corpo"
+      - "Tieni la banda con il palmo rivolto verso la pancia"
+      - "Mantenendo il gomito al fianco, ruota l'avambraccio verso l'esterno"
+      - "Muoviti lentamente e con controllo - circa 2 secondi fuori, 2 secondi indietro"
+      - "Non lasciare che il gomito si allontani dal fianco"
+      - "Torna lentamente alla posizione iniziale"
+    common_mistakes:
+      - "Lasciare che il gomito si allontani - mantienilo aderente al fianco"
+      - "Usare lo slancio invece del movimento controllato - muoviti lentamente"
+      - "Ruotare tutto il corpo invece del braccio - mantieni il busto fermo"
+      - "Sollevare la spalla - mantienila rilassata e abbassata"
+      - "Usare una banda troppo resistente - inizia leggero e progredisci"
+
+source: ai_assisted
+owner_id: shared

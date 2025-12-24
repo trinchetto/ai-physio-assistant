@@ -1,0 +1,94 @@
+# Plantar Fascia Stretch
+# Stretch for the plantar fascia and foot arch
+
+id: plantar_fascia_stretch
+
+name: "Plantar Fascia Stretch"
+
+primary_language: en
+
+description: >
+  A targeted stretch for the plantar fascia, the thick band of tissue running
+  along the bottom of the foot. This stretch is essential for treating and
+  preventing plantar fasciitis and is most effective when performed first
+  thing in the morning before taking steps.
+
+instructions:
+  - "Sit in a chair or on the edge of your bed"
+  - "Cross your affected foot over your opposite knee"
+  - "Grasp your toes and gently pull them back toward your shin"
+  - "You should feel a stretch along the arch of your foot"
+  - "Use your other hand to massage along the plantar fascia if desired"
+  - "Hold the stretch for 20-30 seconds"
+  - "Repeat 3 times on each foot"
+  - "Perform this stretch before getting out of bed in the morning"
+
+common_mistakes:
+  - "Not pulling the toes back far enough - gently pull until you feel a stretch"
+  - "Holding the stretch too briefly - maintain for at least 20 seconds"
+  - "Walking immediately after waking without stretching - always stretch first"
+  - "Pulling too aggressively and causing pain - the stretch should be firm but comfortable"
+
+body_regions:
+  - ankle_foot
+
+conditions:
+  - plantar_fasciitis
+  - heel_pain
+  - arch_pain
+  - foot_stiffness
+
+therapeutic_goals:
+  - reduce_pain
+  - improve_mobility
+  - reduce_stiffness
+  - prevent_recurrence
+
+contraindications:
+  - plantar_fascia_rupture
+  - severe_acute_inflammation
+
+difficulty: beginner
+
+equipment:
+  - none
+
+default_sets: 1
+default_reps: "3 each foot"
+default_hold: "20-30 seconds"
+default_rest: "none"
+
+tags:
+  - stretching
+  - plantar_fasciitis
+  - home_exercise
+  - morning_routine
+  - no_equipment
+
+images: []
+
+translations:
+  it:
+    name: "Stretching della Fascia Plantare"
+    description: >
+      Uno stretching mirato per la fascia plantare, la spessa banda di tessuto
+      che corre lungo la parte inferiore del piede. Questo stretching è essenziale
+      per trattare e prevenire la fascite plantare ed è più efficace se eseguito
+      al mattino prima di alzarsi.
+    instructions:
+      - "Siediti su una sedia o sul bordo del letto"
+      - "Incrocia il piede interessato sopra il ginocchio opposto"
+      - "Afferra le dita del piede e tiralo delicatamente indietro verso lo stinco"
+      - "Dovresti sentire uno stiramento lungo l'arco del piede"
+      - "Usa l'altra mano per massaggiare lungo la fascia plantare se desiderato"
+      - "Mantieni lo stretching per 20-30 secondi"
+      - "Ripeti 3 volte su ogni piede"
+      - "Esegui questo stretching prima di alzarti dal letto al mattino"
+    common_mistakes:
+      - "Non tirare abbastanza le dita - tira delicatamente finché senti lo stiramento"
+      - "Mantenere lo stretching troppo brevemente - mantieni almeno 20 secondi"
+      - "Camminare subito dopo il risveglio senza stretching - fai sempre prima lo stretching"
+      - "Tirare troppo aggressivamente causando dolore - lo stretching deve essere fermo ma confortevole"
+
+source: ai_assisted
+owner_id: shared

@@ -1,0 +1,98 @@
+# Standing Hip Abduction
+# Hip abductor strengthening in standing
+
+id: standing_hip_abduction
+
+name: "Standing Hip Abduction"
+
+primary_language: en
+
+description: >
+  A standing exercise that strengthens the hip abductor muscles (gluteus
+  medius and minimus) responsible for lateral hip stability. This exercise
+  is important for balance, walking mechanics, and preventing knee and
+  hip injuries. Can be progressed with resistance bands.
+
+instructions:
+  - "Stand tall next to a wall or sturdy chair for balance support"
+  - "Place your hand lightly on the support - don't lean heavily"
+  - "Keep your standing leg slightly bent, not locked"
+  - "Keeping your body upright, slowly lift your outside leg out to the side"
+  - "Lead with your heel, keeping your toes pointing forward"
+  - "Lift only as high as you can without tilting your pelvis"
+  - "Hold at the top for 1-2 seconds"
+  - "Slowly lower the leg back down with control"
+  - "Complete all repetitions on one side before switching"
+
+common_mistakes:
+  - "Leaning the torso away from the lifting leg - stay upright"
+  - "Rotating the foot outward - keep toes pointing forward"
+  - "Hiking the hip up instead of true abduction - keep pelvis level"
+  - "Swinging the leg using momentum - use slow controlled movements"
+  - "Lifting too high and compensating with trunk lean"
+
+body_regions:
+  - hip
+
+conditions:
+  - hip_weakness
+  - hip_bursitis
+  - itb_syndrome
+  - balance_impairment
+  - gait_dysfunction
+
+therapeutic_goals:
+  - increase_strength
+  - improve_balance
+  - improve_gait
+  - prevent_injury
+
+contraindications:
+  - acute_hip_pain
+  - hip_fracture
+  - severe_balance_impairment_without_support
+
+difficulty: beginner
+
+equipment:
+  - wall_or_chair
+  - resistance_band_optional
+
+default_sets: 3
+default_reps: "12-15 each leg"
+default_hold: "1-2 seconds at top"
+default_rest: "30 seconds"
+
+tags:
+  - strengthening
+  - balance
+  - glutes
+  - home_exercise
+
+images: []
+
+translations:
+  it:
+    name: "Abduzione dell'Anca in Piedi"
+    description: >
+      Un esercizio in piedi che rafforza i muscoli abduttori dell'anca (gluteo
+      medio e minimo) responsabili della stabilità laterale. Importante per
+      equilibrio, meccanica del cammino e prevenzione degli infortuni.
+    instructions:
+      - "Stai in piedi vicino a un muro o sedia stabile per supporto"
+      - "Appoggia la mano leggermente sul supporto - non appoggiarti pesantemente"
+      - "Mantieni la gamba di appoggio leggermente piegata"
+      - "Mantenendo il corpo eretto, solleva lentamente la gamba esterna di lato"
+      - "Guida con il tallone, mantenendo le dita rivolte in avanti"
+      - "Solleva solo fin dove puoi senza inclinare il bacino"
+      - "Mantieni in alto per 1-2 secondi"
+      - "Abbassa lentamente la gamba con controllo"
+      - "Completa tutte le ripetizioni su un lato prima di cambiare"
+    common_mistakes:
+      - "Inclinare il busto lontano dalla gamba - mantieniti eretto"
+      - "Ruotare il piede verso l'esterno - mantieni le dita rivolte in avanti"
+      - "Sollevare l'anca invece della vera abduzione - mantieni il bacino a livello"
+      - "Oscillare la gamba con slancio - usa movimenti lenti e controllati"
+
+source: ai_assisted
+owner_id: shared

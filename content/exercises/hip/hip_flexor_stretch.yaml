@@ -1,0 +1,97 @@
+# Hip Flexor Stretch / Kneeling Lunge Stretch
+# Stretches the iliopsoas and rectus femoris
+
+id: hip_flexor_stretch
+
+name: "Hip Flexor Stretch"
+
+primary_language: en
+
+description: >
+  A kneeling stretch targeting the hip flexor muscles (iliopsoas and rectus
+  femoris) that often become tight from prolonged sitting. Tight hip flexors
+  can contribute to lower back pain, anterior pelvic tilt, and reduced hip
+  extension during walking and running.
+
+instructions:
+  - "Start in a half-kneeling position with your right knee on the floor"
+  - "Place your left foot flat on the floor in front of you, knee at 90 degrees"
+  - "Keep your torso upright and core engaged"
+  - "Gently tuck your tailbone under (posterior pelvic tilt) to increase the stretch"
+  - "Shift your weight forward slightly, keeping your torso upright"
+  - "You should feel a stretch in the front of your right hip"
+  - "Hold for 30 seconds, breathing deeply"
+  - "For a deeper stretch, raise your right arm overhead and lean slightly left"
+  - "Return to starting position and repeat on the other side"
+
+common_mistakes:
+  - "Arching the lower back instead of tucking the pelvis - this reduces the stretch"
+  - "Leaning the torso forward - keep upright to target hip flexors"
+  - "Letting the front knee travel past the toes - keep knee over ankle"
+  - "Holding the breath - breathe normally or deeply"
+
+body_regions:
+  - hip
+
+conditions:
+  - hip_flexor_tightness
+  - anterior_pelvic_tilt
+  - lower_back_pain
+  - hip_pain
+  - psoas_syndrome
+
+therapeutic_goals:
+  - improve_mobility
+  - reduce_stiffness
+  - improve_posture
+  - reduce_pain
+
+contraindications:
+  - hip_replacement_recent
+  - knee_injury_cannot_kneel
+  - groin_strain_acute
+
+difficulty: beginner
+
+equipment:
+  - none
+
+default_sets: 2
+default_reps: "2-3 each side"
+default_hold: "30 seconds"
+default_rest: "15 seconds"
+
+tags:
+  - stretching
+  - home_exercise
+  - no_equipment
+  - desk_worker
+
+images: []
+
+translations:
+  it:
+    name: "Stretching dei Flessori dell'Anca"
+    description: >
+      Uno stretching in ginocchio mirato ai muscoli flessori dell'anca (ileopsoas
+      e retto femorale) che spesso si irrigidiscono dalla posizione seduta
+      prolungata. I flessori dell'anca tesi possono contribuire al mal di schiena
+      e alla ridotta estensione dell'anca.
+    instructions:
+      - "Inizia in posizione di mezzo inginocchiamento con il ginocchio destro a terra"
+      - "Posiziona il piede sinistro a terra davanti a te, ginocchio a 90 gradi"
+      - "Mantieni il busto eretto e il core attivo"
+      - "Retroverti delicatamente il bacino per aumentare lo stretching"
+      - "Sposta il peso leggermente in avanti, mantenendo il busto eretto"
+      - "Dovresti sentire lo stiramento nella parte anteriore dell'anca destra"
+      - "Mantieni per 30 secondi, respirando profondamente"
+      - "Per uno stretching più profondo, solleva il braccio destro e inclina a sinistra"
+      - "Torna alla posizione iniziale e ripeti dall'altro lato"
+    common_mistakes:
+      - "Inarcare la schiena invece di retrovertire il bacino - riduce lo stretching"
+      - "Piegare il busto in avanti - mantienilo eretto per i flessori dell'anca"
+      - "Lasciare che il ginocchio anteriore superi le dita - mantienilo sulla caviglia"
+      - "Trattenere il respiro - respira normalmente o profondamente"
+
+source: ai_assisted
+owner_id: shared

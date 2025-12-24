@@ -1,0 +1,97 @@
+# Wall Slides / Wall Angels
+# Improves shoulder mobility and scapular control
+
+id: wall_slides
+
+name: "Wall Slides"
+
+primary_language: en
+
+description: >
+  An exercise that improves shoulder mobility, scapular control, and posture.
+  Wall slides strengthen the lower trapezius and serratus anterior while
+  stretching the pectorals and anterior shoulder. Excellent for overhead
+  athletes and desk workers.
+
+instructions:
+  - "Stand with your back flat against a wall, feet about 6 inches from the wall"
+  - "Press your lower back, upper back, and head against the wall"
+  - "Place your arms against the wall in a 'goalpost' position - elbows at 90 degrees, level with shoulders"
+  - "Try to keep your entire arm (wrist, elbow, shoulder) in contact with the wall"
+  - "Slowly slide your arms up the wall, straightening your elbows overhead"
+  - "Go only as high as you can while maintaining contact with the wall"
+  - "Slowly lower back to the starting position"
+  - "Focus on squeezing your shoulder blades together and down throughout"
+
+common_mistakes:
+  - "Arching the lower back away from the wall - keep it pressed flat"
+  - "Losing wall contact with wrists or elbows - reduce range of motion if needed"
+  - "Shrugging the shoulders toward the ears - keep shoulders down and back"
+  - "Moving too quickly - use slow, controlled movements"
+
+body_regions:
+  - shoulder
+  - upper_back
+
+conditions:
+  - shoulder_impingement
+  - rotator_cuff_tendinopathy
+  - shoulder_stiffness
+  - rounded_shoulders
+  - upper_crossed_syndrome
+
+therapeutic_goals:
+  - improve_mobility
+  - improve_posture
+  - increase_strength
+  - improve_scapular_control
+
+contraindications:
+  - acute_shoulder_injury
+  - shoulder_dislocation_recent
+  - frozen_shoulder_acute
+  - rotator_cuff_tear_acute
+
+difficulty: beginner
+
+equipment:
+  - wall
+
+default_sets: 3
+default_reps: "10-15"
+default_hold: "2 seconds at top"
+default_rest: "30 seconds"
+
+tags:
+  - mobility
+  - strengthening
+  - posture
+  - office_exercise
+  - no_equipment
+
+images: []
+
+translations:
+  it:
+    name: "Scivolamenti a Parete"
+    description: >
+      Un esercizio che migliora la mobilità della spalla, il controllo scapolare
+      e la postura. Gli scivolamenti a parete rafforzano il trapezio inferiore
+      e il dentato anteriore, allungando i pettorali e la spalla anteriore.
+    instructions:
+      - "Stai con la schiena piatta contro il muro, piedi a circa 15 cm dal muro"
+      - "Premi la parte bassa della schiena, la parte alta e la testa contro il muro"
+      - "Posiziona le braccia contro il muro a 'porta' - gomiti a 90 gradi, a livello delle spalle"
+      - "Cerca di mantenere tutto il braccio (polso, gomito, spalla) a contatto con il muro"
+      - "Fai scorrere lentamente le braccia verso l'alto, raddrizzando i gomiti sopra la testa"
+      - "Vai solo fin dove puoi mantenendo il contatto con il muro"
+      - "Torna lentamente alla posizione iniziale"
+      - "Concentrati sullo stringere le scapole insieme e in basso"
+    common_mistakes:
+      - "Inarcare la parte bassa della schiena - mantienila premuta piatta"
+      - "Perdere il contatto con polsi o gomiti - riduci l'ampiezza se necessario"
+      - "Sollevare le spalle verso le orecchie - mantienile basse e indietro"
+      - "Muoversi troppo velocemente - usa movimenti lenti e controllati"
+
+source: ai_assisted
+owner_id: shared

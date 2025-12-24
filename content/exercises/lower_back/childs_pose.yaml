@@ -1,0 +1,100 @@
+# Child's Pose / Prayer Stretch
+# Gentle flexion stretch for the lower back
+
+id: childs_pose
+
+name: "Child's Pose"
+
+primary_language: en
+
+description: >
+  A gentle resting stretch that flexes the lumbar spine and stretches the
+  lower back, hips, and thighs. Child's pose provides a calming effect and
+  is excellent for relieving tension after prolonged standing or extension
+  activities. It gently stretches the paraspinal muscles and opens the
+  posterior hip.
+
+instructions:
+  - "Start on your hands and knees in a tabletop position"
+  - "Spread your knees wider than your hips, keeping big toes touching or close together"
+  - "Sit your hips back toward your heels"
+  - "Walk your hands forward and lower your chest toward the floor"
+  - "Rest your forehead on the floor or on your stacked hands"
+  - "Extend your arms forward or rest them alongside your body"
+  - "Relax completely and breathe deeply into your lower back"
+  - "Hold for 30 seconds to 2 minutes"
+  - "To come up, walk your hands back and slowly rise to sitting"
+
+common_mistakes:
+  - "Forcing the hips down when flexibility is limited - only go as far as comfortable"
+  - "Holding tension in the shoulders - let arms and shoulders relax"
+  - "Shallow breathing - take slow, deep breaths to enhance the stretch"
+  - "Coming up too quickly - rise slowly to avoid dizziness"
+
+body_regions:
+  - lower_back
+  - hip
+
+conditions:
+  - lower_back_pain
+  - lower_back_stiffness
+  - hip_tightness
+  - stress_tension
+
+therapeutic_goals:
+  - reduce_muscle_tension
+  - reduce_stiffness
+  - improve_mobility
+  - relaxation
+
+contraindications:
+  - knee_injury_cannot_flex
+  - ankle_injury
+  - pregnancy_late_stage
+  - diarrhea
+
+difficulty: beginner
+
+equipment:
+  - none
+
+default_sets: 2
+default_reps: "1"
+default_hold: "30-60 seconds"
+default_rest: "15 seconds"
+
+tags:
+  - stretching
+  - relaxation
+  - home_exercise
+  - no_equipment
+  - yoga
+
+images: []
+
+translations:
+  it:
+    name: "Posizione del Bambino"
+    description: >
+      Uno stretching di riposo delicato che flette la colonna lombare e allunga
+      la parte bassa della schiena, i fianchi e le cosce. La posizione del bambino
+      ha un effetto calmante ed è eccellente per alleviare la tensione dopo
+      prolungata posizione eretta.
+    instructions:
+      - "Inizia a quattro zampe in posizione di tavolo"
+      - "Allarga le ginocchia più dei fianchi, mantenendo gli alluci che si toccano"
+      - "Siediti indietro con i fianchi verso i talloni"
+      - "Cammina con le mani in avanti e abbassa il petto verso il pavimento"
+      - "Appoggia la fronte sul pavimento o sulle mani sovrapposte"
+      - "Estendi le braccia in avanti o appoggiale lungo il corpo"
+      - "Rilassati completamente e respira profondamente nella parte bassa della schiena"
+      - "Mantieni da 30 secondi a 2 minuti"
+      - "Per alzarti, cammina con le mani indietro e alzati lentamente"
+    common_mistakes:
+      - "Forzare i fianchi quando la flessibilità è limitata - vai solo fin dove è comodo"
+      - "Mantenere tensione nelle spalle - lascia che braccia e spalle si rilassino"
+      - "Respirazione superficiale - fai respiri lenti e profondi"
+      - "Alzarsi troppo velocemente - alzati lentamente per evitare vertigini"
+
+source: ai_assisted
+owner_id: shared

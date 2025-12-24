@@ -1,0 +1,100 @@
+# Book Opener / Open Book Stretch
+# Side-lying thoracic rotation stretch
+
+id: book_opener
+
+name: "Book Opener Stretch"
+
+primary_language: en
+
+description: >
+  A side-lying rotational stretch for the thoracic spine that also opens
+  the chest and shoulders. This exercise improves thoracic rotation mobility
+  and is particularly beneficial for those with stiff upper backs, rounded
+  shoulders, or breathing restrictions.
+
+instructions:
+  - "Lie on your left side with knees bent to 90 degrees and stacked"
+  - "Extend both arms in front of you at shoulder height, palms together"
+  - "Keeping your knees together and down, slowly lift your right arm"
+  - "Rotate your right arm up and over, opening your chest toward the ceiling"
+  - "Follow your hand with your eyes as it moves"
+  - "Let your right arm rest on the floor behind you if you can reach"
+  - "Hold for 20-30 seconds, breathing deeply into your chest"
+  - "Slowly return the arm to the starting position"
+  - "Repeat 3-5 times, then switch sides"
+
+common_mistakes:
+  - "Letting the top knee lift off the bottom knee - keep knees pressed together"
+  - "Forcing the arm to the floor when mobility is limited - go only as far as comfortable"
+  - "Holding the breath - use deep breaths to enhance the stretch"
+  - "Moving too quickly - this is a slow, controlled stretch"
+
+body_regions:
+  - upper_back
+  - chest
+
+conditions:
+  - thoracic_stiffness
+  - rounded_shoulders
+  - chest_tightness
+  - postural_dysfunction
+  - breathing_dysfunction
+
+therapeutic_goals:
+  - improve_mobility
+  - improve_posture
+  - reduce_stiffness
+  - improve_breathing
+
+contraindications:
+  - shoulder_dislocation_recent
+  - acute_thoracic_pain
+  - severe_osteoporosis
+  - unstable_cardiac_condition
+
+difficulty: beginner
+
+equipment:
+  - none
+
+default_sets: 2
+default_reps: "3-5 each side"
+default_hold: "20-30 seconds"
+default_rest: "15 seconds"
+
+tags:
+  - stretching
+  - mobility
+  - home_exercise
+  - no_equipment
+  - breathing
+
+images: []
+
+translations:
+  it:
+    name: "Apertura del Libro"
+    description: >
+      Uno stretching rotazionale in posizione laterale per la colonna toracica
+      che apre anche il petto e le spalle. Questo esercizio migliora la mobilità
+      rotazionale toracica ed è particolarmente benefico per chi ha la schiena
+      rigida o le spalle arrotondate.
+    instructions:
+      - "Sdraiati sul lato sinistro con le ginocchia piegate a 90 gradi e sovrapposte"
+      - "Estendi entrambe le braccia davanti a te all'altezza delle spalle, palmi uniti"
+      - "Mantenendo le ginocchia unite, solleva lentamente il braccio destro"
+      - "Ruota il braccio destro in alto e oltre, aprendo il petto verso il soffitto"
+      - "Segui la mano con gli occhi mentre si muove"
+      - "Lascia che il braccio destro riposi sul pavimento dietro di te se riesci"
+      - "Mantieni per 20-30 secondi, respirando profondamente nel petto"
+      - "Torna lentamente alla posizione iniziale"
+      - "Ripeti 3-5 volte, poi cambia lato"
+    common_mistakes:
+      - "Lasciare che il ginocchio superiore si sollevi - mantieni le ginocchia premute insieme"
+      - "Forzare il braccio a terra quando la mobilità è limitata - vai solo fin dove è comodo"
+      - "Trattenere il respiro - usa respiri profondi per migliorare lo stretching"
+      - "Muoversi troppo velocemente - questo è uno stretching lento e controllato"
+
+source: ai_assisted
+owner_id: shared

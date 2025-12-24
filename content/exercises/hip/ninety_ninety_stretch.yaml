@@ -1,0 +1,101 @@
+# 90-90 Hip Stretch
+# External and internal rotation stretch for both hips
+
+id: ninety_ninety_stretch
+
+name: "90-90 Hip Stretch"
+
+primary_language: en
+
+description: >
+  A seated stretch that simultaneously works on external rotation of the front
+  hip and internal rotation of the back hip. The 90-90 position is excellent
+  for improving overall hip mobility and is particularly beneficial for athletes
+  and those with restricted hip rotation.
+
+instructions:
+  - "Sit on the floor with your right leg in front, knee bent to 90 degrees"
+  - "Position your right shin parallel to your body with your foot pointing left"
+  - "Place your left leg to your side, also bent to 90 degrees"
+  - "Your left shin should be perpendicular to your body with foot pointing back"
+  - "Sit up tall with your spine straight"
+  - "For the front hip stretch: lean your torso forward over your front leg"
+  - "Keep your chest up and hinge from the hips"
+  - "Hold for 30-60 seconds, breathing deeply"
+  - "To stretch the back hip: sit upright and focus on pressing that knee toward floor"
+  - "Switch legs and repeat on the other side"
+
+common_mistakes:
+  - "Rounding the lower back when leaning forward - keep spine straight, hinge at hips"
+  - "Forcing the knees down when flexibility is limited - allow gradual improvement"
+  - "Letting the back hip lift off the floor - keep both hips grounded if possible"
+  - "Holding the breath - use breathing to relax into the stretch"
+
+body_regions:
+  - hip
+
+conditions:
+  - hip_stiffness
+  - limited_hip_rotation
+  - piriformis_tightness
+  - groin_tightness
+  - lower_back_pain
+
+therapeutic_goals:
+  - improve_mobility
+  - increase_range_of_motion
+  - reduce_stiffness
+  - improve_hip_function
+
+contraindications:
+  - hip_replacement_recent
+  - knee_injury
+  - hip_labral_tear
+  - groin_strain_acute
+
+difficulty: intermediate
+
+equipment:
+  - none
+
+default_sets: 2
+default_reps: "1-2 each side"
+default_hold: "30-60 seconds"
+default_rest: "15 seconds"
+
+tags:
+  - stretching
+  - mobility
+  - home_exercise
+  - no_equipment
+  - advanced_stretch
+
+images: []
+
+translations:
+  it:
+    name: "Stretching 90-90"
+    description: >
+      Uno stretching da seduti che lavora simultaneamente sulla rotazione esterna
+      dell'anca anteriore e sulla rotazione interna dell'anca posteriore. La
+      posizione 90-90 è eccellente per migliorare la mobilità complessiva
+      dell'anca ed è particolarmente benefica per gli atleti.
+    instructions:
+      - "Siediti sul pavimento con la gamba destra davanti, ginocchio piegato a 90 gradi"
+      - "Posiziona lo stinco destro parallelo al corpo con il piede che punta a sinistra"
+      - "Posiziona la gamba sinistra di lato, anche piegata a 90 gradi"
+      - "Lo stinco sinistro dovrebbe essere perpendicolare al corpo con il piede che punta indietro"
+      - "Siediti eretto con la colonna dritta"
+      - "Per lo stretching dell'anca anteriore: inclina il busto in avanti sulla gamba davanti"
+      - "Mantieni il petto in alto e piega dalle anche"
+      - "Mantieni per 30-60 secondi, respirando profondamente"
+      - "Per stirare l'anca posteriore: siediti eretto e concentrati sul premere quel ginocchio a terra"
+      - "Cambia gamba e ripeti dall'altro lato"
+    common_mistakes:
+      - "Arrotondare la schiena quando ci si inclina - mantieni la colonna dritta"
+      - "Forzare le ginocchia quando la flessibilità è limitata - permetti un miglioramento graduale"
+      - "Lasciare che l'anca posteriore si sollevi - mantieni entrambe le anche a terra"
+      - "Trattenere il respiro - usa la respirazione per rilassarti nello stretching"
+
+source: ai_assisted
+owner_id: shared

@@ -1,0 +1,98 @@
+# Prone Y Raise
+# Lower trapezius and posterior shoulder strengthening
+
+id: prone_y_raise
+
+name: "Prone Y Raise"
+
+primary_language: en
+
+description: >
+  A prone exercise that specifically targets the lower trapezius muscle,
+  which is often weak in those with poor posture and shoulder problems.
+  The Y raise helps restore balance between the upper and lower trapezius
+  and improves scapular control.
+
+instructions:
+  - "Lie face down on the floor or a bench with your forehead resting down"
+  - "Extend your arms straight overhead in a Y position (45 degrees from center)"
+  - "Turn your thumbs to point toward the ceiling"
+  - "Keeping your arms straight, lift them off the floor"
+  - "Squeeze your shoulder blades down and together as you lift"
+  - "Hold at the top for 2-3 seconds"
+  - "Slowly lower back down with control"
+  - "Keep your neck neutral - do not lift your head"
+
+common_mistakes:
+  - "Lifting the head and straining the neck - keep forehead down"
+  - "Shrugging the shoulders toward the ears - focus on pulling shoulder blades down"
+  - "Bending the elbows - keep arms straight throughout"
+  - "Using momentum to swing the arms - lift slowly with muscle control"
+  - "Arms too wide (T position) or too narrow - maintain 45-degree Y angle"
+
+body_regions:
+  - upper_back
+  - shoulder
+
+conditions:
+  - scapular_dyskinesia
+  - shoulder_impingement
+  - rounded_shoulders
+  - upper_crossed_syndrome
+  - rotator_cuff_tendinopathy
+
+therapeutic_goals:
+  - increase_strength
+  - improve_posture
+  - improve_scapular_control
+  - prevent_injury
+
+contraindications:
+  - acute_shoulder_injury
+  - severe_shoulder_impingement
+  - neck_injury
+
+difficulty: beginner
+
+equipment:
+  - none
+
+default_sets: 3
+default_reps: "10-15"
+default_hold: "2-3 seconds at top"
+default_rest: "60 seconds"
+
+tags:
+  - strengthening
+  - posture
+  - scapular_stability
+  - home_exercise
+  - no_equipment
+
+images: []
+
+translations:
+  it:
+    name: "Sollevamento a Y Prono"
+    description: >
+      Un esercizio prono che lavora specificamente sul trapezio inferiore,
+      spesso debole in chi ha cattiva postura e problemi alla spalla. Il
+      sollevamento a Y aiuta a ripristinare l'equilibrio tra trapezio
+      superiore e inferiore.
+    instructions:
+      - "Sdraiati a pancia in giù sul pavimento con la fronte appoggiata"
+      - "Estendi le braccia dritte sopra la testa in posizione Y (45 gradi dal centro)"
+      - "Gira i pollici verso il soffitto"
+      - "Mantenendo le braccia dritte, solleva le braccia dal pavimento"
+      - "Stringi le scapole in basso e insieme mentre sollevi"
+      - "Mantieni in alto per 2-3 secondi"
+      - "Abbassa lentamente con controllo"
+      - "Mantieni il collo neutro - non sollevare la testa"
+    common_mistakes:
+      - "Sollevare la testa sforzando il collo - mantieni la fronte appoggiata"
+      - "Sollevare le spalle verso le orecchie - concentrati sulle scapole in basso"
+      - "Piegare i gomiti - mantieni le braccia dritte"
+      - "Usare lo slancio - solleva lentamente con controllo muscolare"
+
+source: ai_assisted
+owner_id: shared

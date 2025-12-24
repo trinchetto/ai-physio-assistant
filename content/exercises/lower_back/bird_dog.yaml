@@ -1,0 +1,102 @@
+# Bird Dog Exercise
+# Core stabilization exercise for the lower back
+
+id: bird_dog
+
+name: "Bird Dog"
+
+primary_language: en
+
+description: >
+  A fundamental core stabilization exercise that strengthens the lower back,
+  glutes, and deep core muscles while improving balance and coordination.
+  The bird dog teaches neutral spine control and is safe for most people
+  with lower back pain.
+
+instructions:
+  - "Start on your hands and knees in a tabletop position"
+  - "Place hands directly under shoulders, knees directly under hips"
+  - "Keep your spine in a neutral position - imagine a glass of water on your lower back"
+  - "Brace your core muscles gently as if preparing to be pushed"
+  - "Slowly extend your right arm forward and left leg backward simultaneously"
+  - "Keep arm and leg at body height - do not raise them above your back"
+  - "Hold for 3-5 seconds, maintaining a level spine and hips"
+  - "Slowly return to starting position with control"
+  - "Repeat with left arm and right leg"
+  - "Alternate sides for the specified repetitions"
+
+common_mistakes:
+  - "Arching the lower back when extending the leg - keep spine neutral"
+  - "Rotating the hips when lifting the leg - keep hips level"
+  - "Lifting the arm or leg too high - maintain body height"
+  - "Holding the breath - breathe normally throughout"
+  - "Moving too quickly - use slow, controlled movements"
+
+body_regions:
+  - lower_back
+  - core
+
+conditions:
+  - lower_back_pain
+  - core_weakness
+  - postural_dysfunction
+  - disc_herniation
+
+therapeutic_goals:
+  - increase_strength
+  - improve_stability
+  - improve_posture
+  - reduce_pain
+
+contraindications:
+  - acute_lower_back_pain_severe
+  - wrist_injury
+  - knee_injury_cannot_kneel
+
+difficulty: beginner
+
+equipment:
+  - none
+
+default_sets: 3
+default_reps: "8-10 each side"
+default_hold: "3-5 seconds"
+default_rest: "30 seconds"
+
+tags:
+  - core
+  - strengthening
+  - stabilization
+  - home_exercise
+  - no_equipment
+
+images: []
+
+translations:
+  it:
+    name: "Bird Dog"
+    description: >
+      Un esercizio fondamentale di stabilizzazione del core che rafforza la parte
+      bassa della schiena, i glutei e i muscoli profondi del core, migliorando
+      equilibrio e coordinazione. Insegna il controllo della colonna neutra ed è
+      sicuro per la maggior parte delle persone con mal di schiena.
+    instructions:
+      - "Inizia a quattro zampe in posizione di tavolo"
+      - "Posiziona le mani sotto le spalle, le ginocchia sotto i fianchi"
+      - "Mantieni la colonna in posizione neutra - immagina un bicchiere d'acqua sulla schiena"
+      - "Attiva delicatamente i muscoli del core come preparandoti a una spinta"
+      - "Estendi lentamente il braccio destro in avanti e la gamba sinistra indietro"
+      - "Mantieni braccio e gamba all'altezza del corpo - non sollevarli sopra la schiena"
+      - "Mantieni per 3-5 secondi, mantenendo colonna e fianchi a livello"
+      - "Torna lentamente alla posizione iniziale con controllo"
+      - "Ripeti con braccio sinistro e gamba destra"
+      - "Alterna i lati per le ripetizioni specificate"
+    common_mistakes:
+      - "Inarcare la parte bassa della schiena estendendo la gamba - mantieni la colonna neutra"
+      - "Ruotare i fianchi sollevando la gamba - mantieni i fianchi a livello"
+      - "Sollevare braccio o gamba troppo in alto - mantieni l'altezza del corpo"
+      - "Trattenere il respiro - respira normalmente"
+      - "Muoversi troppo velocemente - usa movimenti lenti e controllati"
+
+source: ai_assisted
+owner_id: shared

@@ -1,0 +1,95 @@
+# Levator Scapulae Stretch
+# Targets the levator scapulae muscle that connects the neck to the shoulder blade
+
+id: levator_scapulae_stretch
+
+name: "Levator Scapulae Stretch"
+
+primary_language: en
+
+description: >
+  A targeted stretch for the levator scapulae muscle, which runs from the upper
+  cervical vertebrae to the shoulder blade. This muscle commonly becomes tight
+  from poor posture and stress, causing pain at the angle of the neck and shoulder.
+
+instructions:
+  - "Sit on a chair and grasp the seat with your right hand to anchor your shoulder down"
+  - "Turn your head 45 degrees to the left (looking toward your left armpit)"
+  - "Gently tuck your chin and look down toward your left armpit"
+  - "Place your left hand on the back of your head"
+  - "Apply gentle downward pressure to increase the stretch"
+  - "You should feel a stretch at the right side of your neck, near the shoulder blade"
+  - "Hold for 20-30 seconds"
+  - "Release slowly and repeat on the other side"
+
+common_mistakes:
+  - "Not rotating the head before bending - the 45-degree rotation is essential to target the levator"
+  - "Pulling too hard with the hand - use gentle pressure only"
+  - "Letting the shoulder rise up - keep it anchored down by holding the chair"
+  - "Rounding the whole spine forward - only the neck should bend, keep upper back upright"
+
+body_regions:
+  - neck
+
+conditions:
+  - neck_pain
+  - neck_stiffness
+  - tension_headache
+  - upper_back_pain
+  - shoulder_pain
+
+therapeutic_goals:
+  - reduce_muscle_tension
+  - reduce_pain
+  - improve_mobility
+  - reduce_stiffness
+
+contraindications:
+  - cervical_instability
+  - acute_disc_herniation_cervical
+  - cervical_radiculopathy_acute
+  - recent_cervical_surgery
+
+difficulty: beginner
+
+equipment:
+  - chair
+
+default_sets: 2
+default_reps: "2-3 each side"
+default_hold: "20-30 seconds"
+default_rest: "15 seconds"
+
+tags:
+  - stretching
+  - office_exercise
+  - tension_relief
+  - desk_worker
+
+images: []
+
+translations:
+  it:
+    name: "Stretching dell'Elevatore della Scapola"
+    description: >
+      Uno stretching mirato per il muscolo elevatore della scapola, che va
+      dalle vertebre cervicali superiori alla scapola. Questo muscolo si
+      irrigidisce comunemente a causa della cattiva postura e dello stress,
+      causando dolore nell'angolo tra collo e spalla.
+    instructions:
+      - "Siediti su una sedia e afferra il sedile con la mano destra per ancorare la spalla"
+      - "Gira la testa di 45 gradi verso sinistra (guardando verso l'ascella sinistra)"
+      - "Ritrai delicatamente il mento e guarda verso l'ascella sinistra"
+      - "Appoggia la mano sinistra sulla parte posteriore della testa"
+      - "Applica una leggera pressione verso il basso per aumentare lo stretching"
+      - "Dovresti sentire lo stiramento sul lato destro del collo, vicino alla scapola"
+      - "Mantieni per 20-30 secondi"
+      - "Rilascia lentamente e ripeti dall'altro lato"
+    common_mistakes:
+      - "Non ruotare la testa prima di piegare - la rotazione di 45 gradi è essenziale"
+      - "Tirare troppo forte con la mano - usa solo una pressione leggera"
+      - "Lasciare che la spalla si sollevi - mantienila ancorata tenendo la sedia"
+      - "Piegare tutta la colonna in avanti - solo il collo dovrebbe piegarsi"
+
+source: ai_assisted
+owner_id: shared
