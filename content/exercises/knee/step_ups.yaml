@@ -1,0 +1,96 @@
+# Step Ups
+# Functional lower extremity strengthening
+
+id: step_ups
+
+name: "Step Ups"
+
+primary_language: en
+
+description: >
+  A functional exercise that strengthens the quadriceps, glutes, and hip
+  stabilizers while mimicking the movement pattern of climbing stairs.
+  Step ups are excellent for knee rehabilitation and improving functional
+  leg strength for daily activities.
+
+instructions:
+  - "Stand facing a sturdy step, bench, or stair (start with 6-8 inch height)"
+  - "Place your entire right foot on the step"
+  - "Press through your right heel to step up, bringing your left foot to meet it"
+  - "Focus on using your right leg to lift - don't push off with your left"
+  - "Stand fully upright on the step"
+  - "Slowly lower your left foot back to the floor with control"
+  - "Keep your right foot on the step and repeat for all repetitions"
+  - "Then switch to lead with your left leg"
+
+common_mistakes:
+  - "Pushing off with the back leg - use the front leg to do the work"
+  - "Letting the knee cave inward - keep knee aligned over second toe"
+  - "Leaning forward excessively - stay upright"
+  - "Using a step that's too high initially - start low and progress"
+  - "Dropping down quickly - control the lowering phase"
+
+body_regions:
+  - knee
+  - hip
+
+conditions:
+  - quadriceps_weakness
+  - post_surgical_knee
+  - patellofemoral_pain
+  - functional_weakness
+  - stair_climbing_difficulty
+
+therapeutic_goals:
+  - increase_strength
+  - improve_function
+  - rehabilitation
+  - improve_balance
+
+contraindications:
+  - acute_knee_pain
+  - severe_balance_impairment
+  - immediately_post_surgery
+
+difficulty: intermediate
+
+equipment:
+  - step_or_stair
+
+default_sets: 3
+default_reps: "10-12 each leg"
+default_hold: "none"
+default_rest: "60 seconds"
+
+tags:
+  - strengthening
+  - functional
+  - rehabilitation
+  - home_exercise
+
+images: []
+
+translations:
+  it:
+    name: "Salita sul Gradino"
+    description: >
+      Un esercizio funzionale che rafforza quadricipiti, glutei e stabilizzatori
+      dell'anca imitando il movimento del salire le scale. Eccellente per la
+      riabilitazione del ginocchio e migliorare la forza funzionale delle gambe.
+    instructions:
+      - "Stai in piedi di fronte a un gradino stabile (inizia con 15-20 cm di altezza)"
+      - "Posiziona l'intero piede destro sul gradino"
+      - "Spingi attraverso il tallone destro per salire, portando il piede sinistro a unirsi"
+      - "Concentrati sull'usare la gamba destra per sollevarti - non spingere con la sinistra"
+      - "Stai completamente eretto sul gradino"
+      - "Abbassa lentamente il piede sinistro a terra con controllo"
+      - "Mantieni il piede destro sul gradino e ripeti per tutte le ripetizioni"
+      - "Poi cambia per guidare con la gamba sinistra"
+    common_mistakes:
+      - "Spingere con la gamba posteriore - usa la gamba anteriore"
+      - "Lasciare che il ginocchio cada verso l'interno - mantienilo allineato"
+      - "Inclinarsi eccessivamente in avanti - mantieniti eretto"
+      - "Usare un gradino troppo alto inizialmente - inizia basso e progredisci"
+
+source: ai_assisted
+owner_id: shared
