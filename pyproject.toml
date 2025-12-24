@@ -23,6 +23,11 @@ packages = [
     { include = "ai_physio_assistant", from = "src" }
 ]
 
+[[tool.poetry.source]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+priority = "explicit"
+
 [tool.poetry.dependencies]
 python = "^3.10"
 pydantic = "^2.0.0"
@@ -31,9 +36,8 @@ pyyaml = "^6.0"
 diffusers = "^0.25.0"
 transformers = "^4.36.0"
 accelerate = "^0.25.0"
-# Use PyTorch CPU version to avoid platform-specific issues
-# Users can install CUDA/ROCm versions separately if needed
-torch = {version = "^2.0.0", source = "pypi"}
+# Use PyTorch CPU-only to avoid triton dependency issues
+torch = {version = "^2.0.0", source = "pytorch-cpu"}
 pillow = "^10.0.0"
 safetensors = "^0.4.0"
 
