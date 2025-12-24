@@ -1,0 +1,100 @@
+# Plank / Front Plank
+# Isometric core strengthening
+
+id: plank
+
+name: "Plank"
+
+primary_language: en
+
+description: >
+  A fundamental isometric exercise that strengthens the entire core, including
+  the rectus abdominis, obliques, transverse abdominis, and lower back muscles.
+  The plank builds endurance and stability, and is a foundational exercise
+  for athletic performance and injury prevention.
+
+instructions:
+  - "Start in a push-up position, then lower onto your forearms"
+  - "Place your elbows directly under your shoulders"
+  - "Keep your forearms parallel or hands clasped together"
+  - "Extend your legs behind you, balancing on your toes"
+  - "Create a straight line from your head to your heels"
+  - "Engage your core by bracing as if preparing to be punched in the stomach"
+  - "Squeeze your glutes to keep your hips from sagging"
+  - "Keep your neck neutral by looking at the floor between your hands"
+  - "Hold the position while breathing normally"
+
+common_mistakes:
+  - "Letting the hips sag toward the floor - maintain a straight line"
+  - "Raising the hips too high (pike position) - body should be flat"
+  - "Holding the breath - maintain normal breathing"
+  - "Looking up and straining the neck - keep neck neutral, look at floor"
+  - "Placing elbows too far forward - keep them under shoulders"
+
+body_regions:
+  - core
+
+conditions:
+  - core_weakness
+  - lower_back_pain
+  - postural_dysfunction
+  - general_conditioning
+
+therapeutic_goals:
+  - increase_strength
+  - build_endurance
+  - improve_stability
+  - improve_posture
+
+contraindications:
+  - shoulder_injury_acute
+  - wrist_injury
+  - severe_lower_back_pain
+  - uncontrolled_hypertension
+
+difficulty: intermediate
+
+equipment:
+  - none
+
+default_sets: 3
+default_reps: "1"
+default_hold: "20-60 seconds"
+default_rest: "60 seconds"
+
+tags:
+  - core
+  - strengthening
+  - isometric
+  - home_exercise
+  - no_equipment
+
+images: []
+
+translations:
+  it:
+    name: "Plank"
+    description: >
+      Un esercizio isometrico fondamentale che rafforza l'intero core, inclusi
+      il retto addominale, gli obliqui, il trasverso dell'addome e i muscoli
+      lombari. Il plank costruisce resistenza e stabilità, ed è un esercizio
+      base per le prestazioni atletiche e la prevenzione degli infortuni.
+    instructions:
+      - "Inizia in posizione di push-up, poi abbassati sugli avambracci"
+      - "Posiziona i gomiti direttamente sotto le spalle"
+      - "Mantieni gli avambracci paralleli o le mani unite"
+      - "Estendi le gambe dietro di te, in equilibrio sulle punte"
+      - "Crea una linea dritta dalla testa ai talloni"
+      - "Attiva il core contraendo come se ti preparassi a ricevere un pugno"
+      - "Stringi i glutei per evitare che i fianchi cedano"
+      - "Mantieni il collo neutro guardando il pavimento tra le mani"
+      - "Mantieni la posizione respirando normalmente"
+    common_mistakes:
+      - "Lasciare che i fianchi cedano verso il pavimento - mantieni una linea dritta"
+      - "Sollevare i fianchi troppo in alto - il corpo dovrebbe essere piatto"
+      - "Trattenere il respiro - mantieni una respirazione normale"
+      - "Guardare in alto sforzando il collo - mantieni il collo neutro"
+      - "Posizionare i gomiti troppo in avanti - mantienili sotto le spalle"
+
+source: ai_assisted
+owner_id: shared

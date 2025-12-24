@@ -1,0 +1,102 @@
+# Pallof Press
+# Anti-rotation core exercise
+
+id: pallof_press
+
+name: "Pallof Press"
+
+primary_language: en
+
+description: >
+  An anti-rotation core exercise that challenges the obliques and deep core
+  muscles to resist rotational forces. Named after physical therapist John
+  Pallof, this exercise builds functional core strength that transfers to
+  sports and daily activities requiring rotational stability.
+
+instructions:
+  - "Attach a resistance band to a fixed anchor point at chest height"
+  - "Stand perpendicular to the anchor point, feet shoulder-width apart"
+  - "Hold the band with both hands at your chest"
+  - "Step away from the anchor until there is tension in the band"
+  - "Engage your core with an abdominal brace"
+  - "Slowly press the band straight out in front of you"
+  - "The band will try to rotate your body - resist this rotation"
+  - "Keep your hips and shoulders square, facing forward"
+  - "Hold the extended position for 2-3 seconds"
+  - "Slowly bring the band back to your chest"
+  - "Complete all reps on one side, then turn and repeat on the other side"
+
+common_mistakes:
+  - "Allowing the torso to rotate toward the anchor - keep shoulders and hips square"
+  - "Shrugging the shoulders - keep them down and relaxed"
+  - "Using too heavy resistance and compensating with poor form - start light"
+  - "Moving the arms too quickly - use slow, controlled movements"
+  - "Not bracing the core - engage your core before pressing"
+
+body_regions:
+  - core
+
+conditions:
+  - core_weakness
+  - lower_back_pain
+  - rotational_instability
+  - sports_training
+
+therapeutic_goals:
+  - increase_strength
+  - improve_stability
+  - improve_anti_rotation
+  - functional_training
+
+contraindications:
+  - acute_lower_back_pain
+  - shoulder_injury_acute
+
+difficulty: intermediate
+
+equipment:
+  - resistance_band
+  - cable_machine_optional
+
+default_sets: 3
+default_reps: "10-12 each side"
+default_hold: "2-3 seconds extended"
+default_rest: "60 seconds"
+
+tags:
+  - core
+  - strengthening
+  - anti_rotation
+  - functional
+
+images: []
+
+translations:
+  it:
+    name: "Pallof Press"
+    description: >
+      Un esercizio anti-rotazione del core che sfida gli obliqui e i muscoli
+      profondi del core a resistere alle forze rotazionali. Prende il nome dal
+      fisioterapista John Pallof, questo esercizio costruisce forza funzionale
+      del core che si trasferisce agli sport e alle attività quotidiane.
+    instructions:
+      - "Attacca una banda elastica a un punto fisso all'altezza del petto"
+      - "Stai perpendicolare al punto di ancoraggio, piedi alla larghezza delle spalle"
+      - "Tieni la banda con entrambe le mani al petto"
+      - "Fai un passo lontano dall'ancoraggio finché c'è tensione nella banda"
+      - "Attiva il core con una contrazione addominale"
+      - "Spingi lentamente la banda dritta davanti a te"
+      - "La banda cercherà di ruotare il tuo corpo - resisti a questa rotazione"
+      - "Mantieni fianchi e spalle allineati, rivolti in avanti"
+      - "Mantieni la posizione estesa per 2-3 secondi"
+      - "Riporta lentamente la banda al petto"
+      - "Completa tutte le ripetizioni su un lato, poi girati e ripeti dall'altro"
+    common_mistakes:
+      - "Permettere al busto di ruotare verso l'ancoraggio - mantieni spalle e fianchi allineati"
+      - "Sollevare le spalle - mantienile basse e rilassate"
+      - "Usare troppa resistenza e compensare con cattiva forma - inizia leggero"
+      - "Muovere le braccia troppo velocemente - usa movimenti lenti e controllati"
+      - "Non attivare il core - attiva il core prima di spingere"
+
+source: ai_assisted
+owner_id: shared

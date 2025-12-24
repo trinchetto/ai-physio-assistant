@@ -1,0 +1,97 @@
+# Straight Leg Raise
+# Quadriceps and hip flexor strengthening
+
+id: straight_leg_raise
+
+name: "Straight Leg Raise"
+
+primary_language: en
+
+description: >
+  A fundamental exercise that strengthens the quadriceps and hip flexors
+  without bending the knee. Straight leg raises are essential in knee
+  rehabilitation, particularly after ACL surgery or total knee replacement,
+  and help build strength while protecting the healing joint.
+
+instructions:
+  - "Lie on your back with one knee bent, foot flat on the floor"
+  - "Keep the other leg straight with toes pointing toward the ceiling"
+  - "Tighten the quadriceps of your straight leg (do a quad set first)"
+  - "Keeping the knee locked straight, lift the leg to the height of the bent knee"
+  - "The leg should rise about 12-18 inches off the ground"
+  - "Hold at the top for 1-2 seconds"
+  - "Slowly lower the leg back down with control"
+  - "Keep the quadriceps tight throughout the entire movement"
+
+common_mistakes:
+  - "Bending the knee as you lift - keep it locked straight"
+  - "Not tightening the quad before lifting - always do a quad set first"
+  - "Lifting too high and arching the back - only lift to bent knee height"
+  - "Dropping the leg quickly - lower with control"
+  - "Letting the foot turn outward - keep toes pointing up"
+
+body_regions:
+  - knee
+  - hip
+
+conditions:
+  - post_surgical_knee
+  - acl_rehabilitation
+  - total_knee_replacement
+  - quadriceps_weakness
+  - patellofemoral_pain
+
+therapeutic_goals:
+  - increase_strength
+  - rehabilitation
+  - prevent_atrophy
+  - improve_function
+
+contraindications:
+  - acute_hip_flexor_strain
+  - immediately_post_surgery_without_clearance
+  - severe_back_pain
+
+difficulty: beginner
+
+equipment:
+  - none
+
+default_sets: 3
+default_reps: "10-15 each leg"
+default_hold: "1-2 seconds at top"
+default_rest: "60 seconds"
+
+tags:
+  - strengthening
+  - rehabilitation
+  - home_exercise
+  - no_equipment
+
+images: []
+
+translations:
+  it:
+    name: "Sollevamento Gamba Tesa"
+    description: >
+      Un esercizio fondamentale che rafforza il quadricipite e i flessori dell'anca
+      senza piegare il ginocchio. I sollevamenti a gamba tesa sono essenziali nella
+      riabilitazione del ginocchio, particolarmente dopo chirurgia del LCA o
+      protesi totale.
+    instructions:
+      - "Sdraiati sulla schiena con un ginocchio piegato, piede a terra"
+      - "Mantieni l'altra gamba dritta con le dita dei piedi verso il soffitto"
+      - "Contrai il quadricipite della gamba dritta (fai prima una contrazione)"
+      - "Mantenendo il ginocchio bloccato, solleva la gamba all'altezza del ginocchio piegato"
+      - "La gamba dovrebbe sollevarsi di circa 30-45 cm da terra"
+      - "Mantieni in alto per 1-2 secondi"
+      - "Abbassa lentamente la gamba con controllo"
+      - "Mantieni il quadricipite contratto durante tutto il movimento"
+    common_mistakes:
+      - "Piegare il ginocchio mentre sollevi - mantienilo bloccato"
+      - "Non contrarre il quadricipite prima di sollevare - fai sempre prima una contrazione"
+      - "Sollevare troppo in alto inarcando la schiena - solleva solo all'altezza del ginocchio piegato"
+      - "Lasciare cadere la gamba velocemente - abbassa con controllo"
+
+source: ai_assisted
+owner_id: shared

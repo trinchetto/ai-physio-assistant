@@ -1,0 +1,95 @@
+# Standing Hamstring Curl
+# Hamstring strengthening exercise
+
+id: hamstring_curl
+
+name: "Standing Hamstring Curl"
+
+primary_language: en
+
+description: >
+  A standing exercise that strengthens the hamstring muscles through knee
+  flexion against resistance or gravity. Strong hamstrings are essential
+  for knee stability, injury prevention, and balanced lower extremity
+  strength. This exercise can be progressed with ankle weights or bands.
+
+instructions:
+  - "Stand facing a wall or holding onto a sturdy chair for balance"
+  - "Stand tall with feet hip-width apart"
+  - "Shift your weight onto your left leg"
+  - "Keeping your thighs parallel, bend your right knee to bring your heel toward your buttock"
+  - "Curl up as far as you can without letting your thigh move forward"
+  - "Squeeze your hamstring at the top of the movement"
+  - "Slowly lower your foot back down with control"
+  - "Complete all repetitions on one side, then switch legs"
+
+common_mistakes:
+  - "Swinging the leg or using momentum - move slowly and with control"
+  - "Letting the thigh swing forward - keep thighs aligned throughout"
+  - "Arching the lower back - keep core engaged and spine neutral"
+  - "Not achieving full range of motion - curl as high as comfortably possible"
+
+body_regions:
+  - knee
+
+conditions:
+  - hamstring_weakness
+  - knee_rehabilitation
+  - acl_prevention
+  - muscle_imbalance
+  - post_surgical_knee
+
+therapeutic_goals:
+  - increase_strength
+  - improve_stability
+  - prevent_injury
+  - rehabilitation
+
+contraindications:
+  - acute_hamstring_strain
+  - severe_knee_pain
+  - balance_impairment_without_support
+
+difficulty: beginner
+
+equipment:
+  - wall_or_chair
+  - ankle_weights_optional
+
+default_sets: 3
+default_reps: "12-15 each leg"
+default_hold: "1 second at top"
+default_rest: "30 seconds"
+
+tags:
+  - strengthening
+  - home_exercise
+  - balance
+
+images: []
+
+translations:
+  it:
+    name: "Curl dei Muscoli Posteriori della Coscia in Piedi"
+    description: >
+      Un esercizio in piedi che rafforza i muscoli posteriori della coscia
+      attraverso la flessione del ginocchio contro resistenza o gravità.
+      Muscoli posteriori forti sono essenziali per la stabilità del ginocchio
+      e la prevenzione degli infortuni.
+    instructions:
+      - "Stai in piedi di fronte a un muro o tenendoti a una sedia stabile"
+      - "Stai eretto con i piedi alla larghezza dei fianchi"
+      - "Sposta il peso sulla gamba sinistra"
+      - "Mantenendo le cosce parallele, piega il ginocchio destro portando il tallone verso il gluteo"
+      - "Piega il più possibile senza far muovere la coscia in avanti"
+      - "Stringi il muscolo posteriore in cima al movimento"
+      - "Abbassa lentamente il piede con controllo"
+      - "Completa tutte le ripetizioni su un lato, poi cambia gamba"
+    common_mistakes:
+      - "Oscillare la gamba o usare lo slancio - muoviti lentamente e con controllo"
+      - "Lasciare che la coscia oscilli in avanti - mantieni le cosce allineate"
+      - "Inarcare la parte bassa della schiena - mantieni il core attivo e la colonna neutra"
+      - "Non completare l'ampiezza del movimento - piega il più possibile"
+
+source: ai_assisted
+owner_id: shared

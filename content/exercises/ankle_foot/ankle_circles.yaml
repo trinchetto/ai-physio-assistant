@@ -1,0 +1,95 @@
+# Ankle Circles
+# Ankle mobility exercise
+
+id: ankle_circles
+
+name: "Ankle Circles"
+
+primary_language: en
+
+description: >
+  A simple mobility exercise that moves the ankle joint through its full range
+  of motion in all directions. Ankle circles help maintain or improve ankle
+  mobility, are useful for warm-ups, and are often prescribed after ankle
+  sprains or prolonged immobilization.
+
+instructions:
+  - "Sit in a chair or on the floor with one leg extended or crossed over the other"
+  - "Alternatively, you can do this lying down with your leg raised"
+  - "Keep your leg still - only your foot and ankle should move"
+  - "Slowly rotate your foot in a clockwise circle"
+  - "Make the circles as large as possible while maintaining control"
+  - "Complete the prescribed number of circles in one direction"
+  - "Reverse direction and repeat the same number counter-clockwise"
+  - "Switch feet and repeat"
+
+common_mistakes:
+  - "Moving the entire leg instead of just the ankle - keep the leg stationary"
+  - "Making small, rushed circles - make them slow and as large as possible"
+  - "Forgetting to do both directions - always do clockwise and counter-clockwise"
+  - "Tensing the foot - keep the foot and toes relaxed"
+
+body_regions:
+  - ankle_foot
+
+conditions:
+  - ankle_stiffness
+  - post_ankle_sprain
+  - ankle_immobilization_recovery
+  - arthritis_ankle
+  - general_warm_up
+
+therapeutic_goals:
+  - improve_mobility
+  - reduce_stiffness
+  - increase_range_of_motion
+  - warm_up
+
+contraindications:
+  - acute_ankle_fracture
+  - acute_ankle_sprain_severe
+  - immediately_post_surgery
+
+difficulty: beginner
+
+equipment:
+  - none
+
+default_sets: 2
+default_reps: "10 circles each direction"
+default_hold: "none"
+default_rest: "15 seconds"
+
+tags:
+  - mobility
+  - warm_up
+  - home_exercise
+  - no_equipment
+
+images: []
+
+translations:
+  it:
+    name: "Cerchi con la Caviglia"
+    description: >
+      Un semplice esercizio di mobilità che muove l'articolazione della caviglia
+      attraverso tutta la sua ampiezza di movimento in tutte le direzioni. I cerchi
+      con la caviglia aiutano a mantenere o migliorare la mobilità, sono utili
+      per il riscaldamento e spesso prescritti dopo distorsioni.
+    instructions:
+      - "Siediti su una sedia o sul pavimento con una gamba distesa o accavallata"
+      - "In alternativa, puoi farlo sdraiato con la gamba sollevata"
+      - "Mantieni la gamba ferma - solo il piede e la caviglia dovrebbero muoversi"
+      - "Ruota lentamente il piede in un cerchio in senso orario"
+      - "Fai i cerchi più grandi possibile mantenendo il controllo"
+      - "Completa il numero prescritto di cerchi in una direzione"
+      - "Inverti la direzione e ripeti lo stesso numero in senso antiorario"
+      - "Cambia piede e ripeti"
+    common_mistakes:
+      - "Muovere l'intera gamba invece della sola caviglia - mantieni la gamba ferma"
+      - "Fare cerchi piccoli e affrettati - falli lenti e grandi il più possibile"
+      - "Dimenticare di fare entrambe le direzioni - fai sempre orario e antiorario"
+      - "Contrarre il piede - mantieni piede e dita rilassati"
+
+source: ai_assisted
+owner_id: shared

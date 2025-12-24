@@ -1,0 +1,96 @@
+# Quad Sets / Quadriceps Setting
+# Isometric quadriceps strengthening
+
+id: quad_sets
+
+name: "Quad Sets"
+
+primary_language: en
+
+description: >
+  An isometric exercise that activates and strengthens the quadriceps without
+  moving the knee joint. Quad sets are fundamental in knee rehabilitation,
+  often the first exercise prescribed after knee surgery or injury. They help
+  restore quadriceps control and reduce muscle atrophy.
+
+instructions:
+  - "Lie on your back or sit with your leg straight out in front of you"
+  - "Place a small rolled towel under your knee for comfort (optional)"
+  - "Tighten the muscles on top of your thigh by pushing the back of your knee down"
+  - "Try to flatten the space under your knee against the floor or towel"
+  - "You should see your kneecap move slightly upward toward your hip"
+  - "Hold the contraction for 5-10 seconds"
+  - "Relax completely, then repeat"
+  - "Focus on achieving a strong, sustained contraction each time"
+
+common_mistakes:
+  - "Not fully contracting the quadriceps - focus on a strong squeeze"
+  - "Holding the breath - breathe normally during the contraction"
+  - "Moving the leg or lifting the heel - keep the leg still, only the muscle contracts"
+  - "Rushing through repetitions - hold each contraction fully"
+
+body_regions:
+  - knee
+
+conditions:
+  - post_surgical_knee
+  - acl_rehabilitation
+  - total_knee_replacement
+  - patellofemoral_pain
+  - quadriceps_weakness
+  - knee_osteoarthritis
+
+therapeutic_goals:
+  - increase_strength
+  - muscle_activation
+  - prevent_atrophy
+  - rehabilitation
+
+contraindications:
+  - acute_fracture
+  - immediately_post_surgery_without_clearance
+
+difficulty: beginner
+
+equipment:
+  - none
+
+default_sets: 3
+default_reps: "10-15"
+default_hold: "5-10 seconds"
+default_rest: "30 seconds"
+
+tags:
+  - strengthening
+  - isometric
+  - rehabilitation
+  - home_exercise
+  - no_equipment
+
+images: []
+
+translations:
+  it:
+    name: "Contrazioni Isometriche del Quadricipite"
+    description: >
+      Un esercizio isometrico che attiva e rinforza il quadricipite senza muovere
+      l'articolazione del ginocchio. Le contrazioni del quadricipite sono fondamentali
+      nella riabilitazione del ginocchio, spesso il primo esercizio prescritto
+      dopo chirurgia o infortunio.
+    instructions:
+      - "Sdraiati sulla schiena o siediti con la gamba distesa davanti a te"
+      - "Posiziona un piccolo asciugamano arrotolato sotto il ginocchio (opzionale)"
+      - "Contrai i muscoli sulla parte superiore della coscia spingendo il ginocchio verso il basso"
+      - "Cerca di appiattire lo spazio sotto il ginocchio contro il pavimento"
+      - "Dovresti vedere la rotula muoversi leggermente verso l'alto verso l'anca"
+      - "Mantieni la contrazione per 5-10 secondi"
+      - "Rilassa completamente, poi ripeti"
+      - "Concentrati su una contrazione forte e sostenuta ogni volta"
+    common_mistakes:
+      - "Non contrarre completamente il quadricipite - concentrati su una forte stretta"
+      - "Trattenere il respiro - respira normalmente durante la contrazione"
+      - "Muovere la gamba o sollevare il tallone - mantieni la gamba ferma"
+      - "Affrettarsi nelle ripetizioni - mantieni completamente ogni contrazione"
+
+source: ai_assisted
+owner_id: shared
