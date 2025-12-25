@@ -369,15 +369,3 @@ def create_routine_draft(
     lines.append("=" * 60)
 
     return "\n".join(lines)
-
-
-# List of all tools for the agent
-AGENT_TOOLS = [
-    list_body_regions,
-    list_difficulty_levels,
-    search_exercises,
-    get_exercise_details,
-    list_all_exercises,
-    get_exercises_for_condition,
-    create_routine_draft,
-]

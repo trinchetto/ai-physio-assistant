@@ -33,7 +33,7 @@ python = "^3.10"
 pydantic = "^2.0.0"
 pyyaml = "^6.0"
 # AI Agent dependencies
-google-adk = ">=1.0.0"
+pydantic-ai = ">=0.1.0"
 # Image generation dependencies
 diffusers = ">=0.25.0"
 transformers = ">=4.36.0"
@@ -98,8 +98,7 @@ module = [
     "accelerate.*",
     "torch.*",
     "PIL.*",
-    "google.adk.*",
-    "google.genai.*",
+    "pydantic_ai.*",
 ]
 ignore_missing_imports = true
 

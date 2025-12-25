@@ -1,18 +1,26 @@
 """
 Main agent definition for the AI Physio Assistant.
 
-This module creates the Google ADK agent with specialized tools
+This module creates a PydanticAI agent with specialized tools
 for helping physiotherapists create exercise routines.
 """
 
 from __future__ import annotations
 
-from google.adk.agents import Agent
+from pydantic_ai import Agent
 
-from ai_physio_assistant.agent.tools import AGENT_TOOLS
+from ai_physio_assistant.agent.tools import (
+    create_routine_draft,
+    get_exercise_details,
+    get_exercises_for_condition,
+    list_all_exercises,
+    list_body_regions,
+    list_difficulty_levels,
+    search_exercises,
+)
 
 # System instruction for the Physio Assistant agent
-SYSTEM_INSTRUCTION = """You are an AI assistant for physiotherapists and osteopaths. Your role is to help healthcare professionals create personalized exercise routines for their patients.
+SYSTEM_PROMPT = """You are an AI assistant for physiotherapists and osteopaths. Your role is to help healthcare professionals create personalized exercise routines for their patients.
 
 ## Your Capabilities
 
@@ -61,22 +69,48 @@ Start by asking how you can help today. Common tasks include:
 - "What exercises help with [symptom/goal]?"
 """
 
+# Default model mapping for convenience
+MODEL_ALIASES: dict[str, str] = {
+    "gemini": "gemini-2.0-flash",
+    "gemini-flash": "gemini-2.0-flash",
+    "gemini-pro": "gemini-2.5-pro",
+    "claude": "anthropic:claude-sonnet-4-0",
+    "claude-sonnet": "anthropic:claude-sonnet-4-0",
+    "claude-haiku": "anthropic:claude-haiku",
+    "gpt-4": "openai:gpt-4o",
+    "gpt-4o": "openai:gpt-4o",
+    "gpt-4o-mini": "openai:gpt-4o-mini",
+}
 
-def create_physio_agent(model: str = "gemini-2.0-flash") -> Agent:
+
+def create_physio_agent(model: str = "gemini-2.0-flash") -> Agent[None, str]:
     """
     Create and return the Physio Assistant agent.
 
     Args:
-        model: The Gemini model to use (default: gemini-2.0-flash).
-               Options include: gemini-2.0-flash, gemini-2.5-flash, gemini-2.5-pro
+        model: The model to use. Can be a full model string (e.g., 'openai:gpt-4o',
+               'anthropic:claude-sonnet-4-0', 'gemini-2.0-flash') or an alias
+               (e.g., 'claude', 'gpt-4', 'gemini').
 
     Returns:
-        An Agent instance configured for physiotherapy assistance.
+        A PydanticAI Agent instance configured for physiotherapy assistance.
     """
-    return Agent(
-        name="physio_assistant",
-        model=model,
-        description="An AI assistant that helps physiotherapists create personalized exercise routines for patients.",
-        instruction=SYSTEM_INSTRUCTION,
-        tools=AGENT_TOOLS,
+    # Resolve model alias if provided
+    resolved_model = MODEL_ALIASES.get(model, model)
+
+    # Create the agent with system prompt
+    agent: Agent[None, str] = Agent(
+        resolved_model,
+        system_prompt=SYSTEM_PROMPT,
     )
+
+    # Register tools using tool_plain since they don't need RunContext
+    agent.tool_plain(list_body_regions)
+    agent.tool_plain(list_difficulty_levels)
+    agent.tool_plain(search_exercises)
+    agent.tool_plain(get_exercise_details)
+    agent.tool_plain(list_all_exercises)
+    agent.tool_plain(get_exercises_for_condition)
+    agent.tool_plain(create_routine_draft)
+
+    return agent
