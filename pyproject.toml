@@ -32,8 +32,11 @@ priority = "explicit"
 python = "^3.10"
 pydantic = "^2.0.0"
 pyyaml = "^6.0"
-# AI Agent dependencies
-pydantic-ai = ">=0.1.0"
+# AI Agent dependencies (LangChain with provider integrations)
+langchain = ">=0.3.0"
+langchain-openai = ">=0.2.0"
+langchain-anthropic = ">=0.3.0"
+langchain-google-genai = ">=2.0.0"
 # Image generation dependencies
 diffusers = ">=0.25.0"
 transformers = ">=4.36.0"
@@ -98,7 +101,11 @@ module = [
     "accelerate.*",
     "torch.*",
     "PIL.*",
-    "pydantic_ai.*",
+    "langchain.*",
+    "langchain_core.*",
+    "langchain_openai.*",
+    "langchain_anthropic.*",
+    "langchain_google_genai.*",
 ]
 ignore_missing_imports = true
 

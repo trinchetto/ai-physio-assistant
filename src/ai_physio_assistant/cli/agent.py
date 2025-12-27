@@ -10,11 +10,10 @@ from __future__ import annotations
 import argparse
 import os
 import sys
-
-from pydantic_ai.messages import ModelMessage
+from typing import Any
 
 from ai_physio_assistant.agent import create_physio_agent
-from ai_physio_assistant.agent.agent import MODEL_ALIASES
+from ai_physio_assistant.agent.agent import MODEL_ALIASES, invoke_agent
 
 
 def check_api_keys(model: str) -> bool:
@@ -27,20 +26,22 @@ def check_api_keys(model: str) -> bool:
     Returns:
         True if the API key is set, False otherwise.
     """
+    # Resolve alias first
+    resolved = MODEL_ALIASES.get(model, model)
+
     # Determine which API key is needed based on model
-    if model.startswith("openai:") or model.startswith("gpt"):
+    if resolved.startswith("gpt-") or resolved.startswith("o1"):
         key_name = "OPENAI_API_KEY"
         key = os.environ.get("OPENAI_API_KEY")
-    elif model.startswith("anthropic:") or model.startswith("claude"):
+    elif resolved.startswith("claude-"):
         key_name = "ANTHROPIC_API_KEY"
         key = os.environ.get("ANTHROPIC_API_KEY")
+    elif resolved.startswith("gemini-"):
+        key_name = "GOOGLE_API_KEY"
+        key = os.environ.get("GOOGLE_API_KEY")
     else:
-        # Gemini models
-        key_name = "GOOGLE_API_KEY or GEMINI_API_KEY"
-        key = os.environ.get("GOOGLE_API_KEY") or os.environ.get("GEMINI_API_KEY")
-        if key:
-            # Ensure GOOGLE_API_KEY is set for pydantic-ai
-            os.environ["GOOGLE_API_KEY"] = key
+        key_name = "OPENAI_API_KEY"
+        key = os.environ.get("OPENAI_API_KEY")
 
     if not key:
         print(f"Error: Please set the {key_name} environment variable.")
@@ -51,7 +52,7 @@ def check_api_keys(model: str) -> bool:
             print("  Anthropic: https://console.anthropic.com/")
         else:
             print("  Google: https://aistudio.google.com/apikey")
-        print(f"\nThen set it: export {key_name.split(' or ')[0]}='your-key-here'")
+        print(f"\nThen set it: export {key_name}='your-key-here'")
         return False
 
     return True
@@ -72,7 +73,7 @@ def run_agent_loop(model: str = "gemini-2.0-flash") -> None:
         sys.exit(1)
 
     # Create the agent
-    agent = create_physio_agent(model=resolved_model)
+    agent = create_physio_agent(model=model)
 
     print("=" * 60)
     print("AI Physio Assistant")
@@ -86,8 +87,9 @@ def run_agent_loop(model: str = "gemini-2.0-flash") -> None:
     print("=" * 60)
     print()
 
-    # Message history for multi-turn conversation
-    message_history: list[ModelMessage] = []
+    # Chat history for multi-turn conversation
+    # Format: [{"role": "user", "content": "..."}, {"role": "assistant", "content": "..."}]
+    chat_history: list[dict[str, Any]] = []
 
     while True:
         try:
@@ -103,7 +105,7 @@ def run_agent_loop(model: str = "gemini-2.0-flash") -> None:
                 break
 
             if user_input.lower() == "clear":
-                message_history = []
+                chat_history = []
                 print("\n--- Conversation cleared ---\n")
                 continue
 
@@ -123,16 +125,17 @@ def run_agent_loop(model: str = "gemini-2.0-flash") -> None:
             print("\nAssistant: ", end="", flush=True)
 
             try:
-                result = agent.run_sync(
-                    user_input,
-                    message_history=message_history,
+                output = invoke_agent(
+                    agent=agent,
+                    message=user_input,
+                    chat_history=chat_history,
                 )
 
-                # Print the response
-                print(result.output)
+                print(output)
 
-                # Update message history for next turn
-                message_history = result.all_messages()
+                # Update chat history
+                chat_history.append({"role": "user", "content": user_input})
+                chat_history.append({"role": "assistant", "content": output})
 
             except Exception as e:
                 error_msg = str(e)
@@ -162,19 +165,19 @@ Examples:
   physio-agent                          # Start with default model (Gemini)
   physio-agent --model claude           # Use Claude
   physio-agent --model gpt-4            # Use GPT-4
-  physio-agent --model gemini-2.5-pro   # Use Gemini Pro
+  physio-agent --model gemini-pro       # Use Gemini Pro
 
 Model Aliases:
   gemini, gemini-flash  -> gemini-2.0-flash
-  gemini-pro            -> gemini-2.5-pro
-  claude, claude-sonnet -> anthropic:claude-sonnet-4-0
-  gpt-4, gpt-4o         -> openai:gpt-4o
-  gpt-4o-mini           -> openai:gpt-4o-mini
+  gemini-pro            -> gemini-1.5-pro
+  claude, claude-sonnet -> claude-sonnet-4-0
+  gpt-4, gpt-4o         -> gpt-4o
+  gpt-4o-mini           -> gpt-4o-mini
 
 Environment Variables:
-  GOOGLE_API_KEY or GEMINI_API_KEY   For Gemini models
-  OPENAI_API_KEY                     For OpenAI models
-  ANTHROPIC_API_KEY                  For Anthropic models
+  GOOGLE_API_KEY      For Gemini models
+  OPENAI_API_KEY      For OpenAI models
+  ANTHROPIC_API_KEY   For Anthropic models
         """,
     )
     parser.add_argument(
@@ -185,7 +188,7 @@ Environment Variables:
 
     args = parser.parse_args()
 
-    # Run the agent loop (synchronous)
+    # Run the agent loop
     run_agent_loop(model=args.model)
 
 
