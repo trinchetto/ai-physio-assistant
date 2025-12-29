@@ -1,7 +1,5 @@
 """Tests for the AI agent tools."""
 
-import pytest
-
 from ai_physio_assistant.agent.tools import (
     get_exercise_details,
     get_exercises_for_condition,
