@@ -37,6 +37,8 @@ langchain = ">=0.3.0"
 langchain-openai = ">=0.2.0"
 langchain-anthropic = ">=0.3.0"
 langchain-google-genai = ">=2.0.0"
+# Frontend dependencies
+streamlit = "^1.40.0"
 # Image generation dependencies
 diffusers = ">=0.25.0"
 transformers = ">=4.36.0"
@@ -58,6 +60,7 @@ pre-commit = "^4.5.1"
 [tool.poetry.scripts]
 physio-generate-images = "ai_physio_assistant.cli.generate_images:main"
 physio-agent = "ai_physio_assistant.cli.agent:main"
+physio-app = "ai_physio_assistant.frontend.app:main"
 
 [build-system]
 requires = ["poetry-core"]
@@ -107,6 +110,7 @@ module = [
     "langchain_anthropic.*",
     "langchain_google_genai.*",
     "langgraph.*",
+    "streamlit.*",
     "yaml",
 ]
 ignore_missing_imports = true
